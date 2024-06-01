@@ -1,0 +1,300 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Morph",
+	"settings": {
+		"appearanceTools": true,
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-sp-html-font-size": "18",
+			"bs-body-font-weight": "500",
+			"bs-heading-font-weight": "700",
+			"bs-display-font-weight": "400",
+			"bs-btn-font-weight": "700",
+			"wp--preset--font-family--body": "var(--wp--preset--font-family--system)",
+			"wp--preset--font-family--heading": "var(--wp--preset--font-family--system)",
+			"wp--preset--font-family--display": "var(--wp--preset--font-family--system)",
+			"wp--preset--font-family--monospace": "var(--wp--preset--font-family--bs-monospace)",
+			"bs-border-width": "0",
+			"bs-sp-spacing-x": "1.5rem",
+			"bs-sp-spacing-y": "1rem",
+			"bs-heading-color": "#485785",
+			"bs-dm-heading-color": "inherit",
+			"bs-alert-color": "var(--bs-emphasis-color)",
+			"bs-alert-box-shadow": "var(--bs-box-shadow-lg)",
+			"bs-accordion-border-color": "transparent",
+			"bs-accordion-active-color": "var(--bs-primary-text-emphasis)",
+			"bs-accordion-active-bg": "var(--bs-primary-bg-subtle)",
+			"bs-accordion-btn-focus-box-shadow": "none",
+			"bs-breadcrumb-bg": "var(--bs-secondary-bg-subtle)",
+			"bs-breadcrumb-box-shadow": "var(--bs-box-shadow-button)",
+			"bs-btn-color": "var(--wp--preset--color--contrast)",
+			"bs-btn-bg": "var(--wp--preset--color--base)",
+			"bs-btn-border-color": "none",
+			"bs-btn-hover-border-color": "none",
+			"bs-btn-box-shadow": "var(--bs-box-shadow-button)",
+			"bs-card-border-color": "var(--bs-border-color-translucent)",
+			"bs-card-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-card-cap-bg": "transparent",
+			"bs-dropdown-bg": "rgba(var(--bs-tertiary-bg-rgb),.8)",
+			"bs-form-control-bg": "rgba(var(--bs-tertiary-bg-rgb),.5)",
+			"bs-form-check-bg-color": "var(--bs-dark-bg-subtle)",
+			"bs-form-check-border-color": "transparent",
+			"bs-list-group-bg": "transparent",
+			"bs-list-group-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-nav-link-color": "var(--bs-heading-color)",
+			"bs-nav-link-hover-color": "var(--bs-link-hover-color)",
+			"bs-nav-tabs-bg": "var(--bs-secondary-bg-subtle)",
+			"bs-nav-tabs-bg-radius": "0.375rem",
+			"bs-nav-tabs-bg-shadow": "var(--bs-box-shadow-button)",
+			"bs-nav-tabs-border-color": "none",
+			"bs-nav-tabs-border-radius": "0",
+			"bs-nav-tabs-link-hover-border-color": "none",
+			"bs-nav-tabs-link-active-color": "#fff",
+			"bs-nav-tabs-link-active-bg": "var(--bs-primary)",
+			"bs-nav-tabs-link-active-border-color": "none",
+			"bs-nav-tabs-link-active-box-shadow": "var(--bs-box-shadow-inset)",
+			"bs-nav-pills-bg": "var(--bs-secondary-bg-subtle)",
+			"bs-nav-pills-bg-radius": "0.375rem",
+			"bs-nav-pills-bg-shadow": "var(--bs-box-shadow-button)",
+			"bs-nav-pills-link-active-color": "#fff",
+			"bs-nav-pills-link-active-bg": "var(--bs-primary)",
+			"bs-nav-pills-link-active-box-shadow": "var(--bs-box-shadow-inset)",
+			"bs-pagination-color": "var(--bs-emphasis-color)",
+			"bs-pagination-active-color": "var(--bs-lighter-text)",
+			"bs-pagination-active-bg": "var(--bs-primary)",
+			"bs-progress-height": "var(--wp--preset--font-size--x-large)",
+			"bs-progress-bg": "rgba(var(--bs-tertiary-bg-rgb),.5)",
+			"bs-range-thumb-bg": "var(--bs-primary)",
+			"bs-range-track-bg": "rgba(var(--bs-tertiary-bg-rgb),.5)"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#d9e3f1",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#7b8ab8",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#d9e3f9",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "rgba(123, 138, 184, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#d9e3f2",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(123, 138, 184, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#f0f5fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(55, 94, 148, 0.1)",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#378dfc",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#d9e3f3",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#43cc29",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#5b62f4",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ffc107",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#e52527",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#f0f5fb",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#212529",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d7e8fe",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "rgba(217, 227, 241, 0.75)",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d9f5d4",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#dee0fd",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fff3cd",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#fad3d4",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#f8fafd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#bed1e6",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"shadow": "0 0.125rem 0.25rem rgba(55, 94, 148, 0.2)",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium",
+					"shadow": "5px 5px 10px rgba(55, 94, 148, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.4)",
+					"slug": "md"
+				},
+				{
+					"name": "Large",
+					"shadow": "8px 8px 40px rgba(0, 0, 0, 0.15), inset 1px 1px 3px rgba(255, 255, 255, 0.5), inset -5px -5px 20px rgba(0, 0, 0, 0.05)",
+					"slug": "lg"
+				},
+				{
+					"name": "Inset",
+					"shadow": "inset 2px 3px 6px rgba(0, 0, 0, 0.2)",
+					"slug": "inset"
+				},
+				{
+					"name": "Button",
+					"shadow": "5px 5px 10px rgba(55, 94, 148, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.4)",
+					"slug": "button"
+				},
+				{
+					"name": "Button Focus",
+					"shadow": "5px 5px 10px rgba(55, 94, 148, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.4)",
+					"slug": "button-focus"
+				},
+				{
+					"name": "Button Active",
+					"shadow": "inset 2px 3px 6px rgba(0, 0, 0, 0.2), inset -3px -2px 6px rgba(255, 255, 255, 0.2)",
+					"slug": "button-active"
+				},
+				{
+					"name": "Theme",
+					"shadow": "inset 2px 2px 6px rgba(109, 114, 121, 0.2), inset -3px -2px 4px rgba(255, 255, 255, 0.2)",
+					"slug": "theme"
+				},
+				{
+					"name": "Form Focus",
+					"shadow": "var(--bs-box-shadow-inset), 0 0 0 0.25rem rgba(55, 141, 252, 0.25)",
+					"slug": "form-focus"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Nunito Sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\",Roboto, \"Helvetica Neue\",Arial, sans-serif, \"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\"",
+					"name": "System San Serif Stack",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "Nunito Sans",
+					"slug": "nunito-sans",
+					"fontFace": [
+						{
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/nunito-sans_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/nunito-sans_normal_500.ttf"
+							]
+						},
+						{
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/nunito/nunito-sans_normal_700.ttf"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\"Courier New\",monospace",
+					"name": "Bootstrap Monospace Stack",
+					"slug": "bs-monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": "body,\n.alert-secondary{\n--bs-alert-color:var(--wp--preset--color--contrast) !important;\n--bs-secondary-text:var(--wp--preset--color--contrast);\n}\n.alert,\n.dropdown-menu{\n-webkit-backdrop-filter:blur(3px);\nbackdrop-filter:blur(3px);\n}\n\n.btn-group:not(.btn-group > .btn-group),\n.btn-group:not(.dropdown-menu),\n.wp-element-button,\n.btn:not(.wp-block-button),\n.btn-sm>.wp-element-button,\n.btn:not(.wp-block-button).btn-sm,\n.btn-lg>.wp-element-button,\n.btn:not(.wp-block-button).btn-lg{\n--bs-border-radius:50rem;\n--bs-border-radius-sm:50rem;\n--bs-border-radius-lg:50rem;\n}\n.btn-group > .dropdown-menu.show,\n.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button,\n.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button:active:hover,\n.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button:active,\n.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button:focus,\n.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button:active:focus,\n.btn-group-vertical,\n.btn-group-vertical .btn,\n.btn-group-vertical .btn:hover,\n.btn-group-vertical .btn:active,\n.btn-group-vertical .btn:focus,\n.btn-group-vertical .btn:active:focus{\n--bs-border-radius:1rem;\n--bs-border-radius-sm:1rem;\n--bs-border-radius-lg:1rem;\n}\n.dark-mode .dropdown-menu,\n.input-group .btn{\n--bs-border-radius:0.375rem;\n--bs-border-radius-sm:.25rem;\n--bs-border-radius-lg:.5rem;\n}\n\n.card-header{\nborder-width:1px;\nborder-color:rgba(55, 94, 148, 0.1) !important;\n}\n\n.card[class*=\"border-\"]>.card-header,\n.card[class*=\"bg-\"],\n.card[class*=\"bg-\"]>.card-header{\nborder-color:rgba(55, 94, 148, 0.1) !important;\n}\n.list-group{\nbackground-color:var(--bs-list-group-bg);\n}\n[class*=\"list-group-item-\"] li,\n.list-group-item[class*=\"list-group-item-\"]{\nbackground-color:transparent;\n}\n.nav-link{\npadding:0.5rem 1rem;\n}\n.nav-tabs .nav-item:first-child .nav-link{\nborder-top-left-radius:0.375rem;\nborder-bottom-left-radius:0.375rem;\n}\n.nav-tabs .nav-item:last-child .nav-link{\nborder-top-right-radius:0.375rem;\nborder-bottom-right-radius:0.375rem;\n}\n\n.wp-block.list-group-item-action li:active,\n.list-group-item-action:active,\n.wp-block.list-group-item-action li:hover,\n.wp-block.list-group-item-action li:focus,\n.list-group-item-action:not(ol):hover,\n.list-group-item-action:not(ol):focus .list-group-item-action:not(ul):hover,\n.list-group-item-action:not(ul):focus{\nbackground-color:transparent;\n}\n.card,\n.btn,\n.btn-group,\n.btn-group-verticle,\n.wp-element-button{\n--bs-primary-text:var(--bs-lighter-text);\n--bs-success-text:var(--bs-lighter-text);\n--bs-warning-text:var(--bs-lighter-text);\n}\n\n[class*=\"btn-outline\"],\n.is-style-outline>.wp-element-button,\n.is-style-outline[class*=\"btn-\"]>.wp-element-button,\n.wp-block-button[class*=\"btn-outline\"]>.wp-element-button,\n.btn[class*=\"btn-outline\"]:not(.wp-block-button){\nborder:calc(2px * 1.8) solid var(--bs-btn-border-color);\nbox-shadow:var(--bs-form-control-shadow);\n}"
+	}
+}

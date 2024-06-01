@@ -1,0 +1,152 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "BootStrap 5",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#212529",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#0a58ca",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#0d6efd",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#6c757d",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#198754",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#0dcaf0",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ffc107",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#dc3545",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#212526",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#cfe2ff",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#e2e3e5",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d1e7dd",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#cff4fc",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fff3cd",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#f8d7da",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-html-text-shadow": "none",
+			"bs-body-color-text-shadow": "none",
+			"bs-body-bg-text-shadow": "none",
+			"bs-secondary-color-text-shadow": "none",
+			"bs-secondary-bg-text-shadow": "none",
+			"bs-tertiary-color-text-shadow": "var(--bs-light-textshadow)",
+			"bs-tertiary-bg-text-shadow": "none",
+			"bs-accent-text-shadow": "none",
+			"bs-heading-text-shadow": "none",
+			"bs-display-text-shadow": "none",
+			"bs-single-title-text-shadow": "none",
+			"bs-heading-color": "inherit",
+			"bs-dm-heading-color": "inherit"
+		}
+	}
+}

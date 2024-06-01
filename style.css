@@ -1,0 +1,24 @@
+/*
+Theme Name: SystemPress
+Theme URI: https://wetite.com/systempress/
+Author: GL Walker
+Author URI: https://wetite.com
+
+Description: SystemPress is a block based theme tightly integrated with BootStrap 5. SystemPress style variations are based on BootSwatch themes. Templates are based on the Twenty Twenty-Four theme providing a vast collection of templates and patterns tailored for different needs, such as presenting a business, blogging and writing or showcasing work. SystemPress also contains the BootStrap Icon library and a color mode block part for enabling night mode.
+
+While SystemPress is perfectly capable of working for you right out of the "box", this theme has been created with the developer in mind. Functions are documented, and expamples of how to extend this theme to meet project needs may be found by browsing the code.
+
+Many BootStrap classes and variables have been merged into the Wordpress global-styles. Other often needed BootStrap classes are defined in the primary bootstrap.css file, while other BootStrap components are in their own stylesheet and loaded only as needed by the frontend. The block editor will load all BootStrap styles so you have no limit of available BootStrap classes.
+
+SystemPress theme contains several block variations of popular BootStrap 5 based components that can be loaded in the site editor and further customized as needed. These include, alerts, cards, list groups, button groups, toolbars, breadcrumbs, accordions and more. Car
+eful consideration has been taken to ensure compatibility with existing WordPress blocks and styles.
+
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.4.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: systempress
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
