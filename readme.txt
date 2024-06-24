@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-SystemPress is a block based theme tightly integrated with BootStrap 5. SystemPress style variations are based on BootSwatch themes. Templates are based on the Twenty Twenty-Four theme providing a vast collection of templates and patterns tailored for different needs, such as presenting a business, blogging and writing or showcasing work. SystemPress also contains the BootStrap Icon library and a color mode block part for enabling night mode.
+SystemPress is a block based theme tightly integrated with BootStrap 5. SystemPress style variations are based on BootSwatch themes. SystemPress also contains a color mode block part for enabling night mode.
 
 While SystemPress is perfectly capable of working for you right out of the "box", this theme has been created with the developer in mind. Functions are well documented, and many expamples of how to extend this theme to meet project needs may be found by browsing the code.
 
