@@ -41,11 +41,6 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#000000",
-					"name": "Accent",
-					"slug": "accent"
-				},
-				{
 					"color": "#f7f7f9",
 					"name": "Secondary Element BG",
 					"slug": "bs-secondary-bg"

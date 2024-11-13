@@ -12,27 +12,13 @@
 
 html {
     font-family: sans-serif;
-    font-size: calc(100% * var(--bs-sp-html-font-size) / 16);
-    line-height: 1.5;
+    font-size: var(--bs-body-font-size);
 }
 
 body {
     margin: 0;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-hr {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid;
-    opacity: .25;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 abbr[title] {
@@ -351,6 +337,7 @@ progress {
     display: none !important;
 }
 
+.comment-content img,
 .img-fluid>img,
 .img-fluid {
     max-width: 100%;
@@ -367,23 +354,12 @@ img.img-thumbnail {
     height: auto;
 }
 
-figure,
-.figure {
-    display: inline-block;
-}
-
-figure>img,
-.figure-img {
-    margin-bottom: .5rem;
-    line-height: 1;
-}
-
 figcaption,
 .figure-caption {
     font-size: var(--wp--preset--font-size--small);
     color: var(--bs-secondary-color);
-    padding-right: .25rem;
-    padding-left: .25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
 
 .visually-hidden,
@@ -407,4 +383,69 @@ figcaption,
     display: block;
     clear: both;
     content: "";
+}
+
+.wp-block-spacer {
+    clear: both;
+}
+
+h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
+    rotate: 180deg
+}
+
+.has-drop-cap:not(:focus):first-letter {
+    float: left;
+    font-size: 8.4em;
+    font-style: normal;
+    font-weight: 100;
+    line-height: .68;
+    margin: .05em .1em 0 0;
+    text-transform: uppercase;
+}
+
+body.rtl .has-drop-cap:not(:focus):first-letter {
+    float: none;
+    margin-left: .1em;
+}
+
+p.has-drop-cap.has-background {
+    overflow: hidden;
+}
+
+ol.has-background,
+ul.has-background,
+p.has-background:not(.badge),
+h1.has-background:not(.badge),
+h2.has-background:not(.badge),
+h3.has-background:not(.badge),
+h4.has-background:not(.badge),
+h5.has-background:not(.badge),
+h6.has-background:not(.badge) {
+    padding: var(--bs-sp-spacing-y) var(--bs-sp-spacing-x);
+}
+
+:where(p.has-text-color:not(.has-link-color)) a {
+    color: inherit;
+}
+
+p.has-text-align-left[style*="writing-mode:vertical-lr"],
+p.has-text-align-right[style*="writing-mode:vertical-rl"] {
+    rotate: 180deg;
+}
+
+html {
+    --bs-sp-spacing-x: var(--wp--preset--font-size--medium);
+    --bs-sp-spacing-y: calc(var(--wp--preset--font-size--medium) * .5);
+
 }

@@ -6,7 +6,7 @@
 		"appearanceTools": true,
 		"custom": {
 			"sp-replace-string": "all",
-			"bs-sp-html-font-size": "18",
+			"bs-body-font-size": "18px",
 			"bs-body-font-weight": "500",
 			"bs-heading-font-weight": "700",
 			"bs-display-font-weight": "400",
@@ -79,11 +79,6 @@
 					"color": "#7b8ab8",
 					"name": "Contrast",
 					"slug": "contrast"
-				},
-				{
-					"color": "#d9e3f9",
-					"name": "Accent",
-					"slug": "accent"
 				},
 				{
 					"color": "rgba(123, 138, 184, 0.75)",

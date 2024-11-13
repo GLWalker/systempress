@@ -38,6 +38,10 @@ if (!function_exists('sp_editor_styles')) {
         $css->set_selector('.block-editor-block-list__block.alert');
         $css->add_property('display', 'inline-flex !important');
 
+        $css->set_selector('.block-editor-block-list__block.offcanvas');
+        $css->add_property('visibility', 'visible !important');
+        $css->add_property('transform', 'none !important');
+
         $css->set_selector(':where( .wp-block-button__link )');
         $css->add_property('padding', 'var(--bs-btn-padding-y) var(--bs-btn-padding-x) !important');
 
@@ -46,6 +50,12 @@ if (!function_exists('sp_editor_styles')) {
 
         $css->set_selector('.block-editor-block-list__block.card');
         $css->add_property('overflow', 'hidden !important');
+
+        $css->set_selector('.block-editor-block-list__block.sp-action-hook');
+        $css->add_property('height', '0.12rem');
+        $css->add_property('width', '67% !important');
+        $css->add_property('margin', '0 auto');
+        $css->add_property('background-color', '#cd5c5c');
 
         $css->set_selector('.wp-block-navigation.nav-pills .block-editor-rich-text__editable');
         $css->add_property(' display', 'block');
@@ -58,21 +68,14 @@ if (!function_exists('sp_editor_styles')) {
         $css->add_property('background-color', 'var(--bs-nav-pills-link-active-bg)');
         $css->add_property('border-radius', 'var(--bs-nav-pills-border-radius)');
 
-        /* fixed position */
-        $css->set_selector('.dark-mode.position-fixed');
-        $css->add_property('bottom', '.5%');
+        $css->set_selector('.block-editor-block-list__block.carousel-indicators p');
+        $css->add_property('display', 'none');
 
-        $css->set_selector('.dark-mode.position-fixed:not(.is-content-justification-center):not(.is-content-justification-right)');
-        $css->add_property('left', '1%');
+        $css->set_selector('.block-editor-block-list__block.carousel-control-prev');
+        $css->add_property('display', 'none');
 
-        $css->set_selector('.dark-mode.position-fixed.is-content-justification-center');
-        $css->add_property('left', '47% !important');
-
-        $css->set_selector('.dark-mode.position-fixed.is-content-justification-right');
-        $css->add_property('right', '1%');
-
-        $css->set_selector('.dark-mode.position-fixed p');
-        $css->add_property('padding', 'calc(var(--wp--preset--spacing--10 / 2)) !important');
+        $css->set_selector('.block-editor-block-list__block.carousel-control-next');
+        $css->add_property('display', 'none');
 
         do_action('sp_editor_styles', $css);
 
@@ -119,94 +122,6 @@ if (!function_exists('sp_shared_styles')) {
     }
 }
 
-if (!function_exists('sp_navigation_styles')) {
-    /**
-     * sp_navigation_styles
-     *
-     * Add some bootstrap markup to block navigation menus
-     * @return void
-     *
-     */
-
-    function sp_navigation_styles()
-    {
-        $css = new SystemPress_CSS();
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container,
-        .wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) wp-block-navigation__submenu-container .has-child .wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container');
-        $css->add_property('position', 'absolute');
-        $css->add_property('z-index', '1000');
-        $css->add_property('min-width', '10rem');
-        $css->add_property('padding', '0.5rem 0');
-        $css->add_property('margin', '0');
-        $css->add_property('font-size', 'var(--wp--preset--font-size--small)');
-
-        $css->add_property('color', 'var(--bs-dropdown-color)');
-        $css->add_property('background-color', 'var(--bs-dropdown-bg)!important');
-        $css->add_property('border', 'var(--bs-border-width) solid var(--bs-dropdown-border-color)');
-
-        $css->add_property('border-radius', 'var(--bs-border-radius)');
-        $css->add_property('box-shadow', 'var(--bs-dropdown-box-shadow)');
-        $css->add_property('background-image', 'var(--bs-dropdown-background-image)');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container > .wp-block-navigation-item > .wp-block-navigation-item');
-        $css->add_property('display', 'block');
-        $css->add_property('width', '100%');
-        $css->add_property('padding', '0.25rem 1rem');
-        $css->add_property('text-decoration', 'none');
-        $css->add_property('border-radius', '0');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container > .wp-block-navigation-item:not(.open-on-click) > .wp-block-navigation-submenu__toggle');
-        $css->add_property('display', 'none');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container > .wp-block-navigation-item.has-child > a::after');
-        $css->add_property('display', 'inline-block');
-        $css->add_property('margin-left', '1em');
-
-        $css->add_property('content', '""');
-        $css->add_property('width', '0');
-        $css->add_property('height', '0');
-        $css->add_property('border-top', '0.3em solid transparent');
-        $css->add_property('border-right', '0');
-        $css->add_property('border-bottom', '0.3em solid transparent');
-        $css->add_property('border-left', '0.3em solid');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container:not( .has-text-color ) > .wp-block-navigation-item > .wp-block-navigation-item');
-        $css->add_property('color', 'var(--bs-dropdown-link-color)');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container:not( .has-background ) > .wp-block-navigation-item > .wp-block-navigation-item');
-        $css->add_property('background-color', ' transparent');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:hover,
-            .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:focus');
-        $css->add_property('color', 'var(--bs-dropdown-link-hover-color ) !important');
-        $css->add_property('background-color', 'var(--bs-dropdown-link-hover-bg) !important');
-        $css->add_property('text-decoration', 'none');
-
-        $css->set_selector('.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content.active,
-
-            .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content:active,
-
-            .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content[aria-current="page"]
-            ');
-        $css->add_property('color', 'var(--bs-dropdown-link-active-color) !important');
-        $css->add_property('background-color', 'var(--bs-dropdown-link-active-bg) !important');
-
-        /*
-            .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content[aria-current="page"] + button
-*/
-        $css->start_media_query(sp_get_media_query('md'));
-        $css->set_selector('.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container');
-        $css->add_property('min-width', '560px');
-        $css->add_property('padding-left', '0');
-        $css->add_property('padding-right', '0');
-        $css->add_property('margin-left', '-1rem');
-        $css->stop_media_query();
-
-        return apply_filters('sp_navigation_styles_output', $css->css_output());
-    }
-}
-
 if (!function_exists('sp_global_vars')) {
     /**
      * Add Bootstrap variables and replace text where need for global stylesheet
@@ -228,6 +143,9 @@ if (!function_exists('sp_global_vars')) {
 
         /* inject BS Vars by placing a placeholder in the theme json custom attributtes */
         $style = sp_replace_it('--wp--custom--sp-replace-string: all;',  $bs_vars, $style);
+
+        /* Remove --wp--custom-- prefix from any variables and replace with only --bs prefix */
+
         $style = sp_replace_it('--wp--custom--bs-', '--bs-', $style);
 
         /* Redefine wp preset font vars */
@@ -251,29 +169,15 @@ function sp_preset_styles_css()
 {
 
     $style = wp_get_global_stylesheet(array('presets', 'styles'));
-
     /* remove css that we dont want */
-    //$style = sp_remove_color_css(  'bs-secondary-bg', $style  );
-    // $style = sp_remove_color_css(  'bs-tertiary-bg', $style  );
-
-    // $style = sp_remove_color_css( 'bs-border-color', $style );
-    $style = sp_remove_color_css('bs-highlight-bg', $style);
-
-    //$style = sp_remove_background_css(  'bs-secondary-color', $style  );
-    //$style = sp_remove_background_css(  'bs-tertiary-color', $style  );
-
-    //$style = sp_remove_background_css('bs-heading-color', $style);
-    // $style = sp_remove_background_css( 'bs-border-color', $style );
-    $style = sp_remove_background_css('bs-code-color', $style);
-    $style = sp_remove_background_css('bs-highlight-color', $style);
+    $style = sp_remove_border_css('base', $style);
+    $style = sp_remove_border_css('contrast', $style);
+    $style = sp_remove_border_css('bs-secondary-bg', $style);
     $style = sp_remove_border_css('bs-secondary-bg', $style);
     $style = sp_remove_border_css('bs-secondary-color', $style);
+
     $style = sp_remove_border_css('bs-tertiary-bg', $style);
     $style = sp_remove_border_css('bs-tertiary-color', $style);
-    // $style = sp_remove_border_css('bs-heading-color', $style);
-    $style = sp_remove_border_css('bs-code-color', $style);
-    $style = sp_remove_border_css('bs-highlight-color', $style);
-    $style = sp_remove_border_css('bs-highlight-bg', $style);
 
     /* headings */
     $style = sp_replace_it('h1', '.h1,h1', $style);
@@ -299,8 +203,6 @@ function sp_preset_styles_css()
     $style = sp_font_size_css('display-2', $style);
     $style = sp_font_size_css('display-1', $style);
 
-    //$style = sp_replace_it(  'font-size: var(--wp--preset--font-size--display-', 'font-weight: 300; line-height: 1.2; font-size: var(--wp--preset--font-size--display-', $style  );
-
     $style = sp_replace_it('.display-6,', '.display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .has-display-1-font-size, .has-display-2-font-size, .has-display-3-font-size, .has-display-4-font-size, .has-display-5-font-size, .has-display-6-font-size {
         font-family: var(--wp--preset--font-family--display);
         font-weight: var(--bs-display-font-weight);
@@ -321,8 +223,6 @@ function sp_preset_styles_css()
 
     /* Navigation */
     $style = sp_replace_it('.wp-block-navigation{',   '.nav, .nav-bar, .wp-block-navigation{', $style);
-    /* WP Colors */
-    $style = sp_color_css('accent', $style);
 
     /* BS Colors */
     $style = sp_color_css('bs-primary', $style);
@@ -334,11 +234,6 @@ function sp_preset_styles_css()
     $style = sp_color_css('bs-light', $style);
     $style = sp_color_css('bs-dark', $style);
 
-    $style = sp_background_css('accent', $style);
-    $style = sp_replace_it('var(--accent-text)', 'var(--wp--preset--color--accent-text)', $style);
-
-    //  $style = sp_replace_it(  'var(--accent-text-shadow)', 'var(--wp--preset--color--accent-text-shadow)', $style  );
-
     $style = sp_background_css('bs-primary', $style);
     $style = sp_background_css('bs-secondary', $style);
     $style = sp_background_css('bs-success', $style);
@@ -347,9 +242,6 @@ function sp_preset_styles_css()
     $style = sp_background_css('bs-danger', $style);
     $style = sp_background_css('bs-light', $style);
     $style = sp_background_css('bs-dark', $style);
-
-    $style = sp_border_css('accent', $style);
-    $style = sp_replace_it('var(--accent-border-color)', 'var(--wp--preset--color--accent-border-color)', $style);
 
     $style = sp_border_css('bs-primary', $style);
     $style = sp_border_css('bs-secondary', $style);
@@ -390,6 +282,12 @@ function sp_preset_styles_css()
     return $style;
 }
 
+/**
+ * sp_custom_css function
+ *
+ * Combine SP shared css output and WP global custom css
+ * @return $css
+ */
 function sp_custom_css()
 {
 
@@ -413,7 +311,6 @@ if (!function_exists('sp_bootstrap_global_vars')) {
         $bs_vars = '';
         $bs_vars .= sp_generate_base_vars('base');
         $bs_vars .= sp_generate_base_vars('contrast');
-        $bs_vars .= sp_generate_base_vars('accent');
         $bs_vars .= sp_generate_base_vars('bs-secondary-color');
         //$bs_vars .= sp_generate_text_shadow_vars('bs-secondary-color');
         $bs_vars .= sp_generate_base_vars('bs-secondary-bg');
@@ -422,7 +319,6 @@ if (!function_exists('sp_bootstrap_global_vars')) {
         $bs_vars .= sp_generate_base_vars('bs-tertiary-bg');
 
         $bs_vars .= sp_generate_base_vars('bs-border-color');
-        $bs_vars .= sp_generate_color_vars('accent');
         $bs_vars .= sp_generate_color_vars('bs-primary');
         $bs_vars .= sp_generate_color_vars('bs-secondary');
         $bs_vars .= sp_generate_color_vars('bs-success');

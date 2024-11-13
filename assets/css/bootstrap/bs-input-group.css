@@ -7,6 +7,7 @@
 }
 
 .input-group {
+  --bs-input-group-bg: var(--bs-form-control-bg);
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -111,9 +112,11 @@
   border-bottom-left-radius: 0;
 }
 
+/*
 .input-group>.form-control,
 .input-group-text {
   border: none;
   box-shadow: none;
   background: transparent;
 }
+  */

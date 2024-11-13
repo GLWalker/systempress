@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: Grid of posts featuring the first post, 2 columns
  * Slug: systempress/posts-grid-2-col
@@ -10,7 +11,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 	<!-- wp:heading {"align":"wide","style":{"typography":{"lineHeight":"1"},"spacing":{"margin":{"top":"0"}}},"fontSize":"x-large"} -->
-	<h2 class="wp-block-heading alignwide has-x-large-font-size" style="margin-top:0;line-height:1"><?php esc_html_e( 'Watch, Read, Listen', 'systempress' ); ?></h2>
+	<h2 class="wp-block-heading alignwide has-x-large-font-size" style="margin-top:0;line-height:1"><?php esc_html_e('Watch, Read, Listen', 'systempress'); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:spacer {"height":"var:preset|spacing|10","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
@@ -38,7 +39,7 @@
 
 					<!-- wp:post-excerpt {"excerptLength":35} /-->
 
-					<!-- wp:template-part {"slug":"post-meta"} /-->
+					<!-- wp:pattern {"slug":"systempress/posts-meta"} /-->
 
 				</div>
 				<!-- /wp:group -->
@@ -65,7 +66,8 @@
 					<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
 
 					<!-- wp:post-excerpt {"excerptLength":14,"fontSize":"small"} /-->
-					<!-- wp:template-part {"slug":"post-meta"} /-->
+
+					<!-- wp:pattern {"slug":"systempress/posts-meta"} /-->
 
 				</div>
 				<!-- /wp:group -->

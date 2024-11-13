@@ -35,7 +35,6 @@ if (!function_exists('sp_generate_base_vars')) {
                 $color = $color['color'];
                 $slug2 = $slug;
                 $color2 = $color;
-                $dm_slug = '';
                 $emphasis = false;
 
                 $rgb = '';
@@ -78,44 +77,14 @@ if (!function_exists('sp_generate_base_vars')) {
 
                 $css->set_selector('rawout');
 
-                /* moved to color
-                if ('accent' === $slug) {
-                    $css->add_property('--wp--preset--color--' . ($slug) . '-text', 'var(' . ($textcolor).')' );
-                    $css->add_property( '--' . ($slug) . '-text-shadow','var(' . $textcolor . '-textshadow)' );
-                    $css->add_property('--wp--preset--color--' . ($slug) . '-rgb', ($rgb_var));
-                }
-                */
                 if ('contrast' === $slug) {
                     $slug = 'bs-body-color';
-                    $dm_slug = 'bs-body-bg';
                     $emphasis = true;
                 }
                 if ('base' === $slug) {
                     $slug = 'bs-body-bg';
-                    $dm_slug = 'bs-body-color';
                 }
-                /*
-                if ('accent' === $slug) {
-                    $slug = 'bs-link-color';
-                }
-                */
-                if ('bs-secondary-color' === $slug) {
-                    $dm_slug = 'bs-secondary-bg';
-                }
-                if ('bs-secondary-bg' === $slug) {
-                    $dm_slug = 'bs-secondary-color';
-                }
-                if ('bs-tertiary-color' === $slug) {
-                    $dm_slug = 'bs-tertiary-bg';
-                }
-                if ('bs-tertiary-bg' === $slug) {
-                    $dm_slug = 'bs-tertiary-color';
-                }
-                /*
-                if ('bs-heading-color' === $slug) {
-                    $slug = 'bs-heading-color';
-                }
-*/
+
                 if ('bs-border-color' === $slug) {
                     $slug = 'bs-border-color';
                 }
@@ -128,11 +97,6 @@ if (!function_exists('sp_generate_base_vars')) {
                 /* This will output the color code */
                 $css->add_property('--' . ($slug), ($color2));
                 $css->add_property('--' . ($slug) . '-rgb', ($rgb_var));
-
-                if ('' !== $dm_slug) {
-                    $css->add_property('--dm-' . ($dm_slug), ($color2));
-                    $css->add_property('--dm-' . ($dm_slug) . '-rgb', ($rgb_var));
-                }
 
                 if (true === $emphasis) {
 
@@ -345,15 +309,10 @@ if (!function_exists('sp_generate_color_vars')) {
 
                 $css->set_selector('rawout');
 
-                /* generate accent var - this statement will prevent the accent preset color from being repeated, while apending the wp--preset--color-- prefix becuase accent is NOT a BootStrap class  */
-                if ('accent' == $slug) {
-                    $slug = 'wp--preset--color--accent';
-                } else {
-                    /* output wp--preset--color var DEFAULT */
-                    $css->add_property('--' . ($slug), 'var(--wp--preset--color--' . ($slug) . ')');
-                    /* output actual color value */
-                    //$css->add_property('--' . ($slug), ($color2));
-                }
+                /* output wp--preset--color var DEFAULT */
+                $css->add_property('--' . ($slug), 'var(--wp--preset--color--' . ($slug) . ')');
+                /* output actual color value */
+                //$css->add_property('--' . ($slug), ($color2));
                 foreach ($colorPalette as $color) {
 
                     if (true === $rgba) {
@@ -414,11 +373,12 @@ if (!function_exists('sp_generate_color_vars')) {
 if (!function_exists('sp_generate_text_shadow_vars')) {
     /**
      * Generates text shadow variables
-     * for output - needed for colors that didnt get shadow generated in other functions
-     * - text colors only or output will be backwards
+     * for output
+     * !!!text colors only or output will be backwards!!!
      *
      * @param [type] $slug slugname of theme color palette json settings
      *
+     * Usage : sp_generate_text_shadow_vars('bs-secondary-color');
      * @return void
      */
     function sp_generate_text_shadow_vars($slug)
@@ -491,6 +451,7 @@ if (!function_exists('sp_generate_text_shadow_vars')) {
         return $styles;
     }
 }
+
 if (!function_exists('sp_remove_color_css')) {
     /**
      * Remove CSS color styles from global stylesheet

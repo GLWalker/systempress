@@ -54,22 +54,23 @@ if (!function_exists('sp_bs_stylesheets')) {
         }
         if (str_contains_any($content, array('card-body', 'card-header', 'card-text', 'card-img'))) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_card');
+            wp_enqueue_script('bs-card');
         }
 
         if (str_contains($content, 'carousel')) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_carousel');
+            wp_enqueue_script('bs-carousel');
         }
         /* added to main bootstrap.css
         if ( str_contains( $content, 'btn-close' ) ) {
             wp_enqueue_style( 'bs-close' );
         }
         */
-        /* added to main bootstrap.css
-        if ( str_contains_any( $content, array( ' container', ' container ', 'container-fluid', 'container-xxl', 'container-xl', 'container-lg', 'container-md', 'container-sm' ) ) ) {
-            //wp_enqueue_style( 'bs-containers' );
-            add_action( 'enqueue_block_assets', 'sp_add_style_bs_containers' );
+        /* added css to main bootstrap.css */
+        if (str_contains_any($content, array(' container', ' container ', 'container-fluid', 'container-xxl', 'container-xl', 'container-lg', 'container-md', 'container-sm'))) {
+            wp_enqueue_script('bs-container');
         }
-        */
+
         if (str_contains_any($content, array('dropup', 'dropend', 'dropdown', 'dropstart'))) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_dropdown');
         }
@@ -89,7 +90,7 @@ if (!function_exists('sp_bs_stylesheets')) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_form_check');
             wp_enqueue_script('bs-forms');
         }
-        if (str_contains_any($content, array('form-control', 'comment-form', 'wp-block-search'))) {
+        if (str_contains_any($content, array('form-control', 'wp-block-loginout', 'comment-form', 'wp-block-search', 'wu-login-form'))) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_form_control');
             wp_enqueue_script('bs-forms');
         }
@@ -100,7 +101,7 @@ if (!function_exists('sp_bs_stylesheets')) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_form_range');
             wp_enqueue_script('bs-forms');
         }
-        if (str_contains_any($content, array('form-select', 'wp-block-categories-dropdown', 'wp-block-archives-dropdown'))) {
+        if (str_contains_any($content, array('use-form-select', 'form-select', 'wp-block-categories-dropdown', 'wp-block-archives-dropdown'))) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_form_select');
             wp_enqueue_script('bs-forms');
         }
@@ -186,7 +187,7 @@ if (!function_exists('sp_bs_stylesheets')) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_toast');
             wp_enqueue_script('bs-toast');
         }
-        if (str_contains($content, 'tooltip')) {
+        if (str_contains_any($content, array('use-tooltip', 'tooltip'))) {
             add_action('enqueue_block_assets', 'sp_add_style_bs_tooltip');
             wp_enqueue_script('bs-tooltip');
         }
@@ -312,6 +313,7 @@ function sp_add_style_bs_buttons()
         wp_add_inline_style('@bootstrap', $css);
     }
 }
+
 function sp_add_style_bs_card()
 {
     $style = 'bs-card';

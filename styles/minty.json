@@ -14,8 +14,6 @@
 			"bs-border-radius-xxl": "2rem",
 			"bs-sp-spacing-x": "0.75rem",
 			"bs-sp-spacing-y": "0.375rem",
-			"bs-heading-color": "#5a5a5a",
-			"bs-dm-heading-color": "inherit",
 			"bs-btn-font-weight": "400",
 			"bs-btn-line-height": "1.5",
 			"bs-btn-border-width:": "var(--bs-border-width)",
@@ -46,11 +44,6 @@
 					"color": "#888888",
 					"name": "Contrast",
 					"slug": "contrast"
-				},
-				{
-					"color": "#609b8a",
-					"name": "Accent",
-					"slug": "accent"
 				},
 				{
 					"color": "rgba(136, 136, 136, 0.75)",

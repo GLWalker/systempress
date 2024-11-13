@@ -9,9 +9,28 @@
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg: var(--bs-body-bg);
   --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
   --bs-offcanvas-transition: transform .3s ease-in-out;
   --bs-offcanvas-title-line-height: 1.5;
+  margin-block-start: 0 !important;
+  top: 0;
+}
+
+.offcanvas-backdrop {
+  margin-top: 0 !important;
+}
+
+.admin-bar .offcanvas,
+.admin-bar .offcanvas-xxl,
+.admin-bar .offcanvas-xl,
+.admin-bar .offcanvas-lg,
+.admin-bar .offcanvas-md,
+.admin-bar .offcanvas-sm {
+  top: 33px !important;
 }
 
 @media (max-width:575.98px) {
@@ -587,6 +606,6 @@
 
 .offcanvas-body {
   flex-grow: 1;
-  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
   overflow-y: auto;
 }

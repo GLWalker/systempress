@@ -49,10 +49,23 @@
   width: 75%
 }
 
+.wp-block-button {
+  background: transparent !important;
+}
+
 .wp-element-button,
 .btn:not(.wp-block-button) {
-  --bs-btn-padding-x: var(--bs-sp-spacing-x);
-  --bs-btn-padding-y: var(--bs-sp-spacing-y);
+  --bs-btn-color: var(--bs-primary-text);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary-border-color);
+  --bs-btn-hover-color: var(--bs-primary-text);
+  --bs-btn-hover-bg: var(--bs-primary-hover-bg);
+  --bs-btn-hover-border-color: var(--bs-primary-hover-border-color);
+  --bs-btn-box-shadow: var(--bs-box-shadow-button);
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-shadow-rgb);
+
+  --bs-btn-padding-x: var(--bs-sp-spacing-x) !important;
+  --bs-btn-padding-y: var(--bs-sp-spacing-y) !important;
   --bs-btn-font-size: var(--wp--preset--font-size--small);
   --bs-btn-line-height: 1.5;
   --bs-btn-border-width: var(--bs-border-width);
@@ -90,8 +103,8 @@
 .btn-group-lg>.wp-element-button,
 .btn:not(.wp-block-button).btn-lg,
 .btn-group-lg>.btn {
-  --bs-btn-padding-y: calc(var(--bs-sp-spacing-y) * 1.25);
-  --bs-btn-padding-x: calc(var(--bs-sp-spacing-x) * 1.25);
+  --bs-btn-padding-y: calc(var(--bs-sp-spacing-y) * 1.25) !important;
+  --bs-btn-padding-x: calc(var(--bs-sp-spacing-x) * 1.25) !important;
   --bs-btn-font-size: var(--wp--preset--font-size--large);
   --bs-btn-border-radius: var(--bs-border-radius-lg);
   line-height: 1.4;
@@ -101,8 +114,8 @@
 .btn-group-sm>.wp-element-button,
 .btn:not(.wp-block-button).btn-sm,
 .btn-group-sm>.btn {
-  --bs-btn-padding-y: calc(var(--bs-sp-spacing-y) * .5);
-  --bs-btn-padding-x: calc(var(--bs-sp-spacing-x) * .75);
+  --bs-btn-padding-y: calc(var(--bs-sp-spacing-y) * .5) !important;
+  --bs-btn-padding-x: calc(var(--bs-sp-spacing-x) * .75) !important;
   --bs-btn-font-size: var(--wp--preset--font-size--x-small);
   --bs-btn-border-radius: var(--bs-border-radius-sm);
   line-height: 1.6;
@@ -116,6 +129,7 @@
   }
 }
 
+.is-style-outline.btn-primary>.wp-element-button,
 .has-bs-primary-background-color.wp-element-button,
 .btn-outline-primary>.wp-element-button,
 .btn-primary>.wp-element-button,
@@ -131,6 +145,7 @@
   --bs-btn-focus-shadow-rgb: var(--bs-primary-shadow-rgb);
 }
 
+.is-style-outline.btn-secondary>.wp-element-button,
 .has-bs-secondary-background-color.wp-element-button,
 .btn-outline-secondary>.wp-element-button,
 .btn-secondary>.wp-element-button,
@@ -273,10 +288,10 @@
 .is-style-outline[class*="btn-"]>.wp-element-button,
 .wp-block-button[class*="btn-outline"]>.wp-element-button,
 .btn[class*="btn-outline"]:not(.wp-block-button) {
-  color: var(--bs-btn-border-color) !important;
+  color: var(--bs-btn-border-color);
   border: calc(var(--bs-btn-border-width) * 1.8) solid var(--bs-btn-border-color);
   text-shadow: none;
-  background-color: transparent !important;
+  background-color: transparent;
   background-image: none;
   --bs-btn-padding-x: calc(var(--bs-sp-spacing-x) - 2px);
   --bs-btn-padding-y: calc(var(--bs-sp-spacing-y) - 2px);
@@ -287,7 +302,7 @@
 .is-style-outline[class*="btn-"]>.wp-element-button:hover,
 .wp-element-button:hover,
 .btn:not(.wp-block-button):not(.form-label):hover {
-  color: var(--bs-btn-hover-color) !important;
+  color: var(--bs-btn-hover-color);
   text-shadow: none;
   background-color: var(--bs-btn-hover-bg) !important;
   border-color: var(--bs-btn-hover-border-color);
@@ -298,12 +313,20 @@
 .is-style-squared[class*="btn-"]>.wp-element-button,
 .wp-block-button.is-style-squared>.wp-element-button,
 .btn.is-style-squared:not(.wp-block-button) {
-  border-radius: 0;
+  border-radius: 0 !important;
+}
+
+.is-style-outline:not([class*="btn-primary"]):not([class*="btn-secondary"]):not([class*="btn-success"]):not([class*="btn-info"]):not([class*="btn-warning"]):not([class*="btn-danger"]):not([class*="btn-light"]):not([class*="btn-dark"])>.wp-element-button {
+  background-color: transparent !important;
+}
+
+.is-style-outline:not([class*="btn-primary"]):not([class*="btn-secondary"]):not([class*="btn-success"]):not([class*="btn-info"]):not([class*="btn-warning"]):not([class*="btn-danger"]):not([class*="btn-light"]):not([class*="btn-dark"])>.wp-element-button:hover {
+  background-color: var(--bs-btn-hover-bg) !important;
 }
 
 .btn-check+.btn:hover {
-  color: var(--bs-btn-color) !important;
-  background-color: var(--bs-btn-bg) !important;
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
 
@@ -311,17 +334,17 @@
 .wp-element-button:focus-visible,
 .btn:not(.wp-block-button):focus-visible {
   --bs-btn-text-shadow: none;
-  color: var(--bs-btn-hover-color) !important;
-  background-color: var(--bs-btn-hover-bg) !important;
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
-  box-shadow: var(--bs-btn-focus-box-shadow) !important;
+  box-shadow: var(--bs-btn-focus-box-shadow);
 }
 
 .btn-check:focus-visible+.btn {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
-  box-shadow: var(--bs-btn-focus-box-shadow) !important;
+  box-shadow: var(--bs-btn-focus-box-shadow);
 }
 
 a.wp-element-button:first-child:active,
@@ -337,11 +360,11 @@ a.wp-element-button.show,
 .btn:not(.wp-block-button):active,
 .btn:not(.wp-block-button).active,
 .btn:not(.wp-block-button).show {
-  color: var(--bs-btn-active-color) !important;
-  background-color: var(--bs-btn-active-bg) !important;
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
   background-image: none;
   border-color: var(--bs-btn-active-border-color);
-  box-shadow: var(--bs-btn-active-shadow) !important;
+  box-shadow: var(--bs-btn-active-shadow);
 }
 
 .btn-check:checked+.btn:focus-visible,
@@ -352,11 +375,11 @@ a.wp-element-button.show,
 .btn:first-child:active:focus-visible,
 .btn.active:focus-visible,
 .btn.show:focus-visible {
-  box-shadow: var(--bs-btn-focus-box-shadow) !important;
+  box-shadow: var(--bs-btn-focus-box-shadow);
 }
 
 .btn-check:checked:focus-visible+.btn {
-  box-shadow: var(--bs-btn-focus-box-shadow) !important;
+  box-shadow: var(--bs-btn-focus-box-shadow);
 }
 
 input[type="submit"]:disabled,

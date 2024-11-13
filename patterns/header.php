@@ -1,52 +1,53 @@
 <?php
 
 /**
- * Title: Header with nav pills
+ * Title: Header
  * Slug: systempress/header
  * Categories: header
  * Block Types: core/template-part/header
  */
 ?>
 
-<!-- wp:separator {"lock":{"move":true,"remove":true},"className":"sp-action-hook sp_hook_start_header"} -->
-<hr class="wp-block-separator has-alpha-channel-opacity sp-action-hook sp_hook_start_header" id="sp_hook_start_header" />
-<!-- /wp:separator -->
+<!-- wp:group {"align":"wide","className":"shadow-sm py-2 my-0","style":{"position":{"type":"sticky","top":"0px"} },"backgroundColor":"bs-secondary-bg","layout":{"type":"constrained"}} -->
 
-<!-- wp:group {"style":{"position":{"type":""},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|40","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"backgroundColor":"base","className":"site-header navbar-transparent shadow-sm","layout":{"type":"default"}} -->
-<div id="masthead" class="wp-block-group site-header navbar-transparent shadow-sm has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--40)">
+<div class="wp-block-group alignwide shadow-sm py-2 my-0 has-bs-secondary-bg-background-color has-background"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
+    <div class="wp-block-group alignwide"><!-- wp:site-logo {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
 
-    <!-- wp:group {"className":"justify-content-lg-between","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group justify-content-lg-between">
+        <!-- wp:site-title {"level":0,"textAlign":"left","style":{"layout":{"selfStretch":"fill","flexSize":null}}} /-->
 
-        <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"className":"site-branding","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
-        <div class="wp-block-group site-branding"><!-- wp:site-logo {"width":80,"shouldSyncIcon":false,"className":"site-logo","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+        <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+        <div class="wp-block-group alignwide">
 
-            <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"default"}} -->
-            <div class="wp-block-group">
-                <!-- wp:site-title {"level":0,"style":{"typography":{"lineHeight":"1.3"}},"className":"main-title","fontSize":"xx-large"} /-->
-                <!-- wp:site-tagline {"textAlign":"left","fontSize":"large"} /-->
-            </div>
-            <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"layout":{"selfStretch":"fit","flexSize":null}},"className":"d-none d-md-block","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-        <div class="wp-block-group d-none d-md-block" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:navigation {"overlayMenu":"never","className":"nav nav-pills justify-content-lg-end","layout":{"type":"flex","justifyContent":"space-between"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+            <!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"left","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
             <!-- wp:home-link {"label":"Home"} /-->
-
             <!-- wp:navigation-link {"label":"Services","url":"#","kind":"custom","isTopLevelLink":true} /-->
-
             <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
-
             <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
             <!-- /wp:navigation -->
+
+            <!-- wp:group {"className":"mt-2","style":{"layout":{"selfStretch":"fixed","flexSize":"80px"},"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"horizontal"}} -->
+
+            <div class="wp-block-group mt-2">
+
+                <!-- wp:social-links {"iconColor":"current","iconColorValue":"currentcolor","metadata":{"name":"Offcanvas Trigger"},"className":"is-style-logos-only off-canvas-trigger sp-icon-group"} -->
+                <ul class="wp-block-social-links has-icon-color is-style-logos-only off-canvas-trigger sp-icon-group"><!-- wp:social-link {"url":"#","service":"off-canvas","label":"Toggle Off Canvas Menu"} /--></ul>
+                <!-- /wp:social-links -->
+
+                <!-- wp:social-links {"iconColor":"current","iconColorValue":"currentcolor","metadata":{"name":"Search Modal Trigger"},"className":"is-style-logos-only search-modal-trigger sp-icon-group"} -->
+                <ul class="wp-block-social-links has-icon-color is-style-logos-only search-modal-trigger sp-icon-group"><!-- wp:social-link {"url":"#","service":"search-modal","label":"Toggle Search Form"} /--></ul>
+                <!-- /wp:social-links -->
+
+                <!-- wp:group {"className":"dark-mode dropdown dropstart","layout":{"type":"flex","orientation":"horizontal"}} -->
+                <div class="wp-block-group dark-mode dropdown dropstart">
+                    <!-- wp:separator {"className":"sp-action-hook sp_hook_dark_mode"} -->
+                    <hr class="wp-block-separator has-alpha-channel-opacity sp-action-hook sp_hook_dark_mode"/>
+                    <!-- /wp:separator --></div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:separator {"lock":{"move":true,"remove":true},"className":"sp-action-hook sp_hook_end_header"} -->
-<hr class="wp-block-separator has-alpha-channel-opacity sp-action-hook sp_hook_end_header" id="sp_hook_end_header" />
-<!-- /wp:separator -->

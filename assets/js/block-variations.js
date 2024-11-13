@@ -10,20 +10,24 @@
 
     });
  */
-wp.blocks.registerBlockVariation("core/spacer", {
-	name: "use-class-files",
-	title: "Use Class Files",
+
+wp.blocks.registerBlockVariation("core/separator", {
+	name: "sp-action-hook",
+	title: "SP Action Hook",
+	category: "systempress-blocks",
+	icon: "migrate",
 	attributes: {
-		className: "use-classes",
+		className: "sp-action-hook",
 	},
 })
 
 wp.blocks.registerBlockVariation("core/group", {
 	name: "accordion",
 	title: "Accordion",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description:
 		'Bootstrap "kinda like" Accordion using WordPress details block',
+	icon: "menu-alt2",
 	attributes: {
 		className: "accordion",
 	},
@@ -38,7 +42,7 @@ wp.blocks.registerBlockVariation("core/group", {
 			[
 				[
 					"core/group",
-					{className: "accordion-collapse"},
+					{ className: "accordion-collapse" },
 					[
 						[
 							"core/group",
@@ -69,7 +73,7 @@ wp.blocks.registerBlockVariation("core/group", {
 			[
 				[
 					"core/group",
-					{className: "accordion-collapse"},
+					{ className: "accordion-collapse" },
 					[
 						[
 							"core/group",
@@ -100,7 +104,7 @@ wp.blocks.registerBlockVariation("core/group", {
 			[
 				[
 					"core/group",
-					{className: "accordion-collapse"},
+					{ className: "accordion-collapse" },
 					[
 						[
 							"core/group",
@@ -128,8 +132,9 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "alert",
 	title: "Alert",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Basic BootStrap alert",
+	icon: "warning",
 	attributes: {
 		className: "alert w-100",
 	},
@@ -148,7 +153,8 @@ wp.blocks.registerBlockVariation("core/group", {
 	name: "alert-dismiss",
 	title: "Alert Dismiss",
 	description: "Dismissible BootStrap alert",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
+	icon: "dismiss",
 	attributes: {
 		className: "alert alert-warning alert-dismissible fade show w-100",
 	},
@@ -175,30 +181,34 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/list", {
 	name: "list-group",
 	title: "List Group",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap list group",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
+	icon: "list-view",
 	attributes: {
 		className: "list-group ps-0 list-group-item-action",
 	},
 
 	innerBlocks: [
-		["core/list-item", {className: "list-group-item", content: "An item"}],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A second item"},
+			{ className: "list-group-item", content: "An item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A third item"},
+			{ className: "list-group-item", content: "A second item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A fourth item"},
+			{ className: "list-group-item", content: "A third item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "And a fifth one"},
+			{ className: "list-group-item", content: "A fourth item" },
+		],
+		[
+			"core/list-item",
+			{ className: "list-group-item", content: "And a fifth one" },
 		],
 	],
 })
@@ -206,29 +216,33 @@ wp.blocks.registerBlockVariation("core/list", {
 wp.blocks.registerBlockVariation("core/list", {
 	name: "list-group-numbered",
 	title: "List Group Numbered",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap numbered list group ",
+	icon: "list-view",
 	attributes: {
 		ordered: true,
 		className: "list-group list-group-numbered ps-0 list-group-item-action",
 	},
 	innerBlocks: [
-		["core/list-item", {className: "list-group-item", content: "An item"}],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A second item"},
+			{ className: "list-group-item", content: "An item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A third item"},
+			{ className: "list-group-item", content: "A second item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "A fourth item"},
+			{ className: "list-group-item", content: "A third item" },
 		],
 		[
 			"core/list-item",
-			{className: "list-group-item", content: "And a fifth one"},
+			{ className: "list-group-item", content: "A fourth item" },
+		],
+		[
+			"core/list-item",
+			{ className: "list-group-item", content: "And a fifth one" },
 		],
 	],
 })
@@ -236,8 +250,9 @@ wp.blocks.registerBlockVariation("core/list", {
 wp.blocks.registerBlockVariation("core/list", {
 	name: "list-group-custom",
 	title: "List Group Custom Content",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap list group custom layout",
+	icon: "list-view",
 	attributes: {
 		className: "list-group p-0 list-group-item-action",
 	},
@@ -252,7 +267,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -274,8 +289,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -290,7 +304,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -312,8 +326,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -328,7 +341,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -350,8 +363,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -362,8 +374,9 @@ wp.blocks.registerBlockVariation("core/list", {
 wp.blocks.registerBlockVariation("core/list", {
 	name: "list-group-numbered-custom",
 	title: "List Group Numbered Custom Content",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap numbered list group custom layout",
+	icon: "list-view",
 	attributes: {
 		ordered: true,
 		className: "list-group list-group-numbered p-0 list-group-item-action",
@@ -379,7 +392,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -401,8 +414,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -417,7 +429,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -439,8 +451,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -455,7 +466,7 @@ wp.blocks.registerBlockVariation("core/list", {
 			[
 				[
 					"core/group",
-					{className: "ms-1 me-auto"},
+					{ className: "ms-1 me-auto" },
 					[
 						[
 							"core/paragraph",
@@ -477,8 +488,7 @@ wp.blocks.registerBlockVariation("core/list", {
 					"core/paragraph",
 					{
 						className: "p-0",
-						content:
-							'<span class="badge bg-primary rounded-pill">14</span>',
+						content: '<span class="badge rounded-pill">14</span>',
 					},
 				],
 			],
@@ -490,18 +500,33 @@ wp.blocks.registerBlockVariation("core/archives", {
 	name: "list-group-archives",
 	title: "List Group Archives",
 	description: "WordPress archives widget with BootStrap list group markup",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	attributes: {
-		className: "list-group",
+		className: "list-group list-group-item-action stretched-link",
 		displayAsDropdown: false,
 		showPostCounts: true,
+	},
+})
+
+wp.blocks.registerBlockVariation("core/categories", {
+	name: "list-group-categories",
+	title: "List Group Categories",
+	description: "WordPress categories widget with BootStrap list group markup",
+	category: "systempress-blocks",
+	attributes: {
+		className: "list-group list-group-item-action stretched-link",
+		displayAsDropdown: false,
+		showHierarchy: false,
+		showPostCounts: true,
+		showOnlyTopLevel: true,
+		showEmpty: false,
 	},
 })
 
 wp.blocks.registerBlockVariation("core/buttons", {
 	name: "button-group",
 	title: "Button Group",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap Button Group",
 	attributes: {
 		className: "btn-group",
@@ -542,7 +567,7 @@ wp.blocks.registerBlockVariation("core/buttons", {
 wp.blocks.registerBlockVariation("core/buttons", {
 	name: "button-group-vert",
 	title: "Button Group Vertical",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap Vertical Button Group",
 	attributes: {
 		className: "btn-group-vertical",
@@ -583,8 +608,9 @@ wp.blocks.registerBlockVariation("core/buttons", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "toolbar",
 	title: "Toolbar",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Bootstrap toolbar",
+	icon: "admin-tools",
 	attributes: {
 		className: "btn-toolbar",
 		layout: {
@@ -649,8 +675,9 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "breadcrumbs",
 	title: "Breadcrumb",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Example breadcrumbs markup",
+	icon: "arrow-right",
 	attributes: {
 		className: "bs-breadcrumbs",
 		layout: {
@@ -696,18 +723,18 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "card",
 	title: "Card Image",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Card layout with image top",
+	icon: "welcome-widgets-menus",
 	attributes: {
 		className: "card",
 	},
-	innerBlocks:
-	[
+	innerBlocks: [
 		[
 			"core/image",
 			{
 				className: "card-img-top",
-				url: "./wp-content/themes/systempress/assets/images/art-gallery.webp",
+				url: "./wp-content/themes/systempress/assets/images/thumbnail-300x300.webp",
 				alt: "Click use external image on image toolbar to view image in editor",
 				aspectRatio: "16/9",
 				scale: "cover",
@@ -721,11 +748,10 @@ wp.blocks.registerBlockVariation("core/group", {
 		[
 			"core/group",
 			{
-				className: "card-body"
+				className: "card-body",
 			},
 
 			[
-
 				[
 					"core/heading",
 					{
@@ -742,28 +768,25 @@ wp.blocks.registerBlockVariation("core/group", {
 					{
 						className: "card-text",
 						content:
-							"Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+							"Some quick example text to build on the card title and make up the bulk of the card's content.",
 					},
 				],
 
 				[
 					"core/buttons",
-					{
-					},
+					{},
 					[
 						[
 							"core/button",
 							{
 								className: "btn-",
 								text: "Button",
-								width: "100"
+								width: "100",
 							},
 						],
 					],
 				],
-
 			],
-
 		],
 
 		/* insert new inner block here */
@@ -773,13 +796,13 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "card-header",
 	title: "Card with header",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Card layout with header",
+	icon: "welcome-widgets-menus",
 	attributes: {
 		className: "card",
 	},
-	innerBlocks:
-	[
+	innerBlocks: [
 		[
 			"core/heading",
 			{
@@ -794,11 +817,10 @@ wp.blocks.registerBlockVariation("core/group", {
 		[
 			"core/group",
 			{
-				className: "card-body"
+				className: "card-body",
 			},
 
 			[
-
 				[
 					"core/heading",
 					{
@@ -815,28 +837,25 @@ wp.blocks.registerBlockVariation("core/group", {
 					{
 						className: "card-text",
 						content:
-							"Some quick example text to build on the card title and make up the bulk of the card\'s content.",
+							"Some quick example text to build on the card title and make up the bulk of the card's content.",
 					},
 				],
 
 				[
 					"core/buttons",
-					{
-					},
+					{},
 					[
 						[
 							"core/button",
 							{
 								className: "btn-",
 								text: "Button",
-								width: "100"
+								width: "100",
 							},
 						],
 					],
 				],
-
 			],
-
 		],
 
 		/* insert new inner block here */
@@ -846,18 +865,18 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "card-img-overlay",
 	title: "Card Image Overlay",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Card image with overlay",
+	icon: "welcome-widgets-menus",
 	attributes: {
 		className: "card bg-dark",
 	},
-	innerBlocks:
-	[
+	innerBlocks: [
 		[
 			"core/image",
 			{
 				className: "card-img",
-				url: "./wp-content/themes/systempress/assets/images/building-exterior.webp",
+				url: "./wp-content/themes/systempress/assets/images/thumbnail-300x300.webp",
 				alt: "Click upload external image on toolbar to view this image in editor",
 				sizeSlug: "large",
 				/*
@@ -869,15 +888,15 @@ wp.blocks.registerBlockVariation("core/group", {
 		[
 			"core/group",
 			{
-				className: "card-img-overlay p-5"
+				className: "card-img-overlay p-5",
 			},
 
 			[
-
 				[
 					"core/heading",
 					{
-						className: "card-title h5 bg-light-50 p-3 mb-3 rounded-3",
+						className:
+							"card-title h5 bg-light-50 p-3 mb-3 rounded-3",
 						level: 3,
 						/*
 						placeholder: "Card Title",
@@ -890,28 +909,25 @@ wp.blocks.registerBlockVariation("core/group", {
 					{
 						className: "card-text bg-light-50 p-3 rounded-3",
 						content:
-							"This block won\'t look so well in the editor, but its going to rock the front end!",
+							"This block won't look so well in the editor, but its going to rock the front end!",
 					},
 				],
 
 				[
 					"core/buttons",
-					{
-					},
+					{},
 					[
 						[
 							"core/button",
 							{
 								className: "btn-lg",
 								text: "Click Me",
-								width: "100"
+								width: "100",
 							},
 						],
 					],
 				],
-
 			],
-
 		],
 
 		/* insert new inner block here */
@@ -921,13 +937,13 @@ wp.blocks.registerBlockVariation("core/group", {
 wp.blocks.registerBlockVariation("core/group", {
 	name: "card-featured",
 	title: "Feature Card",
-	category: "bootstrap-blocks",
+	category: "systempress-blocks",
 	description: "Card featured layout",
+	icon: "welcome-widgets-menus",
 	attributes: {
 		className: "card text-center",
 	},
-	innerBlocks:
-	[
+	innerBlocks: [
 		[
 			"core/heading",
 			{
@@ -942,11 +958,10 @@ wp.blocks.registerBlockVariation("core/group", {
 		[
 			"core/group",
 			{
-				className: "card-body"
+				className: "card-body",
 			},
 
 			[
-
 				[
 					"core/heading",
 					{
@@ -972,7 +987,7 @@ wp.blocks.registerBlockVariation("core/group", {
 					{
 						layout: {
 							justifyContent: "center",
-						  },
+						},
 					},
 					[
 						[
@@ -983,29 +998,48 @@ wp.blocks.registerBlockVariation("core/group", {
 						],
 					],
 				],
-
 			],
-
 		],
 		[
 			"core/group",
 			{
-				className: "card-footer text-body-secondary"
+				className: "card-footer text-body-secondary",
 			},
 
 			[
 				[
 					"core/paragraph",
 					{
-						content:
-							"2 days ago",
+						content: "2 days ago",
 					},
 				],
-
 			],
-
 		],
 
 		/* insert new inner block here */
+	],
+})
+
+wp.blocks.registerBlockVariation("core/group", {
+	name: "dark-mode",
+	title: "Dark Mode",
+	description: "Dark Mode Switch",
+	category: "systempress-blocks",
+	icon: "star-half",
+	attributes: {
+		className: "dropdown dark-mode",
+		layout: {
+			type: "flex",
+			orientation: "horizontal",
+		},
+	},
+
+	innerBlocks: [
+		[
+			"core/separator",
+			{
+				className: "sp-action-hook sp_hook_dark_mode",
+			},
+		],
 	],
 })

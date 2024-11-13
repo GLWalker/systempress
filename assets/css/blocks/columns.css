@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: wrap !important;
 }
-
 @media (min-width:768px) {
     .wp-block-columns {
         flex-wrap: nowrap !important;

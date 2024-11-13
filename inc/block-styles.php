@@ -10,14 +10,13 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-
- add_action('init', function() {
+add_action('init', function () {
 
     register_block_style(
         'core/post-terms',
         array(
             'name'         => 'pill',
-            'label'        => __( 'Pill', 'systempress' ),
+            'label'        => __('Pill', 'systempress'),
             /*
              * Styles variation for post terms
              * https://github.com/WordPress/gutenberg/issues/24956
@@ -28,8 +27,10 @@ defined('ABSPATH') || exit;
                 display: inline-block;
                 background-color: var(--wp--preset--color--bs-secondary-bg);
                 color: var(    --wp--preset--color--bs-secondary-color);
-                padding: 0.375rem 0.875rem;
+                padding: var(--bs-sp-spacing-y) var(--bs-sp-spacing-x);
+                margin-bottom: var(--bs-sp-spacing-y);
                 border-radius: var(--wp--preset--spacing--20);
+                font-size: var(--wp--preset--font-size--small);
             }
 
             .is-style-pill a:hover {
@@ -40,10 +41,38 @@ defined('ABSPATH') || exit;
     );
 
     register_block_style(
+        'core/tag-cloud',
+        array(
+            'name'         => 'pill',
+            'label'        => __('Pill', 'systempress'),
+            /*
+             * Styles variation for tag cloud
+             * https://github.com/WordPress/gutenberg/issues/24956
+             */
+            'inline_style' => '.is-style-pill a.tag-cloud-link {
+                display: inline-block;
+                background-color: var(--wp--preset--color--bs-secondary-bg);
+                color: var(    --wp--preset--color--bs-secondary-color);
+                padding: var(--bs-sp-spacing-y) var(--bs-sp-spacing-x);
+                margin-bottom: var(--bs-sp-spacing-y);
+                border-radius: var(--wp--preset--spacing--20);
+                line-height: 1 !important;
+                verticle-align: middle;
+
+            }
+
+            .is-style-pill a.tag-cloud-link:hover {
+                background-color: var(--wp--preset--color--bs-tertiary-color);
+                color: var(--wp--preset--color--bs-tertiary-bg);
+            }',
+        )
+    );
+
+    register_block_style(
         'core/list',
         array(
             'name'         => 'checkmark-list',
-            'label'        => __( 'Checkmark', 'systempress' ),
+            'label'        => __('Checkmark', 'systempress'),
             /*
              * Styles for the custom checkmark list block style
              * https://github.com/WordPress/gutenberg/issues/51480
@@ -58,5 +87,4 @@ defined('ABSPATH') || exit;
             }',
         )
     );
-
 });

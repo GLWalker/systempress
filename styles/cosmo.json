@@ -5,15 +5,14 @@
 	"settings": {
 		"custom": {
 			"sp-replace-string": "all",
-			"bs-sp-html-font-size": "15",
+			"bs-body-font-size": "15px",
+			"bs-html-text-shadow": "var(--bs-light-textshadow)",
 			"bs-border-radius": "0",
 			"bs-border-radius-sm": "0",
 			"bs-border-radius-lg": "0",
 			"bs-border-radius-xl": "0",
 			"bs-border-radius-xxl": "0",
-			"bs-heading-color": "#222222",
-			"bs-dm-heading-color": "inherit",
-			"bs-btn-focus-shadow-rgb": "var(--wp--preset--color--accent-rgb)",
+			"bs-btn-focus-shadow-rgb": "var(--bs-primary-rgb)",
 			"bs-popover-bg": "var(--bs-secondary-bg)",
 			"bs-progress-height": "var(--wp--preset--font-size--x-small)",
 			"bs-progress-bg": "var(--bs-border-color)"
@@ -29,11 +28,6 @@
 					"color": "#383b3d",
 					"name": "Contrast",
 					"slug": "contrast"
-				},
-				{
-					"color": "rgb(39, 128, 227)",
-					"name": "Accent",
-					"slug": "accent"
 				},
 				{
 					"color": "rgba(55, 58, 60, 0.8)",

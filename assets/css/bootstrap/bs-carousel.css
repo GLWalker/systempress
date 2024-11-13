@@ -216,9 +216,10 @@
 [data-bs-theme=dark] .carousel .carousel-control-next-icon,
 [data-bs-theme=dark].carousel .carousel-control-prev-icon,
 [data-bs-theme=dark].carousel .carousel-control-next-icon {
-  filter: invert(1) grayscale(100);
+  filter: none;
 }
 
+/* reomoved
 [data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target],
 [data-bs-theme=dark].carousel .carousel-indicators [data-bs-target] {
   background-color: #000;
@@ -228,3 +229,4 @@
 [data-bs-theme=dark].carousel .carousel-caption {
   color: #000;
 }
+  */

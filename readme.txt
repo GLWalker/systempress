@@ -39,20 +39,37 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 === Images ===
+
+Pexels Images  https://www.pexels.com/
+
+License: https://www.pexels.com/license/ Legal Simplicity All photos and videos on Pexels can be downloaded and used for free.
+
+    Photo by Pepe Tapia: https://www.pexels.com/photo/two-men-riding-orange-and-black-sports-bikes-while-doing-exhibition-716906/
+
+    Photo by Kosygin Leishangthem: https://www.pexels.com/photo/group-of-men-holding-drums-performing-on-stage-2888802/
+
+    Photo by JESHOOTS.com: https://www.pexels.com/photo/man-holding-remote-control-1040160/
+
+    Photo by Luis Valencia: https://www.pexels.com/photo/vintage-low-rider-car-16721614/
+
+    Photo by EVG Kowalievska: https://www.pexels.com/photo/person-typing-on-laptop-1174775/
+
+    Photo by Ann H: https://www.pexels.com/photo/yellow-jigsaw-puzzle-piece-3482442/
+
+    Video by Pressmaster: https://www.pexels.com/video/digital-projection-of-abstract-geometrical-lines-3129671/
+
+Placeholder images in various sizes -
+https://betterplaceholder.com/
+
 License: CC0 https://creativecommons.org/publicdomain/zero/1.0/
 
-museum.webp - https://www.rawpixel.com/image/3297419/free-photo-image-interior-hallway-architecture
-tourist-and-building.webp - https://www.rawpixel.com/image/5928004/photo-image-public-domain-hand-person
-building-exterior.webp - https://www.rawpixel.com/image/430335/free-photo-image-architecture-building-roof
-windows.webp - https://www.rawpixel.com/image/3286615/free-photo-image-texture-architecture-building
-abstract-geometric-art.webp - https://www.rawpixel.com/image/3283970/free-photo-image-pattern-artwork-abstract
-angular-roof.webp - https://www.rawpixel.com/image/3289063/free-photo-image-architectural-detail-architecture
-art-gallery.webp - https://www.rawpixel.com/image/3286187/free-photo-image-person-stairs-architecture
-green-staircase.webp - https://www.rawpixel.com/image/430558/free-photo-image-abstract-architecture-art-public-domain
-hotel-facade.webp - https://www.rawpixel.com/image/3286725/free-photo-image-black-and-white-background-photos
+ certificate-170x240.webp - https://commons.wikimedia.org/wiki/File:Certificate_(no_image).svg
 
-License: UNICODE LICENSE V3 https://www.unicode.org/license.txt
-icon-message.webp
+ female-360x480.webp - https://commons.wikimedia.org/wiki/File:No_image_(female).svg
+
+ male-360X480.webp - https://commons.wikimedia.org/wiki/File:No_image_(male).svg
+
+=== Fonts ===
 
 Neucha Font
 Copyright (c) 2005-2010 by Jovanny Lemonad. All rights reserved.

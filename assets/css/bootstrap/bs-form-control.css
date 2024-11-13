@@ -3,6 +3,17 @@
 }
 
 .form-control {
+  --bs-form-control-bg: var(--bs-body-bg);
+  --bs-form-control-color: var(--bs-body-color);
+  --bs-form-control-border-color: var(--bs-border-color);
+  --bs-form-control-shadow: var(--bs-box-shadow-inset);
+
+  --bs-form-check-bg-color: rgba(var(--bs-primary-rgb), 0.6);
+
+  --bs-form-check-border-color: rgba(var(--bs-primary-rgb), 0.8);
+  --bs-form-control-floating-bg: var(--bs-body-bg);
+  --bs-form-control--floating-color: var(--bs-body-color);
+
   display: block;
   width: 100%;
   padding: var(--bs-sp-spacing-y) var(--bs-sp-spacing-x);

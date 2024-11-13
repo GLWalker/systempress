@@ -4,10 +4,13 @@ SystemPress Changelog
 V1.3
 Original Submission
 -----------
-05.30/24
 #V1.4
 Add pill nav to header
 -----------
-05.31/24
 #V1.4.1
 Load mininfied css
+Remove unused file directory
+Update font names in theme styles
+Update gradients in theme styles
+Misc changes in theme styles & theme.json
+Add new theme styles
