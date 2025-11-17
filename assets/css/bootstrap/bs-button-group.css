@@ -1,0 +1,185 @@
+.wp-block-buttons.btn-group-vertical {
+  align-items: stretch;
+}
+
+.wp-block-buttons.btn-group .wp-block-button,
+.wp-block-buttons.btn-group-vertical .wp-block-button,
+.btn-group .btn:not(.wp-block-button),
+.btn-group-vertical .btn:not(.wp-block-button) {
+  margin: unset;
+  margin-bottom: var(--bs-sp-spacing-y);
+  margin-top: var(--bs-sp-spacing-x);
+}
+
+.wp-block-buttons.btn-group,
+.wp-block-buttons.btn-group-vertical,
+.btn-group,
+.btn-group-vertical {
+  position: relative !important;
+  display: inline-flex !important;
+  vertical-align: middle !important;
+}
+
+.wp-block-buttons.btn-group-vertical.wp-block-buttons-is-layout-flex,
+.wp-block-buttons.btn-group.wp-block-buttons-is-layout-flex {
+  gap: unset;
+}
+
+.wp-block-buttons.btn-group-vertical .wp-block-button,
+.btn-group-vertical .btn {
+  margin: unset !important;
+}
+
+.wp-block-buttons.btn-group>.wp-block-button>.wp-element-button,
+.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button,
+.btn-group>.btn,
+.btn-group-vertical>.btn {
+  position: relative !important;
+  flex: 1 1 auto !important;
+}
+
+.btn-group .wp-element-button:hover,
+.btn-group .wp-element-button:focus,
+.btn-group .wp-element-button:active,
+.btn-group .wp-element-button.active,
+.btn-group-vertical .wp-element-button:hover,
+.btn-group-vertical .wp-element-button:focus,
+.btn-group-vertical .wp-element-button:active,
+.btn-group-vertical .wp-element-button.active,
+.btn-group>.btn-check:checked+.btn,
+.btn-group>.btn-check:focus+.btn,
+.btn-group>.btn:hover,
+.btn-group>.btn:focus,
+.btn-group>.btn:active,
+.btn-group>.btn.active,
+.btn-group-vertical>.btn-check:checked+.btn,
+.btn-group-vertical>.btn-check:focus+.btn,
+.btn-group-vertical>.btn:hover,
+.btn-group-vertical>.btn:focus,
+.btn-group-vertical>.btn:active,
+.btn-group-vertical>.btn.active {
+  z-index: 1;
+}
+
+.btn-toolbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+}
+
+.btn-toolbar .input-group {
+  width: auto;
+}
+
+.wp-block-buttons.btn-group>.wp-block-button>.wp-element-button,
+.wp-block-buttons.btn-group>.wp-block-button,
+.wp-block-buttons.btn-group>.btn:not(.wp-block-button),
+.wp-block-buttons.btn-group,
+.btn-group,
+.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button,
+.wp-block-buttons.btn-group-vertical>.wp-block-button,
+.wp-block-buttons.btn-group-vertical>.btn:not(.wp-block-button),
+.wp-block-buttons.btn-group-vertical,
+.btn-group-vertical {
+  border-radius: var(--bs-border-radius);
+}
+
+.wp-block-buttons.btn-group .wp-block-button:not(:first-child) .wp-element-button,
+.wp-block-buttons.btn-group>:not(.btn-check:first-child)+.a,
+.wp-block-buttons.btn-group>.btn-group:not(:first-child),
+.btn-group>:not(.btn-check:first-child)+.btn,
+.btn-group>.btn-group:not(:first-child) {
+  margin-left: calc(var(--bs-border-width) * -1) !important;
+}
+
+.wp-block-buttons.btn-group>.wp-block-button:not(:last-child),
+.wp-block-buttons.btn-group>.wp-block-button:not(:last-child):not(.dropdown-toggle)>.wp-element-button,
+.wp-block-buttons.btn-group>.wp-block-button>.wp-element-button.dropdown-toggle-split:first-child,
+.wp-block-buttons.btn-group>.wp-block-buttons.btn-group:not(:last-child)>.wp-block-button>.wp-element-button,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn.dropdown-toggle-split:first-child,
+.btn-group>.btn-group:not(:last-child)>.btn {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.wp-block-buttons.btn-group>.wp-block-button:not(:first-child),
+.wp-block-buttons.btn-group>.wp-block-button:nth-child(n+3)>.wp-element-button,
+.wp-block-buttons.btn-group>.wp-block-button:not(:first-child)>.wp-element-button,
+.wp-block-buttons.btn-group>.wp-block-buttons.btn-group:not(:first-child)>.wp-block-button>.wp-element-button,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn,
+.btn-group>.btn-group:not(:first-child)>.btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.dropdown-toggle-split {
+  padding-right: .5625rem;
+  padding-left: .5625rem;
+}
+
+.dropdown-toggle-split::after,
+.dropup .dropdown-toggle-split::after,
+.dropend .dropdown-toggle-split::after {
+  margin-left: 0;
+}
+
+.dropstart .dropdown-toggle-split::before {
+  margin-right: 0;
+}
+
+.btn-sm+.dropdown-toggle-split,
+.btn-group-sm>.btn+.dropdown-toggle-split {
+  padding-right: .375rem;
+  padding-left: .375rem;
+}
+
+.btn-lg+.dropdown-toggle-split,
+.btn-group-lg>.btn+.dropdown-toggle-split {
+  padding-right: .75rem;
+  padding-left: .75rem;
+}
+
+.wp-block-buttons.btn-group-vertical,
+.btn-group-vertical {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.wp-block-buttons.btn-group-vertical>.wp-block-button,
+.wp-block-buttons.btn-group-vertical>.wp-block-button>.wp-element-button,
+.wp-block-buttons.btn-group-vertical>.btn-group,
+.btn-group-vertical>.btn,
+.btn-group-vertical>.btn-group {
+  width: 100% !important;
+}
+
+.btn-group-vertical>.wp-block-button:not(:first-child),
+.btn-group-vertical>.wp-block-button:not(:first-child)>.wp-element-button,
+.wp-block-buttons.btn-group-vertical>.btn-group:not(:first-child),
+.btn-group-vertical>.btn:not(:first-child),
+.btn-group-vertical>.btn-group:not(:first-child) {
+  margin-top: calc(var(--bs-border-width) * -1);
+}
+
+.btn-group-vertical>.wp-block-button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical>.wp-block-button:not(:last-child):not(.dropdown-toggle)>.wp-element-button,
+.wp-block-buttons.btn-group-vertical>.btn-group:not(:last-child)>.wp-block-button,
+.wp-block-buttons.btn-group-vertical>.btn-group:not(:last-child)>.wp-block-button>.wp-element-button,
+.btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical>.btn-group:not(:last-child)>.btn {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical>.wp-block-button~.wp-block-button,
+.btn-group-vertical>.wp-block-button~.wp-block-button>.wp-element-button,
+.btn-group-vertical>.btn-group:not(:first-child)>.wp-block-button,
+.btn-group-vertical>.btn-group:not(:first-child)>.wp-block-button>.wp-element-button,
+.btn-group-vertical>.btn~.btn,
+.btn-group-vertical>.btn-group:not(:first-child)>.btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

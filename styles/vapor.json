@@ -1,0 +1,492 @@
+{
+    "version": 2,
+    "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+    "title": "Vapor",
+    "settings": {
+        "custom": {
+            "sp-replace-string": "all",
+            "bs-code-color": "#ea39b8",
+            "bs-highlight-color": "#adaaaa",
+            "bs-highlight-bg": "#fff3cd",
+            "bs-border-radius": "0.15rem",
+            "wp--preset--font-family--display": "var(--wp--preset--font-family--display-heading)",
+            "bs-breadcrumb-item-active-color": "var(--bs-secondary)",
+            "bs-btn-text-shadow": "var(--bs-dark-textshadow)",
+            "bs-card-color": "var(--bs-white)",
+            "bs-card-bg": "var(--bs-body)",
+            "bs-card-cap-bg": "transparent",
+            "bs-card-text-shadow": "var(--bs-dark-textshadow)",
+            "bs-card-subtitle-color": "var(--wp--preset--color--contrast)",
+            "bs-dropdown-link-hover-bg": "rgba(255, 255, 255, 0.15)",
+            "bs-dropdown-link-active-color": "var(--bs-white)",
+            "bs-list-group-bg": "var(--bs-primary-text-emphasis)",
+            "bs-list-group-action-color": "var(--bs-white)",
+            "bs-list-group-action-hover-color": "var(--bs-white)",
+            "bs-list-group-action-hover-bg": "var(--bs-secondary)",
+            "bs-list-group-action-active-color": "var(--bs-white)",
+            "bs-list-group-active-bg": "var(--wp--preset--color--bs-secondary)",
+            "bs-list-group-text-shadow": "var(--bs-dark-textshadow)",
+            "bs-modal-color": "var(--bs-white)",
+            "bs-modal-bg": "var(--bs-primary)",
+            "bs-nav-pills-link-active-bg": "var(--wp--preset--color--bs-secondary)",
+            "bs-nav-tabs-link-active-color": "var(--wp--preset--color--bs-secondary)",
+            "bs-nav-tabs-link-hover-border-color": "transparent",
+            "bs-pagination-color": "var(--bs-body-color)",
+            "bs-pagination-hover-color": "var(--bs-emphasis-color)",
+            "bs-pagination-hover-bg": "transparent",
+            "bs-pagination-active-color": "var(--bs-white)",
+            "bs-popover-bg": "var(--bs-primary)",
+            "bs-popover-body-color": "var(--bs-white)",
+            "bs-popover-header-color": "var(--bs-popover-body-color)",
+            "bs-popover-header-bg": "var(--bs-popover-bg)",
+            "bs-progress-bg": "var(--bs-primary)",
+            "bs-range-thumb-bg": "var(--wp--preset--color--bs-secondary)",
+            "bs-range-track-bg": "var(--bs-primary)",
+            "bs-toast-color": "var(--bs-white)",
+            "bs-toast-bg": "rgba(var(--bs-primary-rgb), 0.85)",
+            "bs-toast-header-color": "var(--bs-toast-color)",
+            "bs-toast-header-bg": "var(--bs-toast-bg)"
+        },
+        "color": {
+            "gradients": [
+                {
+                    "slug": "body",
+                    "gradient": "linear-gradient(#17082e 0%, #1a0933 7%, #1a0933 80%, #0c1f4c 100%)",
+                    "name": "Body Background"
+                },
+                {
+                    "slug": "element",
+                    "gradient": "linear-gradient(135deg, rgba(255,255,255, 0.3) 0%,rgba(255,255,255,0.2) 100%)",
+                    "name": "Element Background"
+                },
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "gradient": "linear-gradient(rgba(var(--bs-primary-shadow-rgb),0.7), var(--bs-primary) 60%, rgba(var(--bs-primary-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Primary Hover",
+                    "slug": "primary-hover",
+                    "gradient": "linear-gradient(var(--bs-primary), var(--bs-primary-hover-border-color) 60%, var(--bs-primary-hover-bg))"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "gradient": "linear-gradient(  rgba(var(--bs-secondary-shadow-rgb),0.7), var(--bs-secondary) 60%, rgba(var(--bs-secondary-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Secondary Hover",
+                    "slug": "secondary-hover",
+                    "gradient": "linear-gradient(var(--bs-secondary), var(--bs-secondary-hover-border-color) 60%, var(--bs-secondary-hover-bg))"
+                },
+                {
+                    "name": "Success",
+                    "slug": "success",
+                    "gradient": "linear-gradient(  rgba(var(--bs-success-shadow-rgb),0.7), var(--bs-success) 60%, rgba(var(--bs-success-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Success Hover",
+                    "slug": "success-hover",
+                    "gradient": "linear-gradient(var(--bs-success), var(--bs-success-hover-border-color) 60%, var(--bs-success-hover-bg))"
+                },
+                {
+                    "name": "Info",
+                    "slug": "info",
+                    "gradient": "linear-gradient(  rgba(var(--bs-info-shadow-rgb),0.7), var(--bs-info) 60%, rgba(var(--bs-info-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Info Hover",
+                    "slug": "info-hover",
+                    "gradient": "linear-gradient(var(--bs-info), var(--bs-info-hover-border-color) 60%, var(--bs-info-hover-bg))"
+                },
+                {
+                    "name": "Warning",
+                    "slug": "warning",
+                    "gradient": "linear-gradient(  rgba(var(--bs-warning-shadow-rgb),0.7), var(--bs-warning) 60%, rgba(var(--bs-warning-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Warning Hover",
+                    "slug": "warning-hover",
+                    "gradient": "linear-gradient(var(--bs-warning), var(--bs-warning-hover-border-color) 60%, var(--bs-warning-hover-bg))"
+                },
+                {
+                    "name": "Danger",
+                    "slug": "danger",
+                    "gradient": "linear-gradient(  rgba(var(--bs-danger-shadow-rgb),0.7), var(--bs-danger) 60%, rgba(var(--bs-danger-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Danger Hover",
+                    "slug": "danger-hover",
+                    "gradient": "linear-gradient(var(--bs-danger), var(--bs-danger-hover-border-color) 60%, var(--bs-danger-hover-bg))"
+                },
+                {
+                    "name": "Light",
+                    "slug": "light",
+                    "gradient": "linear-gradient(  rgba(var(--bs-light-shadow-rgb),0.7), var(--bs-light) 60%, rgba(var(--bs-light-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Light Hover",
+                    "slug": "light-hover",
+                    "gradient": "linear-gradient(var(--bs-light), var(--bs-light-hover-border-color) 60%, var(--bs-light-hover-bg))"
+                },
+                {
+                    "name": "Dark",
+                    "slug": "dark",
+                    "gradient": "linear-gradient(  rgba(var(--bs-dark-shadow-rgb),0.7), var(--bs-dark) 60%, rgba(var(--bs-dark-shadow-rgb),0.7))"
+                },
+                {
+                    "name": "Dark Hover",
+                    "slug": "dark-hover",
+                    "gradient": "linear-gradient(var(--bs-dark), var(--bs-dark-hover-border-color) 60%, var(--bs-dark-hover-bg))"
+                }
+            ],
+            "palette": [
+                {
+                    "color": "#1a0933",
+                    "name": "Base",
+                    "slug": "base"
+                },
+                {
+                    "color": "#32fbe2",
+                    "name": "Contrast",
+                    "slug": "contrast"
+                },
+                {
+                    "color": "rgba(50, 251, 226, 0.8)",
+                    "name": "Secondary Element Text",
+                    "slug": "bs-secondary-color"
+                },
+                {
+                    "color": "#0b0114",
+                    "name": "Secondary Element BG",
+                    "slug": "bs-secondary-bg"
+                },
+                {
+                    "color": "rgba(50, 251, 226, 0.7)",
+                    "name": "Tertiary Element Text",
+                    "slug": "bs-tertiary-color"
+                },
+                {
+                    "color": "#f8f9fa",
+                    "name": "Tertiary Element BG",
+                    "slug": "bs-tertiary-bg"
+                },
+                {
+                    "color": "#1a0922",
+                    "name": "Border Color",
+                    "slug": "bs-border-color"
+                },
+                {
+                    "color": "#6f42c1",
+                    "name": "Primary",
+                    "slug": "bs-primary"
+                },
+                {
+                    "color": "#ea39b8",
+                    "name": "Secondary",
+                    "slug": "bs-secondary"
+                },
+                {
+                    "color": "#3cf281",
+                    "name": "Success",
+                    "slug": "bs-success"
+                },
+                {
+                    "color": "#1ba2f6",
+                    "name": "Info",
+                    "slug": "bs-info"
+                },
+                {
+                    "color": "#ffc107",
+                    "name": "Warning",
+                    "slug": "bs-warning"
+                },
+                {
+                    "color": "#e44c55",
+                    "name": "Danger",
+                    "slug": "bs-danger"
+                },
+                {
+                    "color": "#44d9e8",
+                    "name": "Light",
+                    "slug": "bs-light"
+                },
+                {
+                    "color": "#170229",
+                    "name": "Dark",
+                    "slug": "bs-dark"
+                },
+                {
+                    "color": "#e2d9f3",
+                    "name": "Primary Subtle",
+                    "slug": "bs-primary-bg-subtle"
+                },
+                {
+                    "color": "#fbd7f1",
+                    "name": "Secondary Subtle",
+                    "slug": "bs-secondary-bg-subtle"
+                },
+                {
+                    "color": "#d8fce6",
+                    "name": "Success Subtle",
+                    "slug": "bs-success-bg-subtle"
+                },
+                {
+                    "color": "#d1ecfd",
+                    "name": "Info Subtle",
+                    "slug": "bs-info-bg-subtle"
+                },
+                {
+                    "color": "#fff3cd",
+                    "name": "Warning Subtle",
+                    "slug": "bs-warning-bg-subtle"
+                },
+                {
+                    "color": "#fadbdd",
+                    "name": "Danger Subtle",
+                    "slug": "bs-danger-bg-subtle"
+                },
+                {
+                    "color": "#fcfcfd",
+                    "name": "Light Subtle",
+                    "slug": "bs-light-bg-subtle"
+                },
+                {
+                    "color": "#ced4da",
+                    "name": "Dark Subtle",
+                    "slug": "bs-dark-bg-subtle"
+                },
+                {
+                    "color": "transparent",
+                    "name": "Transparent",
+                    "slug": "transparent"
+                }
+            ],
+            "duotone": [
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#32fbe2"
+                    ],
+                    "name": "Base to Contrast",
+                    "slug": "duotone-1"
+                },
+                {
+                    "colors": [
+                        "#32fbe2",
+                        "#1a0933"
+                    ],
+                    "name": "Contast to Base",
+                    "slug": "duotone-11"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#30115e"
+                    ],
+                    "name": "Base to Accent",
+                    "slug": "duotone-2"
+                },
+                {
+                    "colors": [
+                        "#30115e",
+                        "#1a0933"
+                    ],
+                    "name": "Accent to Base",
+                    "slug": "duotone-12"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#6f42c1"
+                    ],
+                    "name": "Base to Primary",
+                    "slug": "duotone-3"
+                },
+                {
+                    "colors": [
+                        "#6f42c1",
+                        "#1a0933"
+                    ],
+                    "name": "Base to Primary to Base",
+                    "slug": "duotone-13"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#ea39b8"
+                    ],
+                    "name": "Base to Secondary",
+                    "slug": "duotone-4"
+                },
+                {
+                    "colors": [
+                        "#ea39b8",
+                        "#1a0933"
+                    ],
+                    "name": "Secondary to Base",
+                    "slug": "duotone-14"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#3cf281"
+                    ],
+                    "name": "Base to Success",
+                    "slug": "duotone-5"
+                },
+                {
+                    "colors": [
+                        "#3cf281",
+                        "#1a0933"
+                    ],
+                    "name": "Success to Base",
+                    "slug": "duotone-15"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#1ba2f6"
+                    ],
+                    "name": "Base to Info",
+                    "slug": "duotone-6"
+                },
+                {
+                    "colors": [
+                        "#1ba2f6",
+                        "#1a0933"
+                    ],
+                    "name": "Info to Base",
+                    "slug": "duotone-16"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#ffc107"
+                    ],
+                    "name": "Base to Warning",
+                    "slug": "duotone-7"
+                },
+                {
+                    "colors": [
+                        "#ffc107",
+                        "#1a0933"
+                    ],
+                    "name": "Warning to Base",
+                    "slug": "duotone-17"
+                },
+                {
+                    "colors": [
+                        "#1a0933",
+                        "#e44c55"
+                    ],
+                    "name": "Base to Danger",
+                    "slug": "duotone-8"
+                },
+                {
+                    "colors": [
+                        "#e44c55",
+                        "#1a0933"
+                    ],
+                    "name": "Danger to Base",
+                    "slug": "duotone-18"
+                },
+                {
+                    "colors": [
+                        "#44d9e8",
+                        "#170229"
+                    ],
+                    "name": "Light to Dark",
+                    "slug": "duotone-9"
+                },
+                {
+                    "colors": [
+                        "#170229",
+                        "#44d9e8"
+                    ],
+                    "name": "Dark to Light",
+                    "slug": "duotone-10"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Lato, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+                    "name": "System",
+                    "slug": "system"
+                },
+                {
+                    "fontFamily": "Lato",
+                    "name": "Lato",
+                    "slug": "lato",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_normal_400.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "italic",
+                            "fontWeight": "400",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_italic_400.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_normal_700.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "italic",
+                            "fontWeight": "700",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_italic_700.ttf"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+                    "name": "Monospace",
+                    "slug": "monospace"
+                },
+                {
+                    "fontFamily": "Monoton, serif",
+                    "name": "Display",
+                    "slug": "display-heading"
+                },
+                {
+                    "fontFamily": "Monoton",
+                    "slug": "monoton",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Monoton",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/monoton/monoton_normal_400.ttf"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "styles": {
+        "css": "body {\n  min-height: 100vh;\n  background-image: var(--wp--preset--gradient--body);\n}\n\nhr {\n  border-top: 1px solid #6f42c1;\n  box-shadow: 0 0 2px rgba(111, 66, 193, 0.9), 0 0 4px rgba(111, 66, 193, 0.4), 0 0 1rem rgba(111, 66, 193, 0.3), 0 0 4rem rgba(111, 66, 193, 0.1);\n}\n\n* {\n  --bs-lighter-text: var(--bs-white) !important;\n  --bs-primary-text: var(--bs-lighter-text) !important;\n  --bs-secondary-text: var(--bs-lighter-text) !important;\n  --bs-info-text: var(--bs-lighter-text) !important;\n  --bs-success-text: var(--bs-lighter-text) !important;\n  --bs-warning-text: var(--bs-lighter-text) !important;\n  --bs-danger-text: var(--bs-lighter-text) !important;\n  --bs-light-text: var(--bs-lighter-text) !important;\n  --bs-dark-text: var(--bs-lighter-text) !important;\n}\n\n.alert-primary {\n  --bs-alert-bg: var(--bs-primary) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-secondary {\n  --bs-alert-bg: var(--bs-secondary) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-success {\n  --bs-alert-bg: var(--bs-success) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-info {\n  --bs-alert-bg: var(--bs-info) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-warning {\n  --bs-alert-bg: var(--bs-warning) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-danger {\n  --bs-alert-bg: var(--bs-danger) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-light {\n  --bs-alert-bg: var(--bs-light) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-dark {\n  --bs-alert-bg: var(--bs-dark) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.btn-close {\n  --bs-btn-close-color: #fff !important;\n  --bs-btn-close-bg: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e\") !important;\n}\n\n.card>.card-body+.list-group {\n  background: var(--bs-primary-text-emphasis) !important;\n}\n.navbar.bg-body-tertiary {\n  color: var(--bs-primary-text-emphasis) !important;\n}"
+    }
+}

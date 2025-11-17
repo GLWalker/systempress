@@ -1,0 +1,195 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Cerulean",
+	"settings": {
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-heading-color": "#2fa4e7",
+			"bs-dm-heading-color": "#2fa4e7",
+			"bs-btn-text-shadow": "var(--bs-dark-textshadow)",
+			"bs-btn-bg-image": "var(--wp--preset--gradient--primary)",
+			"bs-btn-hover-bg-image": "var(--wp--preset--gradient--primary-hover)",
+			"bs-navbar-background-image": "var(--bs-gradient)",
+			"bs-nav-pills-link-active-background-image": "var(--wp--preset--gradient--primary)",
+			"bs-nav-link-color": "inherit",
+			"bs-nav-link-text-shadow": "var(--bs-dark-textshadow)"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#fff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#495057",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "rgba(73, 80, 87, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(73, 80, 87, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#2fa4e7",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#73a839",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#033c73",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#dd5600",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#c71c22",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#343a40",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d5edfa",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#fbfbfc",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#e3eed7",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#cdd8e3",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#f8ddcc",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#f4d2d3",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"shadow": "0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium",
+					"shadow": "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
+					"slug": "md"
+				},
+				{
+					"name": "Large",
+					"shadow": "0 1rem 3rem rgba(0, 0, 0, 0.175)",
+					"slug": "lg"
+				},
+				{
+					"name": "Inset",
+					"shadow": "inset 0 1px 2px rgba(0, 0, 0, 0.075)",
+					"slug": "inset"
+				},
+				{
+					"name": "Button",
+					"shadow": "inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)",
+					"slug": "button"
+				},
+				{
+					"name": "Button Focus",
+					"shadow": "0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5)",
+					"slug": "button-focus"
+				},
+				{
+					"name": "Button Active",
+					"shadow": "inset 0 3px 5px rgba(0, 0, 0, 0.125)",
+					"slug": "button-active"
+				},
+				{
+					"name": "Theme",
+					"shadow": "inset 2px 2px 6px rgba(109, 114, 121, 0.2), inset -3px -2px 4px rgba(255, 255, 255, 0.2)",
+					"slug": "theme"
+				},
+				{
+					"name": "Form Focus",
+					"shadow": "0 0 0 0.25rem rgba(47, 164, 231, 0.25)",
+					"slug": "form-focus"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": "* {\n  --bs-primary-text: var(--bs-lighter-text);\n  --bs-success-text: var(--bs-lighter-text);\n  --bs-warning-text: var(--bs-lighter-text);\n}\n\n.has-bs-primary-background-color.wp-element-button,\n.btn-primary>.wp-element-button,\n.btn-primary:not(.wp-block-button),\n.navbar.has-bs-primary-background-color,\n.navbar.bg-primary {\n  --bs-btn-bg-image: var(--wp--preset--gradient--primary);\n  --bs-navbar-background-image: var(--wp--preset--gradient--primary);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--primary);\n}\n\n.is-style-outline>.has-bs-primary-background-color.wp-element-button:hover,\n.is-style-outline.bg-primary>.wp-element-button:hover,\n.btn-outline-primary:not(.wp-block-button):hover,\n.has-bs-primary-background-color.wp-element-button:hover,\n.btn-primary>.wp-element-button:hover,\n.btn-primary:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--primary-hover);\n}\n\n.has-bs-secondary-background-color.wp-element-button,\n.btn-secondary>.wp-element-button,\n.btn-secondary:not(.wp-block-button),\n.navbar.has-bs-secondary-background-color,\n.navbar.bg-secondary {\n  --bs-secondary-border-color: #d8dde2 !important;\n  --bs-btn-bg-image: var(--wp--preset--gradient--secondary);\n  --bs-navbar-background-image: var(--wp--preset--gradient--secondary);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--secondary);\n}\n\n.is-style-outline>.has-bs-secondary-background-color.wp-element-button:hover,\n.is-style-outline.bg-secondary>.wp-element-button:hover,\n.btn-outline-secondary:not(.wp-block-button):hover,\n.has-bs-secondary-background-color.wp-element-button:hover,\n.btn-secondary>.wp-element-button:hover,\n.btn-secondary:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--secondary-hover);\n}\n\n.has-bs-success-background-color.wp-element-button,\n.btn-success>.wp-element-button,\n.btn-success:not(.wp-block-button),\n.navbar.has-bs-success-background-color,\n.navbar.bg-success {\n  --bs-btn-bg-image: var(--wp--preset--gradient--success);\n  --bs-navbar-background-image: var(--wp--preset--gradient--success);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--success);\n}\n\n.is-style-outline>.has-bs-success-background-color.wp-element-button:hover,\n.is-style-outline.bg-success>.wp-element-button:hover,\n.btn-outline-success:not(.wp-block-button):hover,\n.has-bs-success-background-color.wp-element-button:hover,\n.btn-success>.wp-element-button:hover,\n.btn-success:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--success-hover);\n}\n\n.has-bs-info-background-color.wp-element-button,\n.btn-info>.wp-element-button,\n.btn-info:not(.wp-block-button),\n.navbar.has-bs-info-background-color,\n.navbar.bg-info {\n  --bs-btn-bg-image: var(--wp--preset--gradient--info);\n  --bs-navbar-background-image: var(--wp--preset--gradient--info);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--info);\n}\n\n.is-style-outline>.has-bs-info-background-color.wp-element-button:hover,\n.is-style-outline.bg-info>.wp-element-button:hover,\n.btn-outline-info:not(.wp-block-button):hover,\n.has-bs-info-background-color.wp-element-button:hover,\n.btn-info>.wp-element-button:hover,\n.btn-info:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--info-hover);\n}\n\n.has-bs-warning-background-color.wp-element-button,\n.btn-warning>.wp-element-button,\n.btn-warning:not(.wp-block-button),\n.navbar.has-bs-warning-background-color,\n.navbar.bg-warning {\n  --bs-btn-bg-image: var(--wp--preset--gradient--warning);\n  --bs-navbar-background-image: var(--wp--preset--gradient--warning);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--warning);\n}\n\n.is-style-outline>.has-bs-warning-background-color.wp-element-button:hover,\n.is-style-outline.bg-warning>.wp-element-button:hover,\n.btn-outline-warning:not(.wp-block-button):hover,\n.has-bs-warning-background-color.wp-element-button:hover,\n.btn-warning>.wp-element-button:hover,\n.btn-warning:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--warning-hover);\n}\n\n.has-bs-danger-background-color.wp-element-button,\n.btn-danger>.wp-element-button,\n.btn-danger:not(.wp-block-button),\n.navbar.has-bs-danger-background-color,\n.navbar.bg-danger {\n  --bs-btn-bg-image: var(--wp--preset--gradient--danger);\n  --bs-navbar-background-image: var(--wp--preset--gradient--danger);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--danger);\n}\n\n.is-style-outline>.has-bs-danger-background-color.wp-element-button:hover,\n.is-style-outline.bg-danger>.wp-element-button:hover,\n.btn-outline-danger:not(.wp-block-button):hover,\n.has-bs-danger-background-color.wp-element-button:hover,\n.btn-danger>.wp-element-button:hover,\n.btn-danger:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--danger-hover);\n}\n\n.has-bs-light-background-color.wp-element-button,\n.btn-light>.wp-element-button,\n.btn-light:not(.wp-block-button),\n.navbar.has-bs-light-background-color,\n.navbar.bg-light {\n  --bs-btn-bg-image: var(--wp--preset--gradient--light);\n  --bs-navbar-background-image: var(--wp--preset--gradient--light);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--light);\n}\n\n.is-style-outline>.has-bs-light-background-color.wp-element-button:hover,\n.is-style-outline.bg-light>.wp-element-button:hover,\n.btn-outline-light:not(.wp-block-button):hover,\n.has-bs-light-background-color.wp-element-button:hover,\n.btn-light>.wp-element-button:hover,\n.btn-light:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--light-hover);\n}\n\n.has-bs-dark-background-color.wp-element-button,\n.btn-dark>.wp-element-button,\n.btn-dark:not(.wp-block-button),\n.navbar.has-bs-dark-background-color,\n.navbar.bg-dark {\n  --bs-btn-bg-image: var(--wp--preset--gradient--dark);\n  --bs-navbar-background-image: var(--wp--preset--gradient--dark);\n  --bs-nav-pills-link-active-background-image: var(--wp--preset--gradient--dark);\n}\n\n.is-style-outline>.has-bs-dark-background-color.wp-element-button:hover,\n.is-style-outline.bg-dark>.wp-element-button:hover,\n.btn-outline-dark:not(.wp-block-button):hover,\n.has-bs-dark-background-color.wp-element-button:hover,\n.btn-dark>.wp-element-button:hover,\n.btn-dark:not(.wp-block-button):hover {\n  --bs-btn-hover-bg-image: var(--wp--preset--gradient--dark-hover);\n}"
+	}
+}

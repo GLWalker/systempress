@@ -1,0 +1,527 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Brite",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#ffffff",
+						"#212529"
+					],
+					"name": "Base to Contrast",
+					"slug": "duotone-1"
+				},
+				{
+					"colors": [
+						"#212529",
+						"#ffffff"
+					],
+					"name": "Contrast to Base",
+					"slug": "duotone-11"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#61bcff"
+					],
+					"name": "Base to Accent",
+					"slug": "duotone-2"
+				},
+				{
+					"colors": [
+						"#61bcff",
+						"#ffffff"
+					],
+					"name": "Accent to Base",
+					"slug": "duotone-12"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#a2e436"
+					],
+					"name": "Base to Primary",
+					"slug": "duotone-3"
+				},
+				{
+					"colors": [
+						"#a2e436",
+						"#ffffff"
+					],
+					"name": "Primary to Base",
+					"slug": "duotone-13"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#ffffff"
+					],
+					"name": "Base to Secondary",
+					"slug": "duotone-4"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#ffffff"
+					],
+					"name": "Secondary to Base",
+					"slug": "duotone-14"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#68d391"
+					],
+					"name": "Base to Success",
+					"slug": "duotone-5"
+				},
+				{
+					"colors": [
+						"#68d391",
+						"#ffffff"
+					],
+					"name": "Success to Base",
+					"slug": "duotone-15"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#22d2ed"
+					],
+					"name": "Base to Info",
+					"slug": "duotone-6"
+				},
+				{
+					"colors": [
+						"#22d2ed",
+						"#ffffff"
+					],
+					"name": "Info to Base",
+					"slug": "duotone-16"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#ffc700"
+					],
+					"name": "Base to Warning",
+					"slug": "duotone-7"
+				},
+				{
+					"colors": [
+						"#ffc700",
+						"#ffffff"
+					],
+					"name": "Warning to Base",
+					"slug": "duotone-17"
+				},
+				{
+					"colors": [
+						"#ffffff",
+						"#f56565"
+					],
+					"name": "Base to Danger",
+					"slug": "duotone-8"
+				},
+				{
+					"colors": [
+						"#f56565",
+						"#ffffff"
+					],
+					"name": "Danger to Base",
+					"slug": "duotone-18"
+				},
+				{
+					"colors": [
+						"#fcfcfd",
+						"#000000"
+					],
+					"name": "Light to Dark",
+					"slug": "duotone-9"
+				},
+				{
+					"colors": [
+						"#000000",
+						"#fcfcfd"
+					],
+					"name": "Dark to Light",
+					"slug": "duotone-10"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "bs-gradient",
+					"gradient": "linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))",
+					"name": "BS Gradient"
+				},
+				{
+					"slug": "bs-gradient-alt",
+					"gradient": "linear-gradient(to right, rgba(var(--bs-tertiary-bg-rgb), 0.2) 0%, rgba(var(--bs-secondary-bg-rgb), 0.2) 25%, transparent 50%, rgba(var(--bs-secondary-bg-rgb), 0.2) 75%, rgba(var(--bs-tertiary-bg-rgb), 0.2) 100%)",
+					"name": "BS Gradient Alt"
+				},
+				{
+					"slug": "body",
+					"gradient": "linear-gradient(to right, var(--wp--preset--color--bs-secondary-bg) 0%, var(--wp--preset--color--bs-tertiary-bg) 30%, var(--wp--preset--color--base) 50%, var(--wp--preset--color--bs-tertiary-bg) 70%, var(--wp--preset--color--bs-secondary-bg) 100%)",
+					"name": "Body Background"
+				},
+				{
+					"slug": "element",
+					"gradient": "linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%)",
+					"name": "Element Background"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"gradient": "linear-gradient(rgba(var(--bs-primary-shadow-rgb),0.7), var(--bs-primary) 60%, rgba(var(--bs-primary-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Primary Hover",
+					"slug": "primary-hover",
+					"gradient": "linear-gradient(var(--bs-primary), var(--bs-primary-hover-border-color) 60%, var(--bs-primary-hover-bg))"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"gradient": "linear-gradient(rgba(var(--bs-secondary-shadow-rgb),0.7), var(--bs-secondary) 60%, rgba(var(--bs-secondary-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Secondary Hover",
+					"slug": "secondary-hover",
+					"gradient": "linear-gradient(var(--bs-secondary), var(--bs-secondary-hover-border-color) 60%, var(--bs-secondary-hover-bg))"
+				},
+				{
+					"name": "Success",
+					"slug": "success",
+					"gradient": "linear-gradient(rgba(var(--bs-success-shadow-rgb),0.7), var(--bs-success) 60%, rgba(var(--bs-success-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Success Hover",
+					"slug": "success-hover",
+					"gradient": "linear-gradient(var(--bs-success), var(--bs-success-hover-border-color) 60%, var(--bs-success-hover-bg))"
+				},
+				{
+					"name": "Info",
+					"slug": "info",
+					"gradient": "linear-gradient(rgba(var(--bs-info-shadow-rgb),0.7), var(--bs-info) 60%, rgba(var(--bs-info-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Info Hover",
+					"slug": "info-hover",
+					"gradient": "linear-gradient(var(--bs-info), var(--bs-info-hover-border-color) 60%, var(--bs-info-hover-bg))"
+				},
+				{
+					"name": "Warning",
+					"slug": "warning",
+					"gradient": "linear-gradient(rgba(var(--bs-warning-shadow-rgb),0.7), var(--bs-warning) 60%, rgba(var(--bs-warning-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Warning Hover",
+					"slug": "warning-hover",
+					"gradient": "linear-gradient(var(--bs-warning), var(--bs-warning-hover-border-color) 60%, var(--bs-warning-hover-bg))"
+				},
+				{
+					"name": "Danger",
+					"slug": "danger",
+					"gradient": "linear-gradient(rgba(var(--bs-danger-shadow-rgb),0.7), var(--bs-danger) 60%, rgba(var(--bs-danger-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Danger Hover",
+					"slug": "danger-hover",
+					"gradient": "linear-gradient(var(--bs-danger), var(--bs-danger-hover-border-color) 60%, var(--bs-danger-hover-bg))"
+				},
+				{
+					"name": "Light",
+					"slug": "light",
+					"gradient": "linear-gradient(rgba(var(--bs-light-shadow-rgb),0.7), var(--bs-light) 60%, rgba(var(--bs-light-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Light Hover",
+					"slug": "light-hover",
+					"gradient": "linear-gradient(var(--bs-light), var(--bs-light-hover-border-color) 60%, var(--bs-light-hover-bg))"
+				},
+				{
+					"name": "Dark",
+					"slug": "dark",
+					"gradient": "linear-gradient(rgba(var(--bs-dark-shadow-rgb),0.7), var(--bs-dark) 60%, rgba(var(--bs-dark-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Dark Hover",
+					"slug": "dark-hover",
+					"gradient": "linear-gradient(var(--bs-dark), var(--bs-dark-hover-border-color) 60%, var(--bs-dark-hover-bg))"
+				}
+			],
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base/Body",
+					"slug": "base"
+				},
+				{
+					"color": "#212529",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary Body BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "#555758",
+					"name": "Secondary Body Contrast",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Body BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "#86898c",
+					"name": "Tertiary Body Contrast",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#a2e436",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#68d391",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#22d2ed",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ffc700",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#f56565",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#000000",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#ecfad7",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#e1f6e9",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#d3f6fb",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fff4cc",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#fde0e0",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				},
+				{
+					"color": "currentcolor",
+					"name": "Current",
+					"slug": "current"
+				},
+				{
+					"color": "color-mix(in srgb, currentColor 20%, transparent)",
+					"name": "Current Mix",
+					"slug": "current-mix"
+				},
+				{
+					"color": "inherit",
+					"name": "Inherit",
+					"slug": "inherit"
+				}
+			]
+		},
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-body-font-size": "0.875rem",
+			"bs-body-font-weight": "400",
+			"bs-heading-font-weight": "500",
+			"bs-display-font-weight": "300",
+			"bs-btn-font-weight": "400",
+			"bs-border-width": "2px",
+			"bs-border-style": "solid",
+			"bs-border-radius": "0.375rem",
+			"bs-border-radius-sm": "0.25rem",
+			"bs-border-radius-lg": "0.5rem",
+			"bs-border-radius-xl": "1rem",
+			"bs-border-radius-xxl": "2rem",
+			"bs-border-radius-2xl": "var(--bs-border-radius-xxl)",
+			"bs-border-radius-pill": "50rem",
+			"bs-heading-color": "inherit",
+			"bs-link-color": "var(--bs-primary)",
+			"bs-link-hover-color": "var(--bs-primary-hover-bg)",
+			"bs-link-hover-color-rgb": "var(--bs-primary-shadow-rgb)",
+			"wp--preset--font-family--body": "var:preset|font-family|system",
+			"wp--preset--font-family--heading": "var:preset|font-family|open-sans",
+			"wp--preset--font-family--display": "var:preset|font-family|lato",
+			"wp--preset--font-family--monospace": "var:preset|font-family|bs-monospace",
+			"wp--preset--font-family--single-title": "var:preset|font-family|display",
+			"bs-btn-font-family": "var(--wp--preset--font-family--heading)",
+			"bs-focus-ring-color": "rgba(0,0,0,1)",
+			"bs-focus-ring-rgb": "0,0,0",
+			"bs-focus-ring-width": "1px",
+			"bs-focus-ring-opacity": "1",
+			"bs-form-valid-color": "var(--bs-success)",
+			"bs-form-valid-border-color": "var(--bs-success-border-color)",
+			"bs-form-invalid-color": "var(--bs-danger)",
+			"bs-form-invalid-border-color": "var(--bs-danger-border-color)",
+			"bs-disabled-bg": "#e9ecef",
+			"bs-disabled-opacity": ".75",
+			"bs-disabled-filter": "grayscale(75%) brightness(100%)",
+			"bs-code-color": "#ea4998",
+			"bs-highlight-color": "#212529",
+			"bs-highlight-bg": "##fff4cc"
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"shadow": "0 .125rem .25rem rgba(0, 0, 0, .075)",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium",
+					"shadow": "0 .5rem 1rem rgba(0, 0, 0, .15)",
+					"slug": "md"
+				},
+				{
+					"name": "Large",
+					"shadow": "0 1rem 3rem rgba(0, 0, 0, .175)",
+					"slug": "lg"
+				},
+				{
+					"name": "Inset",
+					"shadow": "inset 0 1px 2px rgba(0, 0, 0, .075)",
+					"slug": "inset"
+				},
+				{
+					"name": "Top",
+					"shadow": "0 -1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "top"
+				},
+				{
+					"name": "Right",
+					"shadow": "1rem 0 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "right"
+				},
+				{
+					"name": "Bottom",
+					"shadow": "0 1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "bottom"
+				},
+				{
+					"name": "Left",
+					"shadow": "-1rem 0 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "left"
+				},
+				{
+					"name": "Top Right",
+					"shadow": "0 -1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4), 1rem 0 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "top-right"
+				},
+				{
+					"name": "Top Bottom",
+					"shadow": "0 -1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4), 0 1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "top-bottom"
+				},
+				{
+					"name": "All Sides",
+					"shadow": "0 -1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4), 1rem 0 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4), 0 1rem 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4), -1rem 0 1rem -1rem rgba(var(--bs-emphasis-color-rgb), 0.4)",
+					"slug": "all-sides"
+				},
+				{
+					"name": "Inset All Sides",
+					"shadow": "0 0 .625rem 0 rgba(0,0,0,0.4) inset",
+					"slug": "inset-all-sides"
+				},
+				{
+					"name": "Button",
+					"shadow": "inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)",
+					"slug": "button"
+				},
+				{
+					"name": "Button Focus",
+					"shadow": "0 0 0 1px rgba(var(--bs-btn-focus-shadow-rgb), .5)",
+					"slug": "button-focus"
+				},
+				{
+					"name": "Button Active",
+					"shadow": "0 0 0 1px rgba(var(--bs-btn-focus-shadow-rgb), .5)",
+					"slug": "button-active"
+				},
+				{
+					"name": "Form Focus",
+					"shadow": "0 0 0 1px var(--bs-focus-ring-color)",
+					"slug": "form-focus"
+				},
+				{
+					"name": "Form Shadow",
+					"shadow": "inset 0 .0625rem .125rem rgba(0, 0, 0, 0.075)",
+					"slug": "form-control-shadow"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": ":root {\n  --bs-border-width: 2px !important;\n  --bs-border-color: #000 !important;\n}\n\n[data-bs-theme=light],\n[data-bs-theme=dark] {\n  --bs-border-color: #000 !important;\n}\n\n.table {\n  border: 2px solid #000 !important;\n}\n\n.navbar {\n  font-size: 1.09375rem !important;\n  font-weight: 500 !important;\n  border: 2px solid #000 !important;\n}\n.navbar.fixed-top {\n  border-width: 0 0 2px 0 !important;\n}\n.navbar.fixed-bottom {\n  border-width: 2px 0 0 0 !important;\n}\n.navbar .dropdown-toggle::after {\n  margin-left: 0.15em !important;\n  vertical-align: 0.15em !important;\n}\n.navbar-toggler {\n  --bs-border-width: 2px !important;\n}\n\n.btn {\n  margin: 3px 0 0 3px !important;\n  border-color: #000 !important;\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transition: all 0.3s !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn:hover {\n  border-color: #000 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn.disabled {\n  border-color: #000 !important;\n}\n.btn-link, .btn-link:hover {\n  color: #000 !important;\n}\n\n.btn-outline-primary {\n  color: #000 !important;\n  background-color: #a2e436 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-primary:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-primary:hover,\n.btn-check + .btn-outline-primary:hover {\n  background-color: #a2e436 !important;\n}\n.btn-outline-secondary {\n  color: #000 !important;\n  background-color: #fff !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-secondary:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-secondary:hover,\n.btn-check + .btn-outline-secondary:hover {\n  background-color: #fff !important;\n}\n.btn-outline-success {\n  color: #000 !important;\n  background-color: #68d391 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-success:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-success:hover,\n.btn-check + .btn-outline-success:hover {\n  background-color: #68d391 !important;\n}\n.btn-outline-info {\n  color: #000 !important;\n  background-color: #22d2ed !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-info:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-info:hover,\n.btn-check + .btn-outline-info:hover {\n  background-color: #22d2ed !important;\n}\n.btn-outline-warning {\n  color: #000 !important;\n  background-color: #ffc700 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-warning:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-warning:hover,\n.btn-check + .btn-outline-warning:hover {\n  background-color: #ffc700 !important;\n}\n.btn-outline-danger {\n  color: #000 !important;\n  background-color: #f56565 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-danger:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-danger:hover,\n.btn-check + .btn-outline-danger:hover {\n  background-color: #f56565 !important;\n}\n.btn-outline-light {\n  color: #000 !important;\n  background-color: #e9ecef !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-light:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-light:hover,\n.btn-check + .btn-outline-light:hover {\n  background-color: #e9ecef !important;\n}\n.btn-outline-dark {\n  color: #000 !important;\n  background-color: #000 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n.btn-outline-dark:hover {\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn-dark:hover,\n.btn-check + .btn-outline-dark:hover {\n  background-color: #000 !important;\n}\n.btn-outline-dark {\n  color: #fff !important;\n}\n.btn-group .btn {\n  margin-left: 0 !important;\n}\n.btn-group > .btn.active {\n  z-index: 0 !important;\n}\n.btn-group .btn:hover, .btn-group .btn:active, .btn-group .btn:focus,\n.btn-group-vertical .btn:hover,\n.btn-group-vertical .btn:active,\n.btn-group-vertical .btn:focus {\n  z-index: 0 !important;\n}\n.btn-group > .btn-check:focus + .btn,\n.btn-group > .btn-check:checked + .btn,\n.btn-group-vertical > .btn-check:focus + .btn,\n.btn-group-vertical > .btn-check:checked + .btn {\n  z-index: 0 !important;\n}\n.btn-check + .btn {\n  border-color: #000 !important;\n  box-shadow: 3px 3px 0 0 var(--bs-border-color) !important;\n  transform: translate(-3px, -3px) !important;\n}\n.btn-check + .btn:hover {\n  color: #000 !important;\n  border-color: #000 !important;\n}\n.btn-check:checked + .btn,\n:not(.btn-check) + .btn:active,\n.btn:first-child:active,\n.btn.active,\n.btn.show {\n  border-color: #000 !important;\n  box-shadow: none !important;\n  transform: translate(0, 0) !important;\n}\n[data-bs-theme=dark] .btn-link,\n[data-bs-theme=dark] .btn-link:hover {\n  color: #fff !important;\n}\n/* ...continue adding !important to every remaining rule exactly as they appear in your original CSS... */"
+	}
+}

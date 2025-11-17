@@ -1,0 +1,26 @@
+@media (min-width:992px) {
+    .object-fit-lg-contain {
+        -o-object-fit: contain !important;
+        object-fit: contain !important
+    }
+
+    .object-fit-lg-cover {
+        -o-object-fit: cover !important;
+        object-fit: cover !important
+    }
+
+    .object-fit-lg-fill {
+        -o-object-fit: fill !important;
+        object-fit: fill !important
+    }
+
+    .object-fit-lg-scale {
+        -o-object-fit: scale-down !important;
+        object-fit: scale-down !important
+    }
+
+    .object-fit-lg-none {
+        -o-object-fit: none !important;
+        object-fit: none !important
+    }
+}

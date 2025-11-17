@@ -1,0 +1,26 @@
+@media (min-width:576px) {
+    .object-fit-sm-contain {
+        -o-object-fit: contain !important;
+        object-fit: contain !important
+    }
+
+    .object-fit-sm-cover {
+        -o-object-fit: cover !important;
+        object-fit: cover !important
+    }
+
+    .object-fit-sm-fill {
+        -o-object-fit: fill !important;
+        object-fit: fill !important
+    }
+
+    .object-fit-sm-scale {
+        -o-object-fit: scale-down !important;
+        object-fit: scale-down !important
+    }
+
+    .object-fit-sm-none {
+        -o-object-fit: none !important;
+        object-fit: none !important
+    }
+}

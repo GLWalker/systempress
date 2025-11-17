@@ -1,0 +1,268 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Materia",
+	"settings": {
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-body-font-size": "17px",
+			"bs-sp-spacing-x": "var(--wp--preset--font-size--large)",
+			"bs-sp-spacing-y": "calc(var(--wp--preset--font-size--large) * .5)",
+			"bs-html-text-shadow": "none",
+			"bs-body-color-text-shadow": "none",
+			"bs-body-bg-text-shadow": "none",
+			"bs-secondary-color-text-shadow": "none",
+			"bs-secondary-bg-text-shadow": "none",
+			"bs-tertiary-color-text-shadow": "var(--bs-light-textshadow)",
+			"bs-tertiary-bg-text-shadow": "none",
+			"bs-heading-text-shadow": "none",
+			"bs-display-text-shadow": "none",
+			"bs-single-title-text-shadow": "none",
+			"bs-btn-text-shadow": "none",
+			"bs-heading-color": "#333333",
+			"bs-dm-heading-color": "inherit",
+			"bs-btn-bg-image": "var(--bs-gradient)",
+			"bs-dropdown-link-color": "#555555",
+			"bs-dropdown-border-color": "transparent",
+			"bs-dropdown-box-shadow": "var(--bs-box-shadow-button)",
+			"bs-nav-tabs-border-color": "transparent",
+			"bs-nav-tabs-link-hover-border-color": "var(--bs-secondary-bg) var(--bs-secondary-bg) transparent",
+			"bs-nav-tabs-link-active-color": "var(--bs-emphasis-color)",
+			"bs-nav-tabs-link-active-border-color": "var(--bs-border-color) var(--bs-border-color) var(--bs-body-bg)",
+			"bs-nav-pills-link-active-background-image": "var(--bs-gradient)",
+			"bs-navbar-background-image": "var(--bs-gradient)",
+			"bs-card-border-color": "transparent",
+			"bs-card-box-shadow": "var(--bs-box-shadow-button)",
+			"bs-accordion-background-image": "var(--bs-gradient)",
+			"bs-pagination-background-image": "var(--bs-gradient)",
+			"bs-pagination-focus-box-shadow": "var(--bs-box-shadow-button-focus)",
+			"bs-badge-background-image": "var(--bs-gradient)",
+			"bs-alert-background-image": "var(--bs-gradient)",
+			"bs-modal-border-color": "transparent",
+			"bs-offcanvas-border-color": "transparent",
+			"bs-popover-border-color": "transparent",
+			"bs-popover-box-shadow": "var(--bs-box-shadow-button)"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#444444",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#eeeeee",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(68, 68, 68, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(68, 68, 68, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#2196f3",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#4caf50",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#9c27b0",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ff9800",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#e51c23",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#222222",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d3eafd",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#fcfcfc",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#dbefdc",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#ebd4ef",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#ffeacc",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#fad2d3",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"shadow": "0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium",
+					"shadow": "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
+					"slug": "md"
+				},
+				{
+					"name": "Large",
+					"shadow": "0 1rem 3rem rgba(0, 0, 0, 0.175)",
+					"slug": "lg"
+				},
+				{
+					"name": "Inset",
+					"shadow": "inset 0 -1px 0 #ddd;",
+					"slug": "inset"
+				},
+				{
+					"name": "Button",
+					"shadow": "0 1px 4px rgba(0, 0, 0, 0.4)",
+					"slug": "button"
+				},
+				{
+					"name": "Button Focus",
+					"shadow": "0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5)",
+					"slug": "button-focus"
+				},
+				{
+					"name": "Button Active",
+					"shadow": "inset 0 3px 5px var(--bs-primary-hover-border-color)",
+					"slug": "button-active"
+				},
+				{
+					"name": "Theme",
+					"shadow": "none",
+					"slug": "theme"
+				},
+				{
+					"name": "Form Focus",
+					"shadow": "inset 0 -2px 0 rgb(var(--bs-focus-ring-rgb))",
+					"slug": "form-focus"
+				}
+			]
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			},
+			"spacingSizes": [
+				{
+					"name": "Step 1 - Fixed",
+					"size": "0.33rem",
+					"slug": "10"
+				},
+				{
+					"name": "Step 2 - Fixed",
+					"size": "0.66rem",
+					"slug": "20"
+				},
+				{
+					"name": "Step 3 - Fixed",
+					"size": "1.25rem",
+					"slug": "30"
+				},
+				{
+					"name": "Step 4 - Fluid",
+					"size": "min(2rem, 3vw)",
+					"slug": "40"
+				},
+				{
+					"name": "Step 5 - Fluid",
+					"size": "min(5rem, 7vw)",
+					"slug": "50"
+				},
+				{
+					"name": "Step 6 - Fluid",
+					"size": "min(10.5rem, 13vw)",
+					"slug": "60"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		}
+	},
+	"styles": {
+		"css": "*,\nbody {\n  --bs-primary-text: var(--bs-lighter-text);\n  --bs-success-text: var(--bs-lighter-text);\n  --bs-warning-text: var(--bs-lighter-text);\n}\n\nbody,\ninput,\nbutton {\n  letter-spacing: 0.2px;\n}\n\np {\n  margin: 0 0 1em !;\n}\n.dropdown-toggle::after,\n.dropup .dropdown-toggle::after,\n.dropstart .dropdown-toggle::after,\n.dropend .dropdown-toggle::after {\n  border-width: 4px;\n}\n\n.form-control {\n  transition: box-shadow 0.2s;\n}\n\n.form-control,\n.form-select:focus,\n.form-control:focus,\n.input-group-text,\n.form-floating>.form-control-plaintext~label,\n.form-floating>label,\n.form-control-plaintext,\n.form-select {\n  border-width: 0 0 !important;\n  border-radius: 0 !important;\n}\n\n.form-control::-webkit-file-upload-button {\n  background-image: var(--bs-gradient);\n}\n\n.form-control::file-selector-button {\n  background-image: var(--bs-gradient);\n}\n\n.form-floating>.form-control:not(:-moz-placeholder-shown)~label::after {\n  background-color: transparent;\n  border-radius: 0;\n}\n\nform-floating> :disabled~label::after,\n.form-floating>.form-control:disabled~label::after,\n.form-floating>.form-control:focus~label::after,\n.form-floating>.form-control:not(:placeholder-shown)~label::after,\n.form-floating>.form-control-plaintext~label::after,\n.form-floating>.form-select~label::after {\n  background-color: transparent;\n  border-radius: 0;\n}\n\n.form-range::-webkit-slider-thumb {\n  background-image: var(--bs-gradient);\n}\n\n.form-range::-webkit-slider-thumb:active {\n  background-image: var(--bs-gradient);\n}\n\n.form-range::-moz-range-thumb {\n  background-image: var(--bs-gradient);\n}\n\n.form-range::-moz-range-thumb:active {\n  background-image: var(--bs-gradient);\n}\n\n.table-hover>tbody>tr,\n.table-hover>tbody>tr>th,\n.table-hover>tbody>tr>td {\n  transition: background-color 0.2s, color 0.2s;\n}\n\n.thead-inverse th {\n  color: #fff;\n  background-color: var(--bs-primary);\n}\n\n.is-style-outline>.wp-element-button,\n[class*=\"btn-outline\"]>.wp-element-button,\n[class*=\"btn-outline\"]:not(.wp-block-button),\n.wp-element-button,\n.btn:not(.wp-block-button) {\n  position: relative;\n  text-transform: uppercase;\n  border-color: transparent !important;\n  transition: color 0.4s, background-color 0.4s, border-color 0.4s, box-shadow 0.4s !important;\n}\n\n.wp-element-button::before,\n.btn:not(.wp-block-button)::before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: block;\n  width: 100%;\n  height: 100%;\n  margin-left: 0 !important;\n  pointer-events: none;\n  content: \"\";\n  background-position: 50% !important;\n  background-size: 1000% 1000% !important;\n  border: none !important;\n  opacity: 0 !important;\n  transition: background 0.5s, opacity 1s !important;\n  background-image: radial-gradient(circle, currentColor 10%, transparent 10.01%) !important;\n}\n\n.wp-element-button:active::before,\n.btn:not(.wp-block-button):active::before {\n  background-size: 0 0 !important;\n  opacity: 0.2 !important;\n  transition: none !important;\n}\n\n.wp-element-button.disabled::before,\n.btn:not(.wp-block-button).disabled::before,\n.wp-element-button[disabled]::before,\n.btn:not(.wp-block-button)[disabled]::before {\n  display: none !important;\n}\n\n.site-header,\n.dropdown-item:hover,\n.dropdown-item:focus,\n.dropdown-item.active,\n.dropdown-item:active,\n.accordion-button:focus,\n.active>.page-link,\n.active:not(.breadcrumb-item):not(.nav-link),\n.current {\n  background-image: var(--bs-gradient);\n}\n\n.navbar {\n  border: none;\n}\n\n.navbar-nav .nav-link {\n  padding-top: 0.9rem;\n  padding-bottom: 0.9rem;\n}\n\n.nav-tabs .nav-item+.nav-item {\n  margin-left: 0;\n}\n\n.nav-tabs .nav-link,\n.nav-tabs .nav-link:focus {\n  margin-right: 0;\n  box-shadow: var(--bs-box-shadow-inset);\n  transition: color 0.2s, box-shadow 0.2s;\n}\n\n.nav-tabs .nav-link:hover,\n.nav-tabs .nav-link:focus:hover {\n  background-color: transparent;\n  box-shadow: inset 0 -2px 0 var(--bs-box-shadow-form-focus);\n}\n\n.nav-tabs .nav-link.active,\n.nav-tabs .nav-link.active:focus {\n  border: none;\n  box-shadow: inset 0 -2px 0 var(--bs-box-shadow-button-active);\n}\n\n.nav-tabs .nav-link.active:hover,\n.nav-tabs .nav-link.active:focus:hover {\n  border: none;\n}\n\n.nav-tabs .nav-link.disabled {\n  box-shadow: var(--bs-box-shadow-inset);\n}\n\n.nav-tabs.nav-justified .nav-link,\n.nav-tabs.nav-justified .nav-link:hover,\n.nav-tabs.nav-justified .nav-link:focus,\n.nav-tabs.nav-justified .nav-link.active,\n.nav-tabs.nav-justified .nav-link.active:hover,\n.nav-tabs.nav-justified .nav-link.active:focus {\n  border: none;\n}\n\n.nav-tabs .dropdown-menu {\n  margin-top: 0;\n}\n\n.dropdown-menu {\n  margin-top: 0;\n}\n\n.navbar.has-bs-primary-background-color input[type=text],\n.navbar.has-bs-primary-background-color input[type=password],\n.navbar.has-bs-primary-background-color input[type=email],\n.navbar.has-bs-primary-background-color input[type=number],\n.navbar.has-bs-primary-background-color input[type=tel],\n\n.navbar.has-bs-dark-background-color input[type=search],\n.navbar.has-bs-dark-background-color input[type=text],\n.navbar.has-bs-dark-background-color input[type=password],\n.navbar.has-bs-dark-background-color input[type=email],\n.navbar.has-bs-dark-background-color input[type=number],\n.navbar.has-bs-dark-background-color input[type=tel],\n\n.navbar.bg-dark input[type=search],\n.navbar.bg-dark input[type=text],\n.navbar.bg-dark input[type=password],\n.navbar.bg-dark input[type=email],\n.navbar.bg-dark input[type=number],\n.navbar.bg-dark input[type=tel],\n\n.navbar.bg-primary input[type=search],\n.navbar.bg-primary input[type=text],\n.navbar.bg-primary input[type=password],\n.navbar.bg-primary input[type=email],\n.navbar.bg-primary input[type=number],\n.navbar.bg-primary input[type=tel] {\n  color: var(--bs-lighter-text) !important;\n  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5) !important;\n}\n\n.navbar.has-bs-primary-background-color input[type=search]:focus,\n.navbar.has-bs-primary-background-color input[type=text]:focus,\n.navbar.has-bs-primary-background-color input[type=password]:focus,\n.navbar.has-bs-primary-background-color input[type=email]:focus,\n.navbar.has-bs-primary-background-color input[type=number]:focus,\n.navbar.has-bs-primary-background-color input[type=tel]:focus,\n\n.navbar.has-bs-dark-background-color input[type=search]:focus,\n.navbar.has-bs-dark-background-color input[type=text]:focus,\n.navbar.has-bs-dark-background-color input[type=password]:focus,\n.navbar.has-bs-dark-background-color input[type=email]:focus,\n.navbar.has-bs-dark-background-color input[type=number]:focus,\n.navbar.has-bs-dark-background-color input[type=tel]:focus,\n\n.navbar.bg-dark input[type=search]:focus,\n.navbar.bg-dark input[type=text]:focus,\n.navbar.bg-dark input[type=password]:focus,\n.navbar.bg-dark input[type=email]:focus,\n.navbar.bg-dark input[type=number]:focus,\n.navbar.bg-dark input[type=tel]:focus,\n.navbar.bg-primary input[type=search]:focus,\n.navbar.bg-primary input[type=text]:focus,\n.navbar.bg-primary input[type=password]:focus,\n.navbar.bg-primary input[type=email]:focus,\n.navbar.bg-primary input[type=number]:focus,\n.navbar.bg-primary input[type=tel]:focus {\n  box-shadow: inset 0 -2px 0 #fff !important;\n}\n\n.navbar.has-bs-primary-background-color input[type=search]::-moz-placeholder,\n.navbar.has-bs-primary-background-color input[type=text]::-moz-placeholder,\n.navbar.has-bs-primary-background-color input[type=password]::-moz-placeholder,\n.navbar.has-bs-primary-background-color input[type=email]::-moz-placeholder,\n.navbar.has-bs-primary-background-color input[type=number]::-moz-placeholder,\n.navbar.has-bs-primary-background-color input[type=tel]::-moz-placeholder,\n\n.navbar.has-bs-dark-background-color input[type=search]::-moz-placeholder,\n.navbar.has-bs-dark-background-color input[type=text]::-moz-placeholder,\n.navbar.has-bs-dark-background-color input[type=password]::-moz-placeholder,\n.navbar.has-bs-dark-background-color input[type=email]::-moz-placeholder,\n.navbar.has-bs-dark-background-color input[type=number]::-moz-placeholder,\n.navbar.has-bs-dark-background-color input[type=tel]::-moz-placeholder,\n\n.navbar.bg-dark input[type=search]::-moz-placeholder,\n.navbar.bg-dark input[type=text]::-moz-placeholder,\n.navbar.bg-dark input[type=password]::-moz-placeholder,\n.navbar.bg-dark input[type=email]::-moz-placeholder,\n.navbar.bg-dark input[type=number]::-moz-placeholder,\n.navbar.bg-dark input[type=tel]::-moz-placeholder,\n.navbar.bg-primary input[type=search]::-moz-placeholder,\n.navbar.bg-primary input[type=text]::-moz-placeholder,\n.navbar.bg-primary input[type=password]::-moz-placeholder,\n.navbar.bg-primary input[type=email]::-moz-placeholder,\n.navbar.bg-primary input[type=number]::-moz-placeholder,\n.navbar.bg-primary input[type=tel]::-moz-placeholder {\n  color: rgba(255, 255, 255, 0.5) !important;\n}\n\n.navbar.has-bs-primary-background-color input[type=search]::placeholder,\n.navbar.has-bs-primary-background-color input[type=text]::placeholder,\n.navbar.has-bs-primary-background-color input[type=password]::placeholder,\n.navbar.has-bs-primary-background-color input[type=email]::placeholder,\n.navbar.has-bs-primary-background-color input[type=number]::placeholder,\n.navbar.has-bs-primary-background-color input[type=tel]::placeholder,\n\n.navbar.has-bs-dark-background-color input[type=search]::placeholder,\n.navbar.has-bs-dark-background-color input[type=text]::placeholder,\n.navbar.has-bs-dark-background-color input[type=password]::placeholder,\n.navbar.has-bs-dark-background-color input[type=email]::placeholder,\n.navbar.has-bs-dark-background-color input[type=number]::placeholder,\n.navbar.has-bs-dark-background-color input[type=tel]::placeholder,\n\n.navbar.bg-dark input[type=search]::placeholder,\n.navbar.bg-dark input[type=text]::placeholder,\n.navbar.bg-dark input[type=password]::placeholder,\n.navbar.bg-dark input[type=email]::placeholder,\n.navbar.bg-dark input[type=number]::placeholder,\n.navbar.bg-dark input[type=tel]::placeholder,\n.navbar.bg-primary input[type=search]::placeholder,\n.navbar.bg-primary input[type=text]::placeholder,\n.navbar.bg-primary input[type=password]::placeholder,\n.navbar.bg-primary input[type=email]::placeholder,\n.navbar.bg-primary input[type=number]::placeholder,\n.navbar.bg-primary input[type=tel]::placeholder {\n  color: rgba(255, 255, 255, 0.5) !important;\n}\n\n.form-check-input:not(:focus) {\n  border: 2px solid var(--bs-dark-bg-subtle) !important;\n}\n\n.form-check-input:focus {\n  box-shadow: var(--bs-box-shadow-button) !important;\n}\n\n.form-switch .form-check-input {\n  position: relative;\n  height: 0.8em;\n  margin-top: 0.29em;\n  background-color: var(--bs-dark-bg-subtle);\n  background-image: none;\n  border: none;\n}\n\n.form-switch .form-check-input:focus {\n  box-shadow: none;\n}\n\n.form-switch .form-check-input::before {\n  position: absolute;\n  top: -0.2em;\n  left: -0.2em;\n  width: 1.2em;\n  height: 1.2em;\n  content: \"\";\n  background-color: #fff;\n  border-radius: 50%;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n  transition: left 0.15s ease-in-out;\n}\n\n.form-switch .form-check-input::after {\n  position: absolute;\n  top: -0.2em;\n  left: -0.2em;\n  z-index: -1;\n  width: 1.2em;\n  height: 1.2em;\n  content: \"\";\n  border-radius: 50%;\n  box-shadow: 0 0 0 9px rgba(0, 0, 0, 0.05);\n  transition: left 0.15s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transform: scale(0);\n}\n\n.form-switch .form-check-input:hover:not(.disabled)::after,\n.form-switch .form-check-input:focus:not(.disabled)::after {\n  transform: scale(0.9);\n}\n\n.form-switch .form-check-input:checked::before {\n  left: calc(100% - 0.8em);\n}\n\n.form-switch .form-check-input:checked::after {\n  left: calc(100% - 0.8em);\n}\n\n.form-switch .form-check-input:checked:hover:not(.disabled)::after,\n.form-switch .form-check-input:checked:focus:not(.disabled)::after {\n  transform: scale(0.9);\n}\n\n.card {\n  --bs-card-border-width: 0;\n}\n\n.has-warning input:not([type=checkbox]),\n.has-warning .form-control,\n.has-warning input.form-control[readonly],\n.has-warning input[type=text][readonly],\n.has-warning [type=text].form-control[readonly],\n.has-warning input:not([type=checkbox]):focus,\n.has-warning .form-control:focus {\n  border-bottom: none;\n  box-shadow: inset 0 -2px 0 #ff9800;\n}\n\n.has-danger input:not([type=checkbox]),\n.has-danger .form-control,\n.has-danger input.form-control[readonly],\n.has-danger input[type=text][readonly],\n.has-danger [type=text].form-control[readonly],\n.has-danger input:not([type=checkbox]):focus,\n.has-danger .form-control:focus {\n  border-bottom: none;\n  box-shadow: inset 0 -2px 0 #e51c23;\n}\n\n.has-success input:not([type=checkbox]),\n.has-success .form-control,\n.has-success input.form-control[readonly],\n.has-success input[type=text][readonly],\n.has-success [type=text].form-control[readonly],\n.has-success input:not([type=checkbox]):focus,\n.has-success .form-control:focus {\n  border-bottom: none;\n  box-shadow: inset 0 -2px 0 #4caf50;\n}\n\n.has-warning .input-group-addon,\n.has-danger .input-group-addon,\n.has-success .input-group-addon {\n  background-color: transparent;\n  border-color: transparent;\n}\n\n.carousel-control-prev {\n  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));\n}\n\n.carousel-control-next {\n  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));\n}\n\n.alert {\n  padding-right: 2.5rem;\n  border: none;\n}\n\n.alert,\n.alert h1,\n.alert .h1,\n.alert h2,\n.alert .h2,\n.alert h3,\n.alert .h3,\n.alert h4,\n.alert .h4,\n.alert h5,\n.alert .h5,\n.alert h6,\n.alert .h6 {\n  color: var(--bs-lighter-text);\n}\n\n.alert-primary {\n  background: var(--wp--preset--gradient--primary);\n}\n\n.alert-secondary {\n  background: var(--wp--preset--gradient--secondary);\n\n}\n\n.alert-success {\n  background: var(--wp--preset--gradient--success);\n}\n\n.alert-info {\n  background: var(--wp--preset--gradient--info);\n}\n\n.alert-warning {\n  background: var(--wp--preset--gradient--warning);\n}\n\n.alert-danger {\n  background: var(--wp--preset--gradient--danger);\n}\n\n.alert-light {\n  background: var(--wp--preset--gradient--light);\n}\n\n.alert-dark {\n  background: var(--wp--preset--gradient--dark);\n}\n\n.alert a:not(.btn),\n.alert .alert-link {\n  font-weight: 700;\n  color: var(--bs-white);\n}\n\n.alert-secondary,\n.alert-secondary a:not(.btn),\n.alert-secondary .alert-link,\n.alert-light,\n.alert-light a:not(.btn),\n.alert-light .alert-link {\n  color: var(--bs-black);\n}\n\n.card.border-primary,\n.card.border-secondary,\n.card.border-success,\n.card.border-info,\n.card.border-warning,\n.card.border-danger,\n.card.border-light,\n.card.border-dark {\n  border-width: 1px;\n}\n\n.modal-content {\n  border-radius: 0.2rem;\n  box-shadow: 0 6px 36px rgba(0, 0, 0, 0.3);\n}\n\n.modal .btn-close,\n.toast .btn-close,\n.offcanvas .btn-close {\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e\");\n}\n\n.popover {\n  border: none;\n  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);\n}"
+	}
+}

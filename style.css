@@ -1,0 +1,60 @@
+/*
+Theme Name: SystemPress
+Theme URI: https://wetite.com/systempress/
+Author: GL Walker
+Author URI: https://wetite.com
+
+Description:
+SystemPress: Build Faster, Smarter, and More Accessible WordPress Websites
+
+SystemPress is a modern, powerful WordPress block theme designed to bring the best of Full Site Editing (FSE) and Bootstrap 5 to your fingertips. Whether you’re a seasoned developer or just starting with WordPress, SystemPress gives you the tools to create beautiful, responsive, and accessible websites effortlessly.
+
+* Why Choose SystemPress? *
+
+•For Developers: SystemPress is built with performance, scalability, and flexibility at its core. Enjoy a clean, modular codebase with powerful utilities for enqueuing scripts, dynamic CSS, custom block attributes, and seamless Bootstrap integration. With accessibility baked in and compatibility with PHP 8 and WordPress 6.7+, it’s ready for anything.
+
+•For Designers: Unleash your creativity with SystemPress’s design-first approach. Create stunning layouts using Bootstrap 5’s responsive grid and built-in components directly in the block editor. Explore JSON designs inspired by Bootswatch, one of the oldest and most trusted theme makers for Bootstrap, to quickly customize your site’s appearance with beautifully coordinated palettes and styles. Whether you prefer light, dark, or bold aesthetics, SystemPress gives you the flexibility to bring your vision to life.
+
+•For Beginners: You don’t need to be a coding expert to build a stunning website with SystemPress. Use the intuitive WordPress block editor to create pages, customize layouts, and experiment with pre-built block patterns inspired by Bootstrap components—all without touching a single line of code.
+
+* Features That Work for Everyone *
+
+•Full Site Editing (FSE): Control every part of your site—headers, footers, templates, and content—directly in the WordPress block editor.
+
+•Built with Bootstrap 5: SystemPress integrates seamlessly with Bootstrap 5, offering a robust grid system, responsive utilities, and a library of pre-styled components like carousels, buttons, and navigation bars.
+
+•Custom Block Patterns: Choose from a growing collection of block patterns, ready to use out of the box. Simply drag, drop, and customize to fit your style.
+
+•Accessibility Ready: Every feature is designed to meet WCAG standards, ensuring your website is usable by everyone. SystemPress includes support for ARIA roles, keyboard navigation, and screen readers.
+
+•Dark Mode Support: With a built-in dark mode toggle, your site can easily adapt to modern styling preferences and improve readability in low-light environments.
+
+•Performance-Driven Design: Lightweight and fast, SystemPress ensures quick load times and an optimized user experience.
+
+* Perfect for All Levels *
+
+•Beginners: SystemPress simplifies web design by providing pre-built templates, drag-and-drop functionality, and intuitive tools that make site creation easy.
+
+•Developers: SystemPress offers the flexibility and control you need for custom solutions. With built-in support for dynamic CSS, Bootstrap customization, and extensible code, you can craft anything from small websites to enterprise-level projects.
+
+•Designers: Combine the visual power of WordPress blocks with the customizable styling of Bootstrap. SystemPress supports your creative vision with reusable patterns, Bootswatch-inspired themes, and robust design options.
+
+* Learn and Grow with SystemPress *
+
+New to block themes? SystemPress is a great starting point for learning how WordPress themes work. Browse the SystemPress codebase to discover how filters and functions extend WordPress’s core functionality. Use the many documented examples to build your own functions or child themes and start crafting truly unique experiences. SystemPress is not just a theme—it’s a resource for your WordPress journey.
+
+* Get Started Today! *
+
+Whether you’re building your first blog, launching a business site, or crafting a complex web application, SystemPress gives you the tools to make it happen. It’s not just a WordPress theme—it’s your complete solution for modern, responsive, and accessible web design.
+
+Make SystemPress the foundation for your next project and experience the future of WordPress today.
+
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 8.0
+Version: 1.4.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: systempress
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/

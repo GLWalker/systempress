@@ -1,0 +1,53 @@
+.alert .is-layout-flow {
+  margin-block-start: 0;
+}
+
+.alert {
+  --bs-alert-padding-x: var(--wp--preset--spacing--30);
+  --bs-alert-padding-y: var(--wp--preset--spacing--30);
+  --bs-alert-margin-bottom: var(--wp--preset--spacing--30);
+  --bs-alert-border-color: var(--bs-border);
+  --bs-alert-border: var(--bs-border-width) solid var(--bs-alert-border-color);
+  --bs-alert-border-radius: var(--bs-border-radius);
+  --bs-alert-box-shadow: var(--bs-box-shadow-sm);
+
+  position: relative;
+  padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+  margin-bottom: var(--bs-alert-margin-bottom);
+  border: var(--bs-alert-border);
+  border-radius: var(--bs-alert-border-radius);
+  box-shadow: var(--bs-alert-box-shadow);
+
+}
+
+.alert>hr {
+  border-color: inherit;
+  border-top: 0;
+
+}
+
+.alert>p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.alert-heading {
+  font-weight: calc(var(--bs-body-font-weight) + 100);
+}
+
+.alert a,
+.alert-link {
+  font-weight: calc(var(--bs-body-font-weight) + 100);
+}
+
+.alert-dismissible {
+  padding-right: 3rem;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem !important;
+}

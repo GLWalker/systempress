@@ -1,0 +1,107 @@
+.input-group .is-layout-flow {
+  margin-block-start: 0;
+}
+
+.input-group>.btn {
+  margin-block-start: 0;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group>.form-control,
+.input-group>.form-select,
+.input-group>.form-floating {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.input-group>.form-control:focus,
+.input-group>.form-select:focus,
+.input-group>.form-floating:focus-within {
+  z-index: 5;
+}
+
+.input-group .btn:not(.wp-block-button) {
+  position: relative;
+  z-index: 2;
+}
+
+.input-group .btn:not(.wp-block-button):focus {
+  z-index: 5;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: var(--bs-sp-spacing-y) var(--bs-sp-spacing-x);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--bs-tertiary-bg);
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
+
+.input-group-lg>.form-control,
+.input-group-lg>.form-select,
+.input-group-lg>.input-group-text,
+.input-group-lg>.btn:not(.wp-block-button) {
+  padding: calc(var(--bs-sp-spacing-y) * 1.25) calc(var(--bs-sp-spacing-x) * .75);
+  font-size: var(--wp--preset--font-size--large);
+  border-radius: var(--bs-border-radius-lg);
+  line-height: 1.6;
+}
+
+.input-group-sm>.form-control,
+.input-group-sm>.form-select,
+.input-group-sm>.input-group-text,
+.input-group-sm>.btn:not(.wp-block-button) {
+  padding: calc(var(--bs-sp-spacing-y) * .75) calc(var(--bs-sp-spacing-x) * .75);
+  font-size: var(--wp--preset--font-size--x-small);
+  border-radius: var(--bs-border-radius-sm);
+  line-height: 1.4;
+}
+
+.input-group-lg>.form-select,
+.input-group-sm>.form-select {
+  padding-right: 3rem;
+}
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group.has-validation>:nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group.has-validation>.dropdown-toggle:nth-last-child(n+4),
+.input-group.has-validation>.form-floating:nth-last-child(n+3)>.form-control,
+.input-group.has-validation>.form-floating:nth-last-child(n+3)>.form-select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: calc(var(--bs-border-width) * -1);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group>.form-floating:not(:first-child)>.form-control,
+.input-group>.form-floating:not(:first-child)>.form-select {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

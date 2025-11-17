@@ -1,0 +1,6 @@
+  @media (max-width:991.98px) {
+    .table-responsive-lg {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch
+    }
+  }

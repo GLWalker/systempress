@@ -1,0 +1,202 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "United",
+	"settings": {
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-border-width": "1px",
+			"bs-border-style": "solid",
+			"bs-border-radius": "0.5rem",
+			"bs-border-radius-sm": "0.375rem",
+			"bs-border-radius-lg": "0.7rem",
+			"bs-border-radius-xl": "1rem",
+			"bs-border-radius-xxl": "2rem",
+			"bs-sp-spacing-x": "0.75rem",
+			"bs-sp-spacing-y": "0.375rem",
+			"bs-heading-color": "var(--wp--preset--color--contrast)",
+			"bs-dm-heading-color": "inherit",
+			"bs-btn-font-weight": "400",
+			"bs-btn-line-height": "1.5",
+			"bs-btn-border-width:": "var(--bs-border-width)",
+			"bs-btn-radius": "var(--bs-border-radius)",
+			"bs-btn-radius-sm": "var(--bs-border-radius-sm)",
+			"bs-btn-radius-lg": "var(--bs-border-radius-lg)"
+		},
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#A62B0C",
+						"#F3F0E7"
+					],
+					"slug": "duotone-1",
+					"name": "Dark rust to beige"
+				}
+			],
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#333333",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "rgba(51, 51, 51, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(51, 51, 51, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#e95420",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#aea79f",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#38b44a",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#17a2b8",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#efb73e",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#df382c",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#772953",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#fbddd2",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#efedec",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d7f0db",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#d1ecf1",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fcf1d8",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#f9d7d5",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Ubuntu",
+					"slug": "ubuntu",
+					"fontFace": [
+						{
+							"fontFamily": "Ubuntu",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/ubuntu/ubuntu_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/ubuntu/ubuntu_normal_700.ttf"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Ubuntu, -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+					"name": "Bootstrap Monospace Stack",
+					"slug": "bs-monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": ".badge.bg-light {\n  color: #333;\n}\n.wp-block-table.table-dark > table,\n.table-dark:not(.wp-block-table) {\n   --bs-table-color: #fff;\n  --bs-table-bg: #772953;\n  --bs-table-border-color: #925475;\n  --bs-table-striped-bg: #7e345c;\n  --bs-table-striped-color: #fff;\n  --bs-table-active-bg: #853e64;\n  --bs-table-active-color: #fff;\n  --bs-table-hover-bg: #813960;\n  --bs-table-hover-color: #fff;\n  }"
+	}
+}

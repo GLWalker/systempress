@@ -1,0 +1,38 @@
+@media (min-width:992px) {
+
+    .align-lg-baseline {
+        vertical-align: baseline !important;
+    }
+
+    .align-lg-top {
+        vertical-align: top !important;
+    }
+
+    .align-lg-middle {
+        vertical-align: middle !important;
+    }
+
+    .align-lg-bottom {
+        vertical-align: bottom !important;
+    }
+
+    .align-lg-text-bottom {
+        vertical-align: text-bottom !important;
+    }
+
+    .align-lg-text-top {
+        vertical-align: text-top !important;
+    }
+
+    .float-lg-start {
+        float: left !important;
+    }
+
+    .float-lg-end {
+        float: right !important;
+    }
+
+    .float-lg-none {
+        float: none !important;
+    }
+}

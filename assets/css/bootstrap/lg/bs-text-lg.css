@@ -1,0 +1,57 @@
+@media (min-width:992px) {
+
+    .text-lg-start {
+        text-align: left !important;
+    }
+
+    .text-lg-end {
+        text-align: right !important;
+    }
+
+    .text-lg-center {
+        text-align: center !important;
+    }
+
+    .text-lg-decoration-none {
+        text-decoration: none !important;
+    }
+
+    .text-lg-decoration-underline {
+        text-decoration: underline !important;
+    }
+
+    .text-lg-decoration-line-through {
+        text-decoration: line-through !important;
+    }
+
+    .text-lg-lowercase {
+        text-transform: lowercase !important;
+    }
+
+    .text-lg-uppercase {
+        text-transform: uppercase !important;
+    }
+
+    .text-lg-capitalize {
+        text-transform: capitalize !important;
+    }
+
+    .text-lg-wrap {
+        white-space: normal !important;
+    }
+
+    .text-lg-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .text-lg-break {
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+    }
+
+    .text-lg-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

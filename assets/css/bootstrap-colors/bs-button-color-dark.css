@@ -1,0 +1,70 @@
+.btn.btn-dark,
+.wp-block-button__link.has-bs-dark-background-color,
+.wp-element-button.has-bs-dark-background-color {
+  --bs-btn-bg: var(--bs-dark);
+  --bs-btn-border-color: var(--bs-dark-border-color);
+  --bs-btn-color: var(--bs-dark-text);
+}
+
+.btn.btn-outline-dark,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color {
+  --bs-btn-border-color: var(--bs-dark);
+  --bs-btn-color: var(--bs-dark);
+}
+
+.btn.btn-outline-dark:hover,
+.btn.btn-outline-dark:active,
+.btn.btn-outline-dark.active,
+.btn.btn-outline-dark.show,
+.btn.btn-outline-dark:focus-visible,
+
+.btn.btn-dark:hover,
+.btn.btn-dark:active,
+.btn.btn-dark.active,
+.btn.btn-dark.show,
+.btn.btn-dark:focus-visible,
+
+.wp-block-button__link.has-bs-dark-background-color:hover,
+.wp-block-button__link.has-bs-dark-background-color:active,
+.wp-block-button__link.has-bs-dark-background-color.active,
+.wp-block-button__link.has-bs-dark-background-color.show,
+.wp-block-button__link.has-bs-dark-background-color:focus-visible,
+.wp-element-button.has-bs-dark-background-color:hover,
+.wp-element-button.has-bs-dark-background-color:active,
+.wp-element-button.has-bs-dark-background-color.active,
+.wp-element-button.has-bs-dark-background-color.show,
+.wp-element-button.has-bs-dark-background-color:focus-visible,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:hover,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color.active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color.show,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:focus-visible,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:hover,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color.active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color.show,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:focus-visible {
+  --bs-btn-focus-shadow-rgb: var(--bs-dark-shadow-rgb);
+  --bs-btn-hover-bg: var(--bs-dark-hover-bg);
+  --bs-btn-hover-border-color: var(--bs-dark-hover-border-color);
+  --bs-btn-color: var(--bs-dark-text);
+}
+
+.btn.btn-outline-dark:hover,
+.btn.btn-outline-dark:active,
+.btn.btn-outline-dark.active,
+.btn.btn-outline-dark.show,
+.btn.btn-outline-dark:focus-visible,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:hover,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color.active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color.show,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-dark-color:focus-visible,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:hover,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color.active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color.show,
+[class*="is-style-outline"]>.wp-element-button.has-bs-dark-color:focus-visible {
+  --bs-btn-hover-bg: var(--bs-dark);
+}

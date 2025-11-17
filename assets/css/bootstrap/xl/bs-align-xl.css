@@ -1,0 +1,38 @@
+@media (min-width:1200px) {
+
+    .align-xl-baseline {
+        vertical-align: baseline !important;
+    }
+
+    .align-xl-top {
+        vertical-align: top !important;
+    }
+
+    .align-xl-middle {
+        vertical-align: middle !important;
+    }
+
+    .align-xl-bottom {
+        vertical-align: bottom !important;
+    }
+
+    .align-xl-text-bottom {
+        vertical-align: text-bottom !important;
+    }
+
+    .align-xl-text-top {
+        vertical-align: text-top !important;
+    }
+
+    .float-xl-start {
+        float: left !important;
+    }
+
+    .float-xl-end {
+        float: right !important;
+    }
+
+    .float-xl-none {
+        float: none !important;
+    }
+}

@@ -1,0 +1,498 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Quartz",
+	"settings": {
+		"appearanceTools": true,
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-border-width": "1px",
+			"bs-border-style": "solid",
+			"bs-border-radius": "0.5rem",
+			"bs-border-radius-sm": "0.6rem",
+			"bs-border-radius-lg": "0.7rem",
+			"bs-border-radius-xl": "1rem",
+			"bs-border-radius-xxl": "2rem",
+			"bs-sp-spacing-x": "1.25rem",
+			"bs-sp-spacing-y": "0.75rem",
+			"bs-heading-color": "#fefefe",
+			"bs-dm-heading-color": "inherit",
+			"bs-link-color": "var(--bs-lighter-text)",
+			"bs-code-color": "#e83288",
+			"bs-highlight-color": "#fff3ce",
+			"bs-highlight-bg": "#fff3ee",
+			"bs-alert-bg": "transparent",
+			"bs-alert-background-image": "var(--wp--preset--gradient--element)",
+			"bs-alert-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-accordion-bg": "transparent",
+			"bs-accordion-btn-bg": "rgba(255, 255, 255, 0.4)",
+			"bs-accordion-active-color": "var(--bs-white)",
+			"bs-accordion-active-bg": "var(--bs-primary)",
+			"bs-accordion-btn-focus-border-color": "transparent",
+			"bs-accordion-btn-focus-box-shadow": "var(--bs-box-shadow-button-focus)",
+			"bs-accordion-background-image": "var(--wp--preset--gradient--element)",
+			"bs-accordion-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-card-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-card-cap-bg": "transparent",
+			"bs-card-bg": "transparent",
+			"bs-card-background-image": "var(--wp--preset--gradient--element)",
+			"bs-dropdown-bg": "rgba(255, 255, 255, 0.4)",
+			"bs-dropdown-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-dropdown-background-image": "var(--wp--preset--gradient--element)",
+			"bs-form-control-shadow": "var(--bs-box-shadow-inset)",
+			"bs-list-group-bg": "transparent",
+			"bs-list-group-action-hover-bg": "rgba(255, 255, 255, 0.4)",
+			"bs-list-group-background-image": "var(--wp--preset--gradient--element)",
+			"bs-list-group-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-modal-bg": "transparent",
+			"bs-modal-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-modal-background-image": "var(--wp--preset--gradient--element)",
+			"bs-nav-link-hover-color": "#ffffff",
+			"bs-nav-tabs-border-color": "transparent",
+			"bs-nav-tabs-link-hover-border-color": "transparent",
+			"bs-nav-tabs-link-active-color": "var(--bs-dark)",
+			"bs-nav-tabs-link-active-bg": "transparent",
+			"bs-nav-tabs-link-active-border-color": "transparent",
+			"bs-nav-tabs-link-active-background-image": "linear-gradient(125deg, white, rgba(255, 255, 255, 0.9) 70%)",
+			"bs-nav-tabs-link-active-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-offcanvas-bg": "transparent",
+			"bs-offcanvas-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-offcanvas-background-image": "var(--wp--preset--gradient--element)",
+			"bs-pagination-bg": "rgba(255, 255, 255, 0.3)",
+			"bs-pagination-border-color": "rgba(255, 255, 255, 0.1)",
+			"bs-pagination-hover-bg": "rgba(255, 255, 255, 0.2)",
+			"bs-pagination-hover-border-color": "rgba(255, 255, 255, 0.3)",
+			"bs-pagination-background-image": "var(--wp--preset--gradient--element)",
+			"bs-popover-bg": "transparent",
+			"bs-popover-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-popover-header-bg": "transparent",
+			"bs-popover-background-image": "var(--wp--preset--gradient--element)",
+			"bs-table-color": "var(--bs-black)",
+			"bs-table-active-color": "var(--bs-black)",
+			"bs-table-hover-color": "var(--bs-black)",
+			"bs-toast-bg": "transparent",
+			"bs-toast-box-shadow": "var(--wp--preset--shadow--theme)",
+			"bs-toast-header-bg": "transparent",
+			"bs-toast-background-image": "var(--wp--preset--gradient--element)"
+		},
+		"color": {
+			"gradients": [
+				{
+					"slug": "body",
+					"gradient": "linear-gradient(to right,  #33b7e2 0%,#5e62b0 50%,#dc307c 100%)",
+					"name": "Body Background"
+				},
+				{
+					"slug": "element",
+					"gradient": "linear-gradient(135deg, rgba(255,255,255, 0.3) 0%,rgba(255,255,255,0.2) 100%)",
+					"name": "Element Background"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"gradient": "linear-gradient(rgba(var(--bs-primary-shadow-rgb),0.7), var(--bs-primary) 60%, rgba(var(--bs-primary-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Primary Hover",
+					"slug": "primary-hover",
+					"gradient": "linear-gradient(var(--bs-primary), var(--bs-primary-hover-border-color) 60%, var(--bs-primary-hover-bg))"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"gradient": "linear-gradient(  rgba(var(--bs-secondary-shadow-rgb),0.7), var(--bs-secondary) 60%, rgba(var(--bs-secondary-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Secondary Hover",
+					"slug": "secondary-hover",
+					"gradient": "linear-gradient(var(--bs-secondary), var(--bs-secondary-hover-border-color) 60%, var(--bs-secondary-hover-bg))"
+				},
+				{
+					"name": "Success",
+					"slug": "success",
+					"gradient": "linear-gradient(  rgba(var(--bs-success-shadow-rgb),0.7), var(--bs-success) 60%, rgba(var(--bs-success-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Success Hover",
+					"slug": "success-hover",
+					"gradient": "linear-gradient(var(--bs-success), var(--bs-success-hover-border-color) 60%, var(--bs-success-hover-bg))"
+				},
+				{
+					"name": "Info",
+					"slug": "info",
+					"gradient": "linear-gradient(  rgba(var(--bs-info-shadow-rgb),0.7), var(--bs-info) 60%, rgba(var(--bs-info-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Info Hover",
+					"slug": "info-hover",
+					"gradient": "linear-gradient(var(--bs-info), var(--bs-info-hover-border-color) 60%, var(--bs-info-hover-bg))"
+				},
+				{
+					"name": "Warning",
+					"slug": "warning",
+					"gradient": "linear-gradient(  rgba(var(--bs-warning-shadow-rgb),0.7), var(--bs-warning) 60%, rgba(var(--bs-warning-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Warning Hover",
+					"slug": "warning-hover",
+					"gradient": "linear-gradient(var(--bs-warning), var(--bs-warning-hover-border-color) 60%, var(--bs-warning-hover-bg))"
+				},
+				{
+					"name": "Danger",
+					"slug": "danger",
+					"gradient": "linear-gradient(  rgba(var(--bs-danger-shadow-rgb),0.7), var(--bs-danger) 60%, rgba(var(--bs-danger-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Danger Hover",
+					"slug": "danger-hover",
+					"gradient": "linear-gradient(var(--bs-danger), var(--bs-danger-hover-border-color) 60%, var(--bs-danger-hover-bg))"
+				},
+				{
+					"name": "Light",
+					"slug": "light",
+					"gradient": "linear-gradient(  rgba(var(--bs-light-shadow-rgb),0.7), var(--bs-light) 60%, rgba(var(--bs-light-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Light Hover",
+					"slug": "light-hover",
+					"gradient": "linear-gradient(var(--bs-light), var(--bs-light-hover-border-color) 60%, var(--bs-light-hover-bg))"
+				},
+				{
+					"name": "Dark",
+					"slug": "dark",
+					"gradient": "linear-gradient(  rgba(var(--bs-dark-shadow-rgb),0.7), var(--bs-dark) 60%, rgba(var(--bs-dark-shadow-rgb),0.7))"
+				},
+				{
+					"name": "Dark Hover",
+					"slug": "dark-hover",
+					"gradient": "linear-gradient(var(--bs-dark), var(--bs-dark-hover-border-color) 60%, var(--bs-dark-hover-bg))"
+				}
+			],
+			"palette": [
+				{
+					"color": "#686dc3",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "rgba(255, 255, 255, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#e9e9e8",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(255, 255, 255, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(255, 255, 255, 0.6)",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#e83283",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "rgba(255, 255, 255, 0.4)",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#41d7a7",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#39cbfb",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ffc107",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#fd7e14",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#e9e9e6",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#212529",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#fad6e6",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "rgba(255, 255, 255, 0.88)",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d9f7ed",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#d7f5fe",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fff3cd",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#ffe5d0",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#686dc3",
+						"#ffffff"
+					],
+					"name": "Base to Contrast",
+					"slug": "duotone-1"
+				},
+				{
+					"colors": [
+						"#212529",
+						"#ffffff"
+					],
+					"name": "Contast to Base",
+					"slug": "duotone-11"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#d31f70"
+					],
+					"name": "Base to Accent",
+					"slug": "duotone-2"
+				},
+				{
+					"colors": [
+						"#d31f70",
+						"#686dc3"
+					],
+					"name": "Accent to Base",
+					"slug": "duotone-12"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#e83283"
+					],
+					"name": "Base to Primary",
+					"slug": "duotone-3"
+				},
+				{
+					"colors": [
+						"#e83283",
+						"#686dc3"
+					],
+					"name": "Base to Primary to Base",
+					"slug": "duotone-13"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"rgba(255, 255, 255, 0.4)"
+					],
+					"name": "Base to Secondary",
+					"slug": "duotone-4"
+				},
+				{
+					"colors": [
+						"rgba(255, 255, 255, 0.4)",
+						"#686dc3"
+					],
+					"name": "Secondary to Base",
+					"slug": "duotone-14"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#41d7a7"
+					],
+					"name": "Base to Success",
+					"slug": "duotone-5"
+				},
+				{
+					"colors": [
+						"#41d7a7",
+						"#686dc3"
+					],
+					"name": "Success to Base",
+					"slug": "duotone-15"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#39cbfb"
+					],
+					"name": "Base to Info",
+					"slug": "duotone-6"
+				},
+				{
+					"colors": [
+						"#39cbfb",
+						"#686dc3"
+					],
+					"name": "Info to Base",
+					"slug": "duotone-16"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#ffc107"
+					],
+					"name": "Base to Warning",
+					"slug": "duotone-7"
+				},
+				{
+					"colors": [
+						"#ffc107",
+						"#686dc3"
+					],
+					"name": "Warning to Base",
+					"slug": "duotone-17"
+				},
+				{
+					"colors": [
+						"#686dc3",
+						"#fd7e14"
+					],
+					"name": "Base to Danger",
+					"slug": "duotone-8"
+				},
+				{
+					"colors": [
+						"#fd7e14",
+						"#686dc3"
+					],
+					"name": "Danger to Base",
+					"slug": "duotone-18"
+				},
+				{
+					"colors": [
+						"#e9e9e6",
+						"#212529"
+					],
+					"name": "Light to Dark",
+					"slug": "duotone-9"
+				},
+				{
+					"colors": [
+						"#212529",
+						"#e9e9e6"
+					],
+					"name": "Dark to Light",
+					"slug": "duotone-10"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"shadow": "0 1px 1px rgba(0, 0, 0, 0.1)",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium",
+					"shadow": "1px 3px 24px -1px rgba(0, 0, 0, 0.15)",
+					"slug": "md"
+				},
+				{
+					"name": "Large",
+					"shadow": "0 1rem 3rem rgba(0, 0, 0, 0.175)",
+					"slug": "lg"
+				},
+				{
+					"name": "Inset",
+					"shadow": "inset 0 1px 2px rgba(0, 0, 0, 0.075)",
+					"slug": "inset"
+				},
+				{
+					"name": "Button",
+					"shadow": "1px 3px 24px -1px rgba(0, 0, 0, 0.15)",
+					"slug": "button"
+				},
+				{
+					"name": "Button Focus",
+					"shadow": "0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5)",
+					"slug": "button-focus"
+				},
+				{
+					"name": "Button Active",
+					"shadow": "inset 0 3px 5px rgba(0, 0, 0, 0.125)",
+					"slug": "button-active"
+				},
+				{
+					"name": "Theme",
+					"shadow": "inset 1px 1px rgba(255, 255, 255, 0.2), inset -1px -1px rgba(255, 255, 255, 0.1), 1px 3px 24px -1px rgba(0, 0, 0, 0.15)",
+					"slug": "theme"
+				},
+				{
+					"name": "Form Focus",
+					"shadow": "0 0 0 0.25rem rgba(var(--bs-light-rgb), 0.25)",
+					"slug": "form-focus"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": "body {\n  background-image: var(--wp--preset--gradient--body);\n}\n body, [data-bs-theme=light] {\n  --bs-secondary-text: var(--bs-white);\n  --bs-success-text: var(--bs-white);\n  --bs-info-text: var(--bs-white);\n  --bs-warning-text: var(--bs-white);\n}\n.bg-body-secondary,\n.has-bs-secondary-bg-background-color,\n.nav-tabs .nav-item .nav-link.active,\n.nav-tabs .nav-item.show .nav-link,\n.accordion-item,\n.alert,\n/*\n.card,\n.dropdown-menu,\n.list-group-item,\n*/\n.modal-content,\n.toast,\n.popover,\n.tooltip,\n.offcanvas {\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n}\n\n.card > .list-group:not([class*=\"list-group-item-\"]) ~ li,\n.card > .list-group:not([class*=\"list-group-item-\"]) > .list-group-item:where(:not([class*=\"list-group-item-\"])),\n.card > .list-group:not([class*=\"list-group-item-\"]) > .list-group-item.list-group-item-action:not([class*=\"-primary\"]):not([class*=\"-secondary\"]):not([class*=\"-success\"]):not([class*=\"-info\"]):not([class*=\"-warning\"]):not([class*=\"-danger\"]):not([class*=\"-light\"]):not([class*=\"-dark\"]) {\n  --bs-list-group-background-image: none;\n  --bs-list-group-bg: none;\n  -webkit-backdrop-filter: none;\n  backdrop-filter: none;\n}\n.list-group-item[class*=\"-primary\"],\n.list-group-item[class*=\"-secondary\"],\n.list-group-item[class*=\"-success\"],\n.list-group-item[class*=\"-info\"],\n.list-group-item[class*=\"-warning\"],\n.list-group-item[class*=\"-danger\"],\n.list-group-item[class*=\"-light\"],\n.list-group-item[class*=\"-dark\"],\n.list-group[class*=\"-primary\"] li,\n.list-group[class*=\"-secondary\"] li,\n.list-group[class*=\"-success\"] li,\n.list-group[class*=\"-info\"] li,\n.list-group[class*=\"-warning\"] li,\n.list-group[class*=\"-danger\"] li,\n.list-group[class*=\"-light\"] li,\n.list-group[class*=\"-dark\"] li {\n  --bs-list-group-background-image: none;\n}\n.list-group-item.active {\n  -webkit-backdrop-filter: none;\n  backdrop-filter: none;\n}\n.wp-block-quote:not(.has-background) {\nbackground-image: var(--wp--preset--gradient--element);\n}\n.wp-block-quote:not(.has-background),\n.bg-body-secondary,\n.has-bs-secondary-bg-background-color {\n  background-color: rgba(255, 255, 255, 0.3) !important;\n}\n.alert {\n  position: relative;\n  overflow: hidden;\n}\n.alert::after {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 0.5rem;\n  height: 100%;\n  content: \"\";\n  background-color: var(--bs-primary);\n}\n.alert-primary {\n  border: none;\n  background-color:rgba(var(--bs-primary-bg-subtle-rgb), 0.3);\n}\n.alert-primary::after {\n  background-color: var(--bs-primary);\n}\n.alert-secondary {\n  border: none;\n  color: var(--bs-dark);\n  background-color: rgba(var(--bs-secondary-bg-subtle-rgb), 0.3);\n}\n.alert-secondary::after {\n  background-color: var(--bs-secondary);\n}\n.alert-success {\n  border: none;\n  background-color:rgba(var(--bs-success-bg-subtle-rgb), 0.3);\n}\n.alert-success::after {\n  background-color: var(--bs-success);\n}\n.alert-info {\n  border: none;\n  background-color:rgba(var(--bs-info-bg-subtle-rgb), 0.3);\n}\n.alert-info::after {\n  background-color: var(--bs-info);\n}\n.alert-warning {\n  border: none;\n  background-color:rgba(var(--bs-warning-bg-subtle-rgb), 0.3);\n}\n.alert-warning::after {\n  background-color: var(--bs-warning);\n}\n.alert-danger {\n  border: none;\n  background-color:rgba(var(--bs-danger-bg-subtle-rgb), 0.3);\n}\n.alert-danger::after {\n  background-color: var(--bs-danger);\n}\n.alert-light {\n  border: none;\n  color: var(--bs-dark);\n  background-color:rgba(var(--bs-light-bg-subtle-rgb), 0.3);\n}\n.alert-light::after {\n  background-color: var(--bs-light);\n}\n.alert-dark {\n  border: none;\n  background-color:rgba(var(--bs-dark-bg-subtle-rgb), 0.3);\n}\n.alert-dark::after {\n  background-color: var(--bs-dark);\n}\n.badge.text-bg-light, .badge.bg-light, .badge.has-bs-light-background-color {\n  color: var(--bs-dark) !important;\n}\np.btn-close,\n.btn-close {\n  --bs-btn-close-color: #fff !important;\n  --bs-btn-close-bg: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e\") !important;\n}\n.card.bg-light .card-header,\n.card.bg-light .card-body {\n  color: var(--bs-dark) !important;\n}\n.card.bg-primary,\n.card.bg-success,\n.card.bg-info,\n.card.bg-warning,\n.card.bg-danger,\n.card.bg-light,\n.card.bg-dark {\n  background-image: none !important;\n}\n.form-control::-webkit-file-upload-button {\n  background-color: transparent;\n  background-image: var(--wp--preset--gradient--element);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n  border: none;\n}\n.form-control::file-selector-button {\n  background-color: transparent;\n  background-image: var(--wp--preset--gradient--element);\n  -webkit-backdrop-filter: blur(5px);\n  backdrop-filter: blur(5px);\n  border: none;\n}\n.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {\n  background-color: rgba(255, 255, 255, 0.1);\n}\n.form-control:hover:not(:disabled):not([readonly])::file-selector-button {\n  background-color: rgba(255, 255, 255, 0.1);\n}\n.input-group-text {\n  background-color: transparent;\n  background-image: var(--wp--preset--gradient--element);\n  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2), inset -1px -1px rgba(255, 255, 255, 0.1);\n}\n.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),\n.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {\n  border-right: none;\n}\n.form-select:not([multiple]) {\n  transition: border-color 0.15s ease-in-out;\n}\n.form-select:not([multiple]) option {\n  color: #000;\n}\n.text-bg-light .form-control, .bg-light .form-control, .has-bs-light-background-color .form-control {\n  color: #343a40;\n  border-color: rgba(0, 0, 0, 0.2) !important;\n}\n.text-bg-light .form-control::-moz-placeholder, .bg-light .form-control::-moz-placeholder, .has-bs-light-background-color .form-control::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.2) !important;\n}\n.text-bg-light .form-control::placeholder, .bg-light .form-control::placeholder, .has-bs-light-background-color .form-control::placeholder {\n  color: rgba(0, 0, 0, 0.2) !important;\n}\n.list-group-item-action.active {\n  background-color: var(--bs-list-group-active-bg) !important;\n}\n.nav-tabs .nav-item .nav-link.active a,\n.nav-tabs .nav-item.show .nav-link a {\n  color: #fff;\n}\n.nav-tabs .nav-item .nav-link.active .text-muted,\n.nav-tabs .nav-item.show .nav-link .text-muted {\n  color: rgba(255, 255, 255, 0.7) !important;\n}\n.nav-tabs .nav-item .nav-link.active:hover, .nav-tabs .nav-item .nav-link.active:focus,\n.nav-tabs .nav-item.show .nav-link:hover,\n.nav-tabs .nav-item.show .nav-link:focus {\n  color: #343a40;\n}\n.nav-tabs .dropdown-menu {\n  border-radius: 0.5rem;\n}\n.nav-pills .nav-link {\n  transition: none;\n  border-radius: var(--bs-border-radius-pill) !important;\n}\n.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {\n  color: #fff;\n  isolation: auto;\n}\n.nav-tabs .nav-link {\n  transition: none;\n  border-radius: 0;\n}\n.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {\n  isolation: auto;\n  color: #ffffff;\n}\n.nav-tabs .nav-link, .nav-tabs .nav-link.disabled {\n  background-color: rgba(0, 0, 0, 0.2) !important;\n}\n.nav-tabs .nav-item:first-child > .nav-link {\n  border-radius: 0.5rem 0 0 0.5rem !important;\n}\n.nav-tabs .nav-item:last-child > .nav-link {\n  border-radius: 0 0.5rem 0.5rem 0 !important;\n}\n.nav-tabs .nav-item .nav-link.active,\n.nav-tabs .nav-item.show .nav-link {\n  transform: scale(1.1);\n  border-radius: 0.5rem !important;\n}\n.wp-block-table.table-primary > table,\n.table-primary:not(.wp-block-table) {\n  --bs-table-color: var(--bs-primary-text);\n  --bs-table-bg: var(--bs-primary);\n  --bs-table-hover-color: var(--bs-primary-text);\n}\n.wp-block-table.table-secondary > table,\n.table-secondary:not(.wp-block-table) {\n  --bs-table-color: var(--bs-secondary-text);\n  --bs-table-bg: var(--bs-secondary);\n  --bs-table-hover-color: var(--bs-secondary-text);\n}\n.wp-block-table.table-success > table,\n.table-success:not(.wp-block-table) {\n  --bs-table-color: var(--bs-success-text);\n  --bs-table-bg: var(--bs-success);\n  --bs-table-hover-color: var(--bs-success-text);\n}\n.wp-block-table.table-info > table,\n.table-info:not(.wp-block-table) {\n  --bs-table-color: var(--bs-info-text);\n  --bs-table-bg: var(--bs-info);\n  --bs-table-hover-color: var(--bs-info-text);\n}\n.wp-block-table.table-warning > table,\n.table-warning:not(.wp-block-table) {\n  --bs-table-color: var(--bs-warning-text);\n  --bs-table-bg: var(--bs-warning);\n  --bs-table-hover-color: var(--bs-warning-text);\n}\n.wp-block-table.table-danger > table,\n.table-danger:not(.wp-block-table) {\n  --bs-table-color: var(--bs-danger-text);\n  --bs-table-bg: var(--bs-danger);\n  --bs-table-hover-color: var(--bs-danger-text);\n}\n.wp-block-table.table-light > table,\n.table-light:not(.wp-block-table) {\n  --bs-table-color: var(--bs-light-text);\n  --bs-table-bg: var(--bs-light);\n  --bs-table-hover-color: var(--bs-light-text);\n}\n.wp-block-table.table-dark > table,\n.table-dark:not(.wp-block-table) {\n  --bs-table-color: var(--bs-dark-text);\n  --bs-table-bg: var(--bs-dark);\n  --bs-table-hover-color: var(--bs-dark-text);\n}\n.text-muted {\n  color: rgba(255, 255, 255, 0.5) !important;\n}\n"
+	}
+}

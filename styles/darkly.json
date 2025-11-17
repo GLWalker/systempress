@@ -1,0 +1,234 @@
+{
+    "version": 2,
+    "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+    "title": "Darkly",
+    "settings": {
+        "custom": {
+            "sp-replace-string": "all",
+            "bs-html-text-shadow": "none",
+            "bs-body-color-text-shadow": "none",
+            "bs-body-bg-text-shadow": "none",
+            "bs-secondary-color-text-shadow": "none",
+            "bs-secondary-bg-text-shadow": "none",
+            "bs-tertiary-color-text-shadow": "var(--bs-light-textshadow)",
+            "bs-tertiary-bg-text-shadow": "none",
+            "bs-heading-text-shadow": "none",
+            "bs-display-text-shadow": "none",
+            "bs-single-title-text-shadow": "none",
+            "bs-heading-color": "inherit",
+            "bs-dm-heading-color": "inherit",
+            "bs-link-color": "var(--bs-success)",
+            "bs-code-color": "#e83e8c",
+            "bs-highlight-color": "#212524",
+            "bs-highlight-bg": "#fdebd0",
+            "bs-accordion-active-bg": "var(--bs-primary-bg-subtle)",
+            "bs-breadcrumb-bg": "var(--bs-secondary)",
+            "bs-breadcrumb-divider-color": "var(--bs-lighter-text)",
+            "bs-breadcrumb-item-active-color": "var(--bs-lighter-text)",
+            "bs-card-color": "var(--bs-lighter-text)",
+            "bs-card-bg": "var(--bs-dark)",
+            "bs-dropdown-link-hover-bg": "var(--bs-primary)",
+            "bs-dropdown-border-color": "var(--bs-border-color)",
+            "bs-list-group-bg": "var(--bs-dark)",
+            "bs-list-group-action-hover-bg": "var(--bs-secondary)",
+            "bs-pagination-color": "var(--bs-lighter-text)",
+            "bs-pagination-bg": "var(--bs-success)",
+            "bs-pagination-border-color": "var(--bs-success-border-color)",
+            "bs-pagination-hover-color": "var(--bs-lighter-text)",
+            "bs-pagination-hover-bg": "rgb(var(--bs-success-shadow-rgb))",
+            "bs-pagination-hover-border-color": "var(--bs-success-border-color)",
+            "bs-pagination-active-color": "var(--bs-lighter-text)",
+            "bs-pagination-active-bg": "rgb(var(--bs-success-shadow-rgb))",
+            "bs-pagination-active-border-color": "var(--bs-success-border-color)",
+            "bs-progress-bg": "var(--bs-secondary)",
+            "bs-popover-header-bg": "var(--bs-secondary)",
+            "bs-popover-bg": "var(--bs-dark)",
+            "bs-nav-tabs-link-active-color": "var(--bs-lighter-text)",
+            "bs-toast-bg": "var(--bs-secondary)",
+            "bs-toast-header-bg": "var(--bs-dark)"
+        },
+        "color": {
+            "palette": [
+                {
+                    "color": "#222222",
+                    "name": "Base",
+                    "slug": "base"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "Contrast",
+                    "slug": "contrast"
+                },
+                {
+                    "color": "rgba(33, 37, 41, 0.75)",
+                    "name": "Secondary Element BG",
+                    "slug": "bs-secondary-bg"
+                },
+                {
+                    "color": "#e9ecef",
+                    "name": "Secondary Element Text",
+                    "slug": "bs-secondary-color"
+                },
+                {
+                    "color": "rgba(33, 37, 41, 0.5)",
+                    "name": "Tertiary Element BG",
+                    "slug": "bs-tertiary-bg"
+                },
+                {
+                    "color": "#f8f9fa",
+                    "name": "Tertiary Element Text",
+                    "slug": "bs-tertiary-color"
+                },
+                {
+                    "color": "rgb(68, 68, 68)",
+                    "name": "Border Color",
+                    "slug": "bs-border-color"
+                },
+                {
+                    "color": "#375a7f",
+                    "name": "Primary",
+                    "slug": "bs-primary"
+                },
+                {
+                    "color": "#444444",
+                    "name": "Secondary",
+                    "slug": "bs-secondary"
+                },
+                {
+                    "color": "#00bc8c",
+                    "name": "Success",
+                    "slug": "bs-success"
+                },
+                {
+                    "color": "#3498db",
+                    "name": "Info",
+                    "slug": "bs-info"
+                },
+                {
+                    "color": "#f39c12",
+                    "name": "Warning",
+                    "slug": "bs-warning"
+                },
+                {
+                    "color": "#e74c3c",
+                    "name": "Danger",
+                    "slug": "bs-danger"
+                },
+                {
+                    "color": "#adb5bd",
+                    "name": "Light",
+                    "slug": "bs-light"
+                },
+                {
+                    "color": "#303030",
+                    "name": "Dark",
+                    "slug": "bs-dark"
+                },
+                {
+                    "color": "#d7dee5",
+                    "name": "Primary Subtle",
+                    "slug": "bs-primary-bg-subtle"
+                },
+                {
+                    "color": "#dadada",
+                    "name": "Secondary Subtle",
+                    "slug": "bs-secondary-bg-subtle"
+                },
+                {
+                    "color": "#ccf2e8",
+                    "name": "Success Subtle",
+                    "slug": "bs-success-bg-subtle"
+                },
+                {
+                    "color": "#d6eaf8",
+                    "name": "Info Subtle",
+                    "slug": "bs-info-bg-subtle"
+                },
+                {
+                    "color": "#fdebd0",
+                    "name": "Warning Subtle",
+                    "slug": "bs-warning-bg-subtle"
+                },
+                {
+                    "color": "#fadbd8",
+                    "name": "Danger Subtle",
+                    "slug": "bs-danger-bg-subtle"
+                },
+                {
+                    "color": "#fcfcfd",
+                    "name": "Light Subtle",
+                    "slug": "bs-light-bg-subtle"
+                },
+                {
+                    "color": "#ced4da",
+                    "name": "Dark Subtle",
+                    "slug": "bs-dark-bg-subtle"
+                },
+                {
+                    "color": "transparent",
+                    "name": "Transparent",
+                    "slug": "transparent"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Lato, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+                    "name": "System",
+                    "slug": "system"
+                },
+                {
+                    "fontFamily": "Lato",
+                    "slug": "lato",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_normal_400.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "italic",
+                            "fontWeight": "400",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_italic_400.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_normal_700.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Lato",
+                            "fontStyle": "italic",
+                            "fontWeight": "700",
+                            "fontDisplay": "swap",
+                            "src": [
+                                "file:./assets/fonts/lato/lato_italic_700.ttf"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+                    "name": "Monospace",
+                    "slug": "bs-monospace"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "css": "* {\n  --bs-lighter-text: var(--bs-white) !important;\n  --bs-primary-text: var(--bs-lighter-text) !important;\n  --bs-secondary-text: var(--bs-lighter-text) !important;\n  --bs-info-text: var(--bs-lighter-text) !important;\n  --bs-success-text: var(--bs-lighter-text) !important;\n  --bs-warning-text: var(--bs-lighter-text) !important;\n  --bs-danger-text: var(--bs-lighter-text) !important;\n  --bs-light-text: var(--bs-lighter-text) !important;\n}\n\n.alert-primary {\n  --bs-alert-bg: var(--bs-primary) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-secondary {\n  --bs-alert-bg: var(--bs-secondary) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-success {\n  --bs-alert-bg: var(--bs-success) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-info {\n  --bs-alert-bg: var(--bs-info) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-warning {\n  --bs-alert-bg: var(--bs-warning) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-danger {\n  --bs-alert-bg: var(--bs-danger) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-light {\n  --bs-alert-bg: var(--bs-light) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.alert-dark {\n  --bs-alert-bg: var(--bs-dark) !important;\n  --bs-alert-color: var(--bs-lighter-text) !important;\n  --bs-alert-heading-color: var(--bs-lighter-text) !important;\n}\n\n.btn-close {\n  --bs-btn-close-color: #fff !important;\n  --bs-btn-close-bg: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e\") !important;\n}\n.breadcrumb a {\n  color: var(--bs-lighter-text) !important;\n}\n.accordion {\n  --bs-accordion-btn-icon: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e\") !important;\n  --bs-accordion-btn-active-icon: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23162433' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e\") !important;\n}"
+    }
+}

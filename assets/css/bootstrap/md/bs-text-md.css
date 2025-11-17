@@ -1,0 +1,57 @@
+@media (min-width:576px) {
+
+    .text-md-start {
+        text-align: left !important;
+    }
+
+    .text-md-end {
+        text-align: right !important;
+    }
+
+    .text-md-center {
+        text-align: center !important;
+    }
+
+    .text-md-decoration-none {
+        text-decoration: none !important;
+    }
+
+    .text-md-decoration-underline {
+        text-decoration: underline !important;
+    }
+
+    .text-md-decoration-line-through {
+        text-decoration: line-through !important;
+    }
+
+    .text-md-lowercase {
+        text-transform: lowercase !important;
+    }
+
+    .text-md-uppercase {
+        text-transform: uppercase !important;
+    }
+
+    .text-md-capitalize {
+        text-transform: capitalize !important;
+    }
+
+    .text-md-wrap {
+        white-space: normal !important;
+    }
+
+    .text-md-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .text-md-break {
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+    }
+
+    .text-md-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

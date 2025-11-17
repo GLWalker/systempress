@@ -1,0 +1,153 @@
+@media (min-width:1400px) {
+
+    .m-xxl-1 {
+        margin: var(--wp--preset--spacing--10) !important
+    }
+
+    .m-xxl-2 {
+        margin: var(--wp--preset--spacing--20) !important
+    }
+
+    .m-xxl-3 {
+        margin: var(--wp--preset--spacing--30) !important
+    }
+
+    .m-xxl-4 {
+        margin: var(--wp--preset--spacing--40) !important
+    }
+
+    .m-xxl-5 {
+        margin: var(--wp--preset--spacing--50) !important
+    }
+
+    .mx-xxl-1 {
+        margin-right: var(--wp--preset--spacing--10) !important;
+        margin-left: var(--wp--preset--spacing--10) !important
+    }
+
+    .mx-xxl-2 {
+        margin-right: var(--wp--preset--spacing--20) !important;
+        margin-left: var(--wp--preset--spacing--20) !important
+    }
+
+    .mx-xxl-3 {
+        margin-right: var(--wp--preset--spacing--30) !important;
+        margin-left: var(--wp--preset--spacing--30) !important
+    }
+
+    .mx-xxl-4 {
+        margin-right: var(--wp--preset--spacing--40) !important;
+        margin-left: var(--wp--preset--spacing--40) !important
+    }
+
+    .mx-xxl-5 {
+        margin-right: var(--wp--preset--spacing--50) !important;
+        margin-left: var(--wp--preset--spacing--50) !important
+    }
+
+    .my-xxl-1 {
+        margin-top: var(--wp--preset--spacing--10) !important;
+        margin-bottom: var(--wp--preset--spacing--10) !important
+    }
+
+    .my-xxl-2 {
+        margin-top: var(--wp--preset--spacing--20) !important;
+        margin-bottom: var(--wp--preset--spacing--20) !important
+    }
+
+    .my-xxl-3 {
+        margin-top: var(--wp--preset--spacing--30) !important;
+        margin-bottom: var(--wp--preset--spacing--30) !important
+    }
+
+    .my-xxl-4 {
+        margin-top: var(--wp--preset--spacing--40) !important;
+        margin-bottom: var(--wp--preset--spacing--40) !important
+    }
+
+    .my-xxl-5 {
+        margin-top: var(--wp--preset--spacing--50) !important;
+        margin-bottom: var(--wp--preset--spacing--50) !important
+    }
+
+    .mt-xxl-1 {
+        margin-top: var(--wp--preset--spacing--10) !important
+    }
+
+    .mt-xxl-2 {
+        margin-top: var(--wp--preset--spacing--20) !important
+    }
+
+    .mt-xxl-3 {
+        margin-top: var(--wp--preset--spacing--30) !important
+    }
+
+    .mt-xxl-4 {
+        margin-top: var(--wp--preset--spacing--40) !important
+    }
+
+    .mt-xxl-5 {
+        margin-top: var(--wp--preset--spacing--50) !important
+    }
+
+    .me-xxl-1 {
+        margin-right: var(--wp--preset--spacing--10) !important
+    }
+
+    .me-xxl-2 {
+        margin-right: var(--wp--preset--spacing--20) !important
+    }
+
+    .me-xxl-3 {
+        margin-right: var(--wp--preset--spacing--30) !important
+    }
+
+    .me-xxl-4 {
+        margin-right: var(--wp--preset--spacing--40) !important
+    }
+
+    .me-xxl-5 {
+        margin-right: var(--wp--preset--spacing--50) !important
+    }
+
+    .mb-xxl-1 {
+        margin-bottom: var(--wp--preset--spacing--10) !important
+    }
+
+    .mb-xxl-2 {
+        margin-bottom: var(--wp--preset--spacing--20) !important
+    }
+
+    .mb-xxl-3 {
+        margin-bottom: var(--wp--preset--spacing--30) !important
+    }
+
+    .mb-xxl-4 {
+        margin-bottom: var(--wp--preset--spacing--40) !important
+    }
+
+    .mb-xxl-5 {
+        margin-bottom: var(--wp--preset--spacing--50) !important
+    }
+
+    .ms-xxl-1 {
+        margin-left: var(--wp--preset--spacing--10) !important
+    }
+
+    .ms-xxl-2 {
+        margin-left: var(--wp--preset--spacing--20) !important
+    }
+
+    .ms-xxl-3 {
+        margin-left: var(--wp--preset--spacing--30) !important
+    }
+
+    .ms-xxl-4 {
+        margin-left: var(--wp--preset--spacing--40) !important
+    }
+
+    .ms-xxl-5 {
+        margin-left: var(--wp--preset--spacing--50) !important
+    }
+
+}

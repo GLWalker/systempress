@@ -1,0 +1,57 @@
+@media (min-width:1200px) {
+
+    .text-xl-start {
+        text-align: left !important;
+    }
+
+    .text-xl-end {
+        text-align: right !important;
+    }
+
+    .text-xl-center {
+        text-align: center !important;
+    }
+
+    .text-xl-decoration-none {
+        text-decoration: none !important;
+    }
+
+    .text-xl-decoration-underline {
+        text-decoration: underline !important;
+    }
+
+    .text-xl-decoration-line-through {
+        text-decoration: line-through !important;
+    }
+
+    .text-xl-lowercase {
+        text-transform: lowercase !important;
+    }
+
+    .text-xl-uppercase {
+        text-transform: uppercase !important;
+    }
+
+    .text-xl-capitalize {
+        text-transform: capitalize !important;
+    }
+
+    .text-xl-wrap {
+        white-space: normal !important;
+    }
+
+    .text-xl-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .text-xl-break {
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+    }
+
+    .text-xl-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

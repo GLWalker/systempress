@@ -1,0 +1,217 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Sketchy",
+	"settings": {
+		"custom": {
+			"sp-replace-string": "all",
+			"wp--preset--font-family--body": "var(--wp--preset--font-family--industrial)",
+			"wp--preset--font-family--heading": "var(--wp--preset--font-family--neucha)",
+			"wp--preset--font-family--display": "var(--wp--preset--font-family--cabin-sketch)",
+			"wp--preset--font-family--monospace": "var(--wp--preset--font-family--monospace-code)",
+			"bs-btn-font-family": "var(--wp--preset--font-family--heading)",
+			"bs-border-width": "2px",
+			"bs-border-style": "solid",
+			"bs-border-radius": "25px",
+			"bs-border-radius-sm": "15px",
+			"bs-border-radius-lg": "35px",
+			"bs-border-radius-xl": "1rem",
+			"bs-border-radius-xxl": "2rem",
+			"bs-sp-spacing-x": "0.88rem",
+			"bs-sp-spacing-y": "0.44rem",
+			"bs-heading-color": "var(--wp--preset--color--contrast)",
+			"bs-dm-heading-color": "inherit",
+			"bs-btn-font-weight": "400",
+			"bs-btn-line-height": "1.5",
+			"bs-btn-border-width:": "2px",
+			"bs-btn-radius": "25px",
+			"bs-btn-radius-sm": "15px",
+			"bs-btn-radius-lg": "35px"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#212529",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#f7f7f9",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#222222",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#333333",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#555555",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#28a745",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#17a2b8",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ffc107",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#dc3545",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#555555",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d6d6d6",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#dddddd",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d4edda",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#d1ecf1",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fff3cd",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#f8d7da",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#cccccc",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Neucha",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/neucha/neucha_normal_400.ttf"
+							]
+						}
+					],
+					"fontFamily": "Neucha",
+					"slug": "neucha"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Cabin Sketch",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/cabin-sketch/cabin-sketch_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Cabin Sketch",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/cabin-sketch/cabin-sketch_normal_700.ttf"
+							]
+						}
+					],
+					"fontFamily": "Cabin Sketch",
+					"slug": "cabin-sketch"
+				},
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Sans-serif",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "Bahnschrift, \"DIN Alternate\", \"Franklin Gothic Medium\", \"Nimbus Sans Narrow\", sans-serif-condensed, sans-serif",
+					"name": "Industrial San Serif Stack",
+					"slug": "industrial"
+				},
+				{
+					"fontFamily": "ui-monospace, \"Cascadia Code\", \"Source Code Pro\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+					"name": "Monospace Code Stack",
+					"slug": "monospace-code"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": "header.wp-block-template-part {\n  margin-top: 0;\n}\n\n/* outer element border radius */\n.table-bordered,\n.accordion,\n.list-group,\n.dropdown-menu,\n.modal-content,\n.breadcrumb,\n.carousel-inner,\n.pagination.wp-block-query-pagination :first-child:not(a.page-numbers),\n.page-item:first-child .page-link,\n.pagination.wp-block-query-pagination :last-child:not(a.page-numbers),\n.page-item:last-child .page-link,\n.pagination .page-link,\n.pagination .page-numbers,\n.pagination .wp-block-query-pagination-previous,\n.pagination .wp-block-query-pagination-next,\n[class*=\"border-\"]:not(.border-0),\nfigure,\nfigure>svg,\nfigure>img,\nfigure>table,\nfigure>a>img,\nfigure>a>svg,\n[class*=\"wp-image-\"],\n.img-fluid,\n.img-thumbnail,\n.nav-pills .nav-link,\n.form-control,\n.input-group-text,\ntextarea,\ntextarea.form-control,\nselect,\nselect.form-control,\n.badge,\n.alert,\n.progress,\n.popover,\n.toast,\npre,\n.card,\n.site-header,\n.navbar,\n.wp-block-quote,\n.wp-block-pullquote,\n.wp-block-post-terms a,\n.btn-lg:not(.wp-block-button),\n.btn-sm:not(.wp-block-button),\n.wp-element-button,\n.btn:not(.wp-block-button),\n.btn-group>.btn:not(.wp-block-button),\n.btn-group>.wp-element-button {\n  border-radius: 2.4em 10em .33em .5em/.5em .5em .75em 11em !important;\n}\n\n/* inner element border radius */\n.modal-footer,\n.modal-header,\n.toast-header,\n.card-header,\n.card-footer,\n.popover-header,\n.accordion-button,\n.accordion-item,\n.list-group-item,\n.list-group-item:hover,\n.dropdown-divider,\n.dropdown-item:hover,\n.dropdown-item,\n.pagination .page-numbers.current,\n.page-link.active,\n.active>.page-link,\n.tooltip-inner,\n.table-bordered th,\n.table-bordered td {\n  border-radius: 2.1em 9.7em .30em .47em/.47em .47em .72em 10.7em !important;\n}\n\n/* only bottom border */\n.modal-header,\n.toast-header,\n.card-header,\n.popover-header,\nimg.card-img-bottom,\nfigure.card-img-bottom,\n.card-img-bottom>img,\n.card-img-bottom>a>img,\n.site-header,\n.navbar.fixed-top {\n  border-top: 0;\n  border-radius: 0 9.7em .30em .47em/.47em 0 .72em 10.7em !important;\n\n}\n\n/* only top border */\nimg.card-img-top,\nfigure.card-img-top,\n.card-img-top>img,\n.card-img-top>a>img,\n.card-footer,\n.modal-footer,\n.navbar.fixed-bottom {\n  border-bottom: 0;\n  border-radius: 2.1em 9.7em 0 .47em/.47em .47em .72em 0 !important;\n}\n\n.wp-block-site-title,\n.navbar-brand,\n.wp-block-query-title,\n.entry-title,\n.toast-header,\n.btn-close,\ntable th,\nb,\nstrong {\n  font-family: var(--wp--preset--font-family--display) !important;\n}\n\ntable th,\ntable td {\n  background-color: #fff;\n  border-color: var(--bs-border-color);\n  margin: 1em;\n}\n\n.table-bordered {\n  overflow: hidden;\n  border-spacing: 0;\n  border-collapse: separate;\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n}\n\n.table-bordered th,\n.table-bordered td {\n  margin: 1em !important;\n}\n\n.table-bordered .table-success td,\n.table-bordered .table-success th,\n.table-bordered .table-success:hover td,\n.table-bordered .table-success:hover th {\n  color: #fff;\n  background-color: #28a745;\n}\n\n.table-bordered .table-info td,\n.table-bordered .table-info th,\n.table-bordered .table-info:hover td,\n.table-bordered .table-info:hover th {\n  color: #fff;\n  background-color: #17a2b8;\n}\n\n.table-bordered .table-warning td,\n.table-bordered .table-warning th,\n.table-bordered .table-warning:hover td,\n.table-bordered .table-warning:hover th {\n  color: #fff;\n  background-color: #ffc107;\n}\n\n.table-bordered .table-danger td,\n.table-bordered .table-danger th,\n.table-bordered .table-danger:hover td,\n.table-bordered .table-danger:hover th {\n  color: #fff;\n  background-color: #dc3545;\n}\n\n.table-dark th,\n.table-dark td,\n.table-dark.table-hover .table-active:hover>th,\n.table-dark.table-hover .table-active:hover>td {\n  background-color: #333;\n}\n\n.btn-check {\n  display: inline-block;\n  opacity: 0;\n}\n\n[type=checkbox]:focus,\n[type=radio]:focus {\n  background-color: transparent;\n  border-color: none;\n  outline: 0;\n  box-shadow: initial;\n}\n\n[type=checkbox] {\n  position: relative;\n  width: 0;\n  height: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  cursor: pointer;\n  border: none;\n}\n\n[type=checkbox]::before {\n  position: absolute;\n  top: -0.1em !important;\n  left: 0;\n  display: inline-block;\n  width: 15px !important;\n  height: 16px !important;\n  content: \"\" !important;\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n  border-radius: 2px 8px 2px 4px/5px 3px 5px 3px !important;\n}\n\n[type=checkbox]:focus::before {\n  box-shadow: 0 0 0 0.25rem rgba(51, 51, 51, 0.25) !important;\n}\n\n[type=checkbox]:checked::after,\n[type=checkbox]:indeterminate::after {\n  position: absolute;\n  top: 0 !important;\n  left: 0.1em !important;\n  font-size: 1.5rem;\n  line-height: 0.5;\n  color: #333 !important;\n}\n\n[type=checkbox]:checked::after {\n  content: \"x\" !important;\n}\n\n[type=checkbox]:indeterminate::after {\n  top: 0.1em !important;\n  content: \"-\";\n}\n\n[type=checkbox]:disabled::before {\n  border: 2px solid #aaa !important;\n}\n\n[type=radio] {\n  position: relative;\n  width: 0;\n  height: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  cursor: pointer;\n  border: none;\n}\n\n[type=radio]::before {\n  position: absolute;\n  top: -0.1em !important;\n  left: 0 !important;\n  display: inline-block;\n  width: 16px !important;\n  height: 16px !important;\n  content: \"\" !important;\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n  border-radius: 50% 45% 40% 50%/40% 50% 50% 45% !important;\n}\n\n[type=radio]:focus::before {\n  box-shadow: 0 0 0 0.25rem rgba(51, 51, 51, 0.25) !important;\n}\n\n[type=radio]:checked::before {\n  background-color: #333 !important;\n}\n\n[type=radio]:disabled::before {\n  border: 2px solid #aaa !important;\n}\n\n.form-check-input {\n  border: none !important;\n}\n\n.form-check-input:focus {\n  outline: 0;\n  box-shadow: 0 0 0 0.15rem rgba(51, 51, 51, 0.25);\n}\n\n.form-switch {\n  padding-left: 0 !important;\n}\n\n.form-switch .form-check-input {\n  position: relative;\n  margin-left: 0 !important;\n}\n\n.form-switch .form-check-input::before {\n  width: 32px !important;\n  border-radius: 30% 35% 30% 30%/30% 50% 30% 45% !important;\n}\n\n.form-switch .form-check-input::after {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: inline-block;\n  width: 12px !important;\n  height: 12px !important;\n  content: \"\" !important;\n  background-color: #fff !important;\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n  border-radius: 50% 45% 40% 50%/40% 50% 50% 45% !important;\n  transition: left 0.15s ease-in-out;\n  box-shadow: none !important;\n}\n\n.form-switch .form-check-input:checked::after {\n  top: 0 !important;\n  left: 18px !important;\n  background-color: transparent !important;\n}\n\n.form-switch .form-check-label {\n  margin-left: 0.5em;\n}\n\n.form-check-input:focus,\n.form-check-input:checked {\n  background: transparent !important;\n  border-color: none !important;\n  box-shadow: none;\n  outline: 0;\n\n}\n\n.form-check-input:active {\n  filter: none !important;\n}\n\n.accordion,\n.list-group {\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n}\n\n.accordion-item,\n.list-group-item {\n  border-top: var(--bs-border-width) solid var(--bs-border-color) !important;\n  border-right: none !important;\n  border-left: none !important;\n  border-bottom: none !important;\n}\n\n.accordion-item:first-child,\n.list-group-item:first-child {\n  border-top: none !important;\n}\n\n.nav-tabs .nav-link {\n  border-radius: 45px 15px 225px 5px/25px 225px 25px 255px !important;\n}\n\n.breadcrumb {\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n}\n\n.badge-pill {\n  border-radius: 7rem 8rem 8rem 8rem/4rem 5rem 6rem 6rem !important;\n}\n\n.alert .btn-close::before {\n  color: inherit !important;\n}\n\n.progress {\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n}\n\n.carousel-inner,\n.card,\n.toast,\n.popover,\n.accordion,\n.list-group,\n.dropdown-menu {\n  overflow: hidden !important;\n}\n\npre {\n  border: var(--bs-border-width) solid var(--bs-border-color) !important;\n\n}\n\n.btn-close {\n  background-image: none !important;\n}\n\n.btn-close::before {\n  font-weight: strong !important;\n color: inherit !important;\n  content: \"X\" !important;\n}"
+	}
+}

@@ -1,0 +1,69 @@
+.btn.btn-danger,
+.wp-block-button__link.has-bs-danger-background-color,
+.wp-element-button.has-bs-danger-background-color {
+  --bs-btn-bg: var(--bs-danger);
+  --bs-btn-border-color: var(--bs-danger-border-color);
+  --bs-btn-color: var(--bs-danger-text);
+}
+
+.btn.btn-outline-danger,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color {
+  --bs-btn-border-color: var(--bs-danger);
+  --bs-btn-color: var(--bs-danger);
+}
+
+.btn.btn-outline-danger:hover,
+.btn.btn-outline-danger:active,
+.btn.btn-outline-danger.active,
+.btn.btn-outline-danger.show,
+.btn.btn-outline-danger:focus-visible,
+.btn.btn-danger:hover,
+.btn.btn-danger:active,
+.btn.btn-danger.active,
+.btn.btn-danger.show,
+.btn.btn-danger:focus-visible,
+.wp-block-button__link.has-bs-danger-background-color:hover,
+.wp-block-button__link.has-bs-danger-background-color:active,
+.wp-block-button__link.has-bs-danger-background-color.active,
+.wp-block-button__link.has-bs-danger-background-color.show,
+.wp-block-button__link.has-bs-danger-background-color:focus-visible,
+.wp-element-button.has-bs-danger-background-color:hover,
+.wp-element-button.has-bs-danger-background-color:active,
+.wp-element-button.has-bs-danger-background-color.active,
+.wp-element-button.has-bs-danger-background-color.show,
+.wp-element-button.has-bs-danger-background-color:focus-visible,
+
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:hover,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color.active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color.show,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:focus-visible,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:hover,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color.active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color.show,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:focus-visible {
+  --bs-btn-focus-shadow-rgb: var(--bs-danger-shadow-rgb);
+  --bs-btn-hover-bg: var(--bs-danger-hover-bg);
+  --bs-btn-hover-border-color: var(--bs-danger-hover-border-color);
+  --bs-btn-color: var(--bs-danger-text);
+}
+
+.btn.btn-outline-danger:hover,
+.btn.btn-outline-danger:active,
+.btn.btn-outline-danger.active,
+.btn.btn-outline-danger.show,
+.btn.btn-outline-danger:focus-visible,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:hover,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color.active,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color.show,
+[class*="is-style-outline"]>.wp-block-button__link.has-bs-danger-color:focus-visible,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:hover,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color.active,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color.show,
+[class*="is-style-outline"]>.wp-element-button.has-bs-danger-color:focus-visible {
+  --bs-btn-hover-bg: var(--bs-danger);
+}

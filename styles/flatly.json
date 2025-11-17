@@ -1,0 +1,196 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Flatly",
+	"settings": {
+		"appearanceTools": true,
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-heading-color": "#0a0a0a",
+			"bs-dm-heading-color": "inherit"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#212529",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#ecf0f1",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.75)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "rgba(33, 37, 41, 0.5)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#2c3e50",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "#95a5a6",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#18bc9c",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#3498db",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#f39c12",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#e74c3c",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#ecf0f1",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#7b8a8b",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d5d8dc",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#eaeded",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d1f2eb",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#d6eaf8",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#fdebd0",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#fadbd8",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Lato, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+					"name": "System",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "Lato",
+					"slug": "lato",
+					"fontFace": [
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/lato/lato_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/lato/lato_italic_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/lato/lato_normal_700.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/lato/lato_italic_700.ttf"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+					"name": "Monospace",
+					"slug": "bs-monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": ".alert-primary {\n  --bs-alert-bg: var(--bs-primary);\n}\n.alert-secondary {\n  --bs-alert-bg: var(--bs-secondary);\n}\n.alert-success {\n  --bs-alert-bg: var(--bs-success);\n}\n.alert-info {\n  --bs-alert-bg: var(--bs-info);\n}\n.alert-warning {\n  --bs-alert-bg: var(--bs-warning);\n}\n.alert-danger {\n  --bs-alert-bg: var(--bs-danger);\n}\n.alert-light {\n  --bs-alert-bg: var(--bs-light);\n}\n.alert-dark {\n  --bs-alert-bg: var(--bs-dark);\n}\n.alert-light,\n.alert-light a,\n.alert-light .alert-link {\n  color: #212529;\n}\n\n.modal .btn-close,\n.toast .btn-close,\n.offcanvas .btn-close {\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e\");\n}"
+	}
+}

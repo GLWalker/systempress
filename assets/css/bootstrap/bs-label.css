@@ -1,0 +1,25 @@
+.form-label {
+  margin-bottom: .5rem !important;
+}
+
+.col-form-label {
+  padding-top: calc(var(--bs-sp-spacing-y) + var(--bs-border-width));
+  padding-bottom: calc(var(--bs-sp-spacing-y) + var(--bs-border-width));
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.col-form-label-lg {
+  padding-top: calc(.5rem + var(--bs-border-width));
+  padding-bottom: calc(.5rem + var(--bs-border-width));
+  font-size: var(--wp--preset--font-size--large);
+  line-height: 1.5;
+}
+
+.col-form-label-sm {
+  padding-top: calc(.25rem + var(--bs-border-width));
+  padding-bottom: calc(.25rem + var(--bs-border-width));
+  font-size: var(--wp--preset--font-size--x-small);
+  line-height: 1.4;
+}

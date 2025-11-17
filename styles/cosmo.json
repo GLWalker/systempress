@@ -1,0 +1,196 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Cosmo",
+	"settings": {
+		"custom": {
+			"sp-replace-string": "all",
+			"bs-body-font-size": "15px",
+			"bs-html-text-shadow": "var(--bs-light-textshadow)",
+			"bs-border-radius": "0",
+			"bs-border-radius-sm": "0",
+			"bs-border-radius-lg": "0",
+			"bs-border-radius-xl": "0",
+			"bs-border-radius-xxl": "0",
+			"bs-btn-focus-shadow-rgb": "var(--bs-primary-rgb)",
+			"bs-popover-bg": "var(--bs-secondary-bg)",
+			"bs-progress-height": "var(--wp--preset--font-size--x-small)",
+			"bs-progress-bg": "var(--bs-border-color)"
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#383b3d",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "rgba(55, 58, 60, 0.8)",
+					"name": "Secondary Element Text",
+					"slug": "bs-secondary-color"
+				},
+				{
+					"color": "#e9ecef",
+					"name": "Secondary Element BG",
+					"slug": "bs-secondary-bg"
+				},
+				{
+					"color": "rgba(55, 58, 60, 0.7)",
+					"name": "Tertiary Element Text",
+					"slug": "bs-tertiary-color"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Tertiary Element BG",
+					"slug": "bs-tertiary-bg"
+				},
+				{
+					"color": "#dee2e6",
+					"name": "Border Color",
+					"slug": "bs-border-color"
+				},
+				{
+					"color": "#2780e3",
+					"name": "Primary",
+					"slug": "bs-primary"
+				},
+				{
+					"color": "rgb(55, 58, 61)",
+					"name": "Secondary",
+					"slug": "bs-secondary"
+				},
+				{
+					"color": "#3fb618",
+					"name": "Success",
+					"slug": "bs-success"
+				},
+				{
+					"color": "#9954bb",
+					"name": "Info",
+					"slug": "bs-info"
+				},
+				{
+					"color": "#ff7518",
+					"name": "Warning",
+					"slug": "bs-warning"
+				},
+				{
+					"color": "#ff0039",
+					"name": "Danger",
+					"slug": "bs-danger"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "Light",
+					"slug": "bs-light"
+				},
+				{
+					"color": "#373a3c",
+					"name": "Dark",
+					"slug": "bs-dark"
+				},
+				{
+					"color": "#d4e6f9",
+					"name": "Primary Subtle",
+					"slug": "bs-primary-bg-subtle"
+				},
+				{
+					"color": "#d7d8d8",
+					"name": "Secondary Subtle",
+					"slug": "bs-secondary-bg-subtle"
+				},
+				{
+					"color": "#d9f0d1",
+					"name": "Success Subtle",
+					"slug": "bs-success-bg-subtle"
+				},
+				{
+					"color": "#ebddf1",
+					"name": "Info Subtle",
+					"slug": "bs-info-bg-subtle"
+				},
+				{
+					"color": "#ffe3d1",
+					"name": "Warning Subtle",
+					"slug": "bs-warning-bg-subtle"
+				},
+				{
+					"color": "#ffccd7",
+					"name": "Danger Subtle",
+					"slug": "bs-danger-bg-subtle"
+				},
+				{
+					"color": "#fcfcfd",
+					"name": "Light Subtle",
+					"slug": "bs-light-bg-subtle"
+				},
+				{
+					"color": "#ced4da",
+					"name": "Dark Subtle",
+					"slug": "bs-dark-bg-subtle"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\",Arial, sans-serif, \"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\"",
+					"name": "System San Serif Stack",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "Roboto",
+					"name": "Roboto",
+					"slug": "roboto",
+					"fontFace": [
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/roboto/roboto_normal_300.ttf"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/roboto/roboto_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/roboto/roboto_normal_700.ttf"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\",\"Courier New\",monospace",
+					"name": "Bootstrap Monospace Stack",
+					"slug": "bs-monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": ""
+	}
+}

@@ -1,0 +1,79 @@
+@media (min-width:1200px) {
+  .gap-xl-0 {
+    gap: 0 !important
+  }
+
+  .gap-xl-1 {
+    gap: var(--wp--preset--spacing--10) !important
+  }
+
+  .gap-xl-2 {
+    gap: var(--wp--preset--spacing--20) !important
+  }
+
+  .gap-xl-3 {
+    gap: var(--wp--preset--spacing--30) !important
+  }
+
+  .gap-xl-4 {
+    gap: var(--wp--preset--spacing--40) !important
+  }
+
+  .gap-xl-5 {
+    gap: var(--wp--preset--spacing--50) !important
+  }
+
+  .row-gap-xl-0 {
+    row-gap: 0 !important
+  }
+
+  .row-gap-xl-1 {
+    row-gap: var(--wp--preset--spacing--10) !important
+  }
+
+  .row-gap-xl-2 {
+    row-gap: var(--wp--preset--spacing--20) !important
+  }
+
+  .row-gap-xl-3 {
+    row-gap: var(--wp--preset--spacing--30) !important
+  }
+
+  .row-gap-xl-4 {
+    row-gap: var(--wp--preset--spacing--40) !important
+  }
+
+  .row-gap-xl-5 {
+    row-gap: var(--wp--preset--spacing--50) !important
+  }
+
+  .column-gap-xl-0 {
+    -moz-column-gap: 0 !important;
+    column-gap: 0 !important
+  }
+
+  .column-gap-xl-1 {
+    -moz-column-gap: var(--wp--preset--spacing--10) !important;
+    column-gap: var(--wp--preset--spacing--10) !important
+  }
+
+  .column-gap-xl-2 {
+    -moz-column-gap: var(--wp--preset--spacing--20) !important;
+    column-gap: var(--wp--preset--spacing--20) !important
+  }
+
+  .column-gap-xl-3 {
+    -moz-column-gap: var(--wp--preset--spacing--30) !important;
+    column-gap: var(--wp--preset--spacing--30) !important
+  }
+
+  .column-gap-xl-4 {
+    -moz-column-gap: var(--wp--preset--spacing--40) !important;
+    column-gap: var(--wp--preset--spacing--40) !important
+  }
+
+  .column-gap-xl-5 {
+    -moz-column-gap: var(--wp--preset--spacing--50) !important;
+    column-gap: var(--wp--preset--spacing--50) !important
+  }
+}

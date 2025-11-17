@@ -1,0 +1,48 @@
+SystemPress License & Copyright Notice
+
+Copyright © 2025 Gary L Walker
+
+Licensed under the GNU General Public License v2 or later
+https://www.gnu.org/licenses/gpl-2.0.html
+
+GNU GENERAL PUBLIC LICENSE
+Version 2, June 1991
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+----------------------------------------------------------------------
+
+IMPORTANT NOTICE REGARDING CODE USE
+
+This software is licensed under GPLv2 or later, which allows you to use, modify, and redistribute it, provided that you follow the terms of the license.
+
+If you choose to modify and redistribute this code—you must:
+	1.	Give proper credit to the original author.
+	2.	Keep this license intact and apply it to your modified version.
+	3.	Ensure your changes are also licensed under GPL if you redistribute them.
+
+Things You CANNOT Do:
+X Claim this code or any modified version of it as your own.
+X Remove or hide the original author’s attribution.
+X Rebrand the code as your own or distribute it without adhering to the terms of this license.
+
+We encourage you to contribute if you make improvements to this code—let’s build something great together! But remember, respect the license and keep the integrity of the project intact.
+
+⸻
+
+To Sum Up:
+You can modify it, but don’t try to take credit for it. Respect the GPL, and everyone wins!
+
+----------------------------------------------------------------------
