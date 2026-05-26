@@ -30,7 +30,7 @@
 		"color": {
 			"palette": [
 				{
-					"color": " #060606",
+					"color": "#060606",
 					"name": "Base",
 					"slug": "base"
 				},

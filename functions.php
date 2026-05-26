@@ -15,48 +15,22 @@ defined('ABSPATH') || exit;
 
 //define('SP_LOAD_BOOTSTRAP_STYLESHEETS', true);
 //define('SP_LOAD_BOOTSTRAP_JAVASCRIPTS', true);
-/*
-add_action('wp_footer', function () {
-    $registered_styles = wp_styles();
+define('SYSTEMPRESS_DEBUG_ASSETS', false);
 
-    if ($registered_styles && isset($registered_styles->registered)) {
-        echo '<strong>Total registered styles:</strong> ' . count($registered_styles->registered) . '<br>';
-    } else {
-        echo 'No registered styles found.';
-    }
-});
-
-add_action('wp_footer', function () {
-    $wp_styles = wp_styles();
-
-    if (!empty($wp_styles->queue)) {
-        echo '<strong>Total enqueued styles:</strong> ' . count($wp_styles->queue) . '<br><ul>';
-
-        foreach ($wp_styles->queue as $handle) {
-            echo '<li>' . esc_html($handle) . '</li>';
-        }
-
-        echo '</ul>';
-    } else {
-        echo 'No styles are currently enqueued.';
-    }
-});
-*/
 /**
  * Ensure WordPress version is 6.7 or greater.
  */
-function systempress_check_wp_version()
+function systempress_check_wp_version(): void
 {
     global $wp_version;
     $required_wp_version = '6.7';
 
-    // Compare WordPress version.
     if (version_compare($wp_version, $required_wp_version, '<')) {
         // Switch to default theme.
         switch_theme(WP_DEFAULT_THEME);
 
         // Display admin notice.
-        add_action('admin_notices', function () use ($required_wp_version) {
+        add_action('admin_notices', function () use ($required_wp_version): void {
 ?>
             <div class="notice notice-error">
                 <p>
@@ -71,7 +45,7 @@ function systempress_check_wp_version()
 <?php
         });
 
-        // Prevent further execution.
+        // Stop further execution.
         return;
     }
 }
@@ -86,15 +60,7 @@ function sp_load_files(): void
 {
     $includes_directory = get_template_directory() . '/inc/';
 
-    // Ensure the directory exists before proceeding.
-    if (!is_dir($includes_directory)) {
-        error_log("SystemPress: The directory $includes_directory does not exist.");
-        return;
-    }
-
-    // List of required files.
     $files = [
-        // 'buddypress',
         'theme-functions',
         'enqueue-assets',
         'block-filters',
@@ -111,29 +77,21 @@ function sp_load_files(): void
         'social-icon-filters',
     ];
 
-    // Include each file dynamically if it exists.
     foreach ($files as $file) {
         $file_path = $includes_directory . $file . '.php';
-
         if (file_exists($file_path)) {
             require_once $file_path;
-        } else {
-            error_log(sprintf(
-                'SystemPress: Missing file - %s',
-                $file_path
-            ));
         }
     }
 }
 
 /**
- * Hook Example Implementation.
+ * Example hook output.
  */
 add_action('sp_hook_example', 'sp_hook_example_content', 10);
 
 function sp_hook_example_content(): void
 {
-    // Output HTML content for the example hook.
     echo <<<HTML
     <div class="card h-100 bg-primary">
         <div class="card-body">
@@ -153,20 +111,17 @@ function sp_hook_example_content(): void
 }
 
 /**
- * Load dev file.
+ * Load development file.
  */
-add_action('after_setup_theme', 'sp_dev_file', 0);
 
 function sp_dev_file(): void
 {
-    $dev_file = get_template_directory()  . '/dev.php';
-
+    $dev_file = get_template_directory() . '/dev.php';
     if (file_exists($dev_file)) {
         require_once $dev_file;
-    } else {
-        error_log(sprintf(
-            'SystemPress: Missing file - %s',
-            $dev_file
-        ));
     }
+}
+
+if (defined('SYSTEMPRESS_DEBUG_ASSETS') && SYSTEMPRESS_DEBUG_ASSETS) {
+    add_action('after_setup_theme', 'sp_dev_file', 0);
 }

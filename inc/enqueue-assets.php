@@ -20,8 +20,8 @@ add_filter(
     static function ($theme_json) {
         $data = $theme_json->get_data();
 
-        $data['settings']['color']['palette']['default']   = [];
-        $data['settings']['color']['duotone']['default']   = [];
+        $data['settings']['color']['palette']['default'] = [];
+        $data['settings']['color']['duotone']['default'] = [];
         $data['settings']['color']['gradients']['default'] = [];
         //$data['settings']['shadow']['presets']['default'] = [];
 
@@ -106,7 +106,7 @@ function sp_enqueue_child_styles_last()
         wp_enqueue_style(
             'systempress-child',
             get_stylesheet_uri(),
-            [], // You *could* list dependencies here if you want to control layering further
+            [],
             $child->get('Version'),
             'all'
         );
@@ -133,16 +133,16 @@ if (!function_exists('sp_enqueue_assets')) {
      */
     function sp_enqueue_assets(): void
     {
-        $suffix      = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min'; // Determine script suffix based on debug mode
-        $theme_dir   = trailingslashit(get_template_directory()); // Theme directory path
-        $theme_uri   = trailingslashit(get_template_directory_uri()); // Theme URI
-        $version     = wp_get_theme()->get('Version'); // Theme version
-        $is_admin    = is_admin(); // Check if we're in the admin area
+        $suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min'; // Determine script suffix based on debug mode
+        $theme_dir = trailingslashit(get_template_directory()); // Theme directory path
+        $theme_uri = trailingslashit(get_template_directory_uri()); // Theme URI
+        $version = wp_get_theme()->get('Version'); // Theme version
+        $is_admin = is_admin(); // Check if we're in the admin area
 
         // Global styles handling (based on whether we're in the admin area or frontend)
         $global_name = $is_admin ? 'global-styles-css-custom-properties' : 'global-styles';
-        $deps        = $is_admin ? ['wp-edit-blocks'] : [];
-        $jsdeps      = $is_admin ? ['wp-blocks', 'wp-i18n', 'wp-element', 'wp-components', 'wp-editor'] : [];
+        $deps = $is_admin ? ['wp-edit-blocks'] : [];
+        $jsdeps = $is_admin ? ['wp-blocks', 'wp-i18n', 'wp-element', 'wp-components', 'wp-editor'] : [];
 
         /* Reset CSS - Only for Frontend */
         if (!$is_admin) {
@@ -223,9 +223,9 @@ if (!function_exists('sp_enqueue_assets')) {
 
         /* Enqueue Shared Scripts */
         $scripts = [
-            'wow'               => 'wow.min.js',
+            'wow' => 'wow.min.js',
             '@bootstrap-bundle' => 'bootstrap.bundle.min.js',
-            '@shared'           => 'shared.js',
+            '@shared' => 'shared.js',
         ];
 
         foreach ($scripts as $handle => $script) {
@@ -248,7 +248,7 @@ if (!function_exists('sp_enqueue_assets')) {
 
             wp_localize_script(
                 '@shared',
-                '@buddypress',
+                'systempress',
                 array(
                     'templateUri' => $theme_uri,
                 )
@@ -291,13 +291,13 @@ if (!function_exists('sp_add_editor_style')) {
 
         if ($url === $dynamic_url) {
             $response = array(
-                'body'     => sp_global_vars() . sp_global_styles_presets() . sp_global_css(),
-                'headers'  => new \WpOrg\Requests\Utility\CaseInsensitiveDictionary(),
+                'body' => sp_global_vars() . sp_global_styles_presets() . sp_global_css(),
+                'headers' => new \WpOrg\Requests\Utility\CaseInsensitiveDictionary(),
                 'response' => array(
-                    'code'    => 200,
+                    'code' => 200,
                     'message' => 'OK',
                 ),
-                'cookies'  => array(),
+                'cookies' => array(),
                 'filename' => null,
             );
         }
@@ -311,8 +311,8 @@ if (!function_exists('sp_add_editor_style')) {
     {
         $suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 
-        $theme_dir   = trailingslashit(get_template_directory()); // Theme directory path
-        $theme_uri   = trailingslashit(get_template_directory_uri());
+        $theme_dir = trailingslashit(get_template_directory()); // Theme directory path
+        $theme_uri = trailingslashit(get_template_directory_uri());
 
         // Enable editor styles.
         add_theme_support('editor-styles');
@@ -359,65 +359,65 @@ function sp_do_a11y_scripts(): void
 {
     // Allow users to filter and disable the script
     if (apply_filters('sp_print_a11y_script', true)) {
-?>
+        ?>
         <script id="systempress-a11y">
-            (function() {
+            ( function () {
                 // Trap focus in modal/dialog elements to improve keyboard navigation.
-                const trapFocus = (element) => {
-                    const focusable = element.querySelectorAll("a, button, input, textarea, select, [tabindex]");
-                    const first = focusable[0];
-                    const last = focusable[focusable.length - 1];
+                const trapFocus = ( element ) => {
+                    const focusable = element.querySelectorAll( "a, button, input, textarea, select, [tabindex]" );
+                    const first = focusable[ 0 ];
+                    const last = focusable[ focusable.length - 1 ];
 
-                    element.addEventListener("keydown", (e) => {
-                        if (e.key === "Tab") {
-                            if (e.shiftKey && document.activeElement === first) {
+                    element.addEventListener( "keydown", ( e ) => {
+                        if ( e.key === "Tab" ) {
+                            if ( e.shiftKey && document.activeElement === first ) {
                                 e.preventDefault();
                                 last.focus();
-                            } else if (!e.shiftKey && document.activeElement === last) {
+                            } else if ( !e.shiftKey && document.activeElement === last ) {
                                 e.preventDefault();
                                 first.focus();
                             }
                         }
-                    });
+                    } );
                 };
 
-                document.addEventListener("DOMContentLoaded", () => {
-                    const modals = document.querySelectorAll(".modal, .dialog");
-                    modals.forEach(modal => trapFocus(modal));
-                });
+                document.addEventListener( "DOMContentLoaded", () => {
+                    const modals = document.querySelectorAll( ".modal, .dialog" );
+                    modals.forEach( modal => trapFocus( modal ) );
+                } );
 
                 // Focus outline visibility for keyboard users.
-                document.body.addEventListener("keydown", function(event) {
-                    if (event.key === "Tab") {
-                        document.body.classList.add("using-keyboard");
+                document.body.addEventListener( "keydown", function ( event ) {
+                    if ( event.key === "Tab" ) {
+                        document.body.classList.add( "using-keyboard" );
                     }
-                });
+                } );
 
-                document.body.addEventListener("mousedown", function() {
-                    document.body.classList.remove("using-keyboard");
-                });
+                document.body.addEventListener( "mousedown", function () {
+                    document.body.classList.remove( "using-keyboard" );
+                } );
 
                 // Add ARIA attributes to forms if they don't exist.
-                document.querySelectorAll('form').forEach(function(form) {
+                document.querySelectorAll( 'form' ).forEach( function ( form ) {
                     // Add ARIA label if it's missing.
-                    if (!form.hasAttribute('aria-label')) {
-                        form.setAttribute('aria-label', 'Form');
+                    if ( !form.hasAttribute( 'aria-label' ) ) {
+                        form.setAttribute( 'aria-label', 'Form' );
                     }
 
                     // Add ARIA role if it's missing.
-                    if (!form.hasAttribute('role')) {
-                        form.setAttribute('role', 'form');
+                    if ( !form.hasAttribute( 'role' ) ) {
+                        form.setAttribute( 'role', 'form' );
                     }
 
                     // Add ARIA-labelledby if neither label nor aria-label exists.
-                    if (!form.querySelector('label') && !form.hasAttribute('aria-label')) {
-                        form.setAttribute('aria-labelledby', 'form-label');
+                    if ( !form.querySelector( 'label' ) && !form.hasAttribute( 'aria-label' ) ) {
+                        form.setAttribute( 'aria-labelledby', 'form-label' );
                     }
-                });
+                } );
 
-            })();
+            } )();
         </script>
-<?php
+        <?php
     }
 }
 

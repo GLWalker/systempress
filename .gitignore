@@ -1,35 +1,18 @@
-# macOS
+node_modules/
 .DS_Store
+__MACOSX
+*.zip
 
 # Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 *.log
 
-# Node / npm
-node_modules/
-npm-debug.log
-
-# Editor files
-*.swp
-*.swo
-*.sublime-workspace
-*.sublime-project
-.vscode/
+# IDE
 .idea/
+.vscode/
 
-# OS generated files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Composer
-vendor/
-
-# WordPress core files (if theme repo is not full WP)
-wp-config.php
-wp-content/plugins/
-wp-content/uploads/
-
-# Backup / temp files
-*.bak
-*.tmp
-*.old
+# Docs hiding (Ignore everything in docs except START.md)
+docs/*
+!docs/START.md

@@ -1,0 +1,36 @@
+/* WP Page Tile */
+body.buddypress .wp-block-post-title {
+    display: none;
+}
+
+body.buddypress.wp-theme-twentytwentyfive #buddypress {
+    margin-top: calc(-1.5 * var(--wp--preset--spacing--60)) !important;
+}
+
+/* members search form */
+.dir-search:focus,
+.dir-search:focus-within {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-border-color);
+    outline: 0;
+    box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color) !important;
+}
+
+.dir-search .form-control:focus,
+.dir-search .form-control:focus-within {
+    box-shadow: none;
+    outline: 0;
+    background: transparent;
+    border: none;
+}
+
+/* Make the dropdown button fixed width to avoid jumping */
+.members-order-fixed {
+    width: 280px !important;
+}
+
+/* Optional: make dropdown menu the same width as the button */
+.members-order-fixed+.dropdown-menu {
+    width: 280px !important;
+}
